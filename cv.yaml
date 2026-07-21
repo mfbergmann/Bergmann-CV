@@ -1,0 +1,199 @@
+# ============================================================
+# Bergmann CV — canonical data file
+# Edit THIS file only. Everything else is generated.
+# Run `python build.py` or push to GitHub to regenerate outputs.
+#
+# Conventions:
+#   date: YYYY or YYYY-MM or YYYY-MM-DD (start of the activity)
+#   end: same formats, or "present"
+#   sshrc: true  -> marked with * in the SSHRC contributions doc
+#   refereed: true / other_refereed: true -> SSHRC categorization
+#   formats: which outputs include the entry (default: all)
+# ============================================================
+
+personal:
+  name: Michael F Bergmann
+  title: Associate Professor, Performance, The Creative School, Toronto Metropolitan University
+  orcid: 0000-0002-5698-8121
+  email: mfb@torontomu.ca
+  website: https://bergmann.ai
+  github: mfbergmann
+
+employment:
+  - { date: 2024-01, end: present, text: "Associate Professor (Tenured), Performance, The Creative School, Toronto Metropolitan University" }
+  - { date: 2024-01, end: "TODO-END-DATE", text: "Associate Director, Design + Technology Lab, Toronto Metropolitan University" }
+  - { date: 2019-08, end: 2024-01, text: "Assistant Professor, Performance, The Creative School, Toronto Metropolitan University" }
+  - { date: 2022-07, end: 2023-07, text: "Co-Undergraduate Program Director (Production), Performance, The Creative School, TMU" }
+  - { date: 2017, end: present, text: "Full Member, Yeates School of Graduate Studies, TMU" }
+  - { date: 2016-08, end: 2019-08, text: "Assistant Professor (Limited Term Faculty), Performance, The Creative School, TMU" }
+  - { date: 2014, end: 2016, text: "Technology Specialist / Media Server Programmer, WorldStage LAB, San Francisco / New York" }
+  - { date: 2007, end: 2010, text: "Projection Specialist, Meet The Dude Productions, Toronto" }
+
+education:
+  - { date: 2022-09, end: present, text: "PhD (in progress), Critical Studies in Improvisation, University of Guelph. Expected 2027." }
+  - { date: 2011, end: 2014, text: "MFA, Design (Projection Design Specialization), Yale School of Drama, Yale University" }
+  - { date: 2006, end: 2011, text: "BFA, Theatre Performance Production, Ryerson Theatre School, Toronto Metropolitan University (coursework completed December 2010; graduated May 2011)" }
+
+qualifications:
+  - { date: 2020, text: "Teaching Adult Learners Online, Chang School of Continuing Education, TMU" }
+  - { date: 2019, text: "SEDA Recognised Teacher, University Teaching Development Programme (SEDA, UK and Ireland)" }
+  - { date: 2019, text: "Apple Certified Teacher, Apple" }
+  - { date: 2018, text: "Watchout Certified User and Operator, Dataton" }
+  - { date: 2015, text: "Pandoras Box Certified, Christie" }
+
+awards:
+  - { date: 2022, text: "Best World Feature Film: Nuptials, Austin Revolution Film Festival (as producer)" }
+  - { date: 2014, text: "Best Production: He Left Quietly, SummerWorks Performance Festival (as designer)" }
+  - { date: 2012, end: 2014, text: "Eldon Elder Fellowship, Yale University ($40,000 USD; held throughout the MFA)" }
+  - { date: 2009, text: "Spirit of the Fringe, Prague Fringe Festival" }
+
+invited_positions:
+  - { date: 2025-12, end: 2026-02, text: "Mentor, Setsubun Digital Media Residency, Japanese Canadian Cultural Centre, Toronto" }
+  - { date: 2024-06, text: "Artist-in-residence, SÍM Residency (with UKAI Projects), Reykjavík, Iceland — Shipwreck, June 2–30, 2024" }
+  - { date: 2022-04, text: "Artist-in-residence, Ingenuity Labs Research Institute, Queen's University, Kingston" }
+  - { date: 2021-09, end: 2022, text: "Ferment AI Residency artist" }
+
+memberships:
+  - { date: 2025, end: present, text: "Canadian Artificial Intelligence Association" }
+  - { date: 2023, end: present, text: "Almost Alchemy — improvised, multi-disciplinary performance collective (founding member)" }
+  - { date: 2022, end: 2023, text: "Synectic Assembly — AI-driven art collective (founding member)" }
+  - { date: 2021, end: 2022, text: "Diagonal — speaker series and reading group, BMO Lab, University of Toronto" }
+  - { date: 2019, end: present, text: "United States Institute for Theatre Technology (USITT)" }
+  - { date: 2018, end: present, text: "Associated Designers of Canada / IATSE Local ADC 659" }
+  - { date: 2018, end: present, text: "Canadian Institute for Theatre Technology (CITT)" }
+
+service:
+  - { date: 2026-06, end: present, text: "Judge, Music, Film & Theatre panel, The Global Undergraduate Awards, Dublin" }
+  - { date: 2026-04-02, text: "Co-chair (with Dr. Afsoon Soudi), 3rd Annual Creative AI Symposium, Creative AI Hub, TMU" }
+  - { date: 2025-07, end: present, text: "Member, Creative AI Hub Steering Committee, The Creative School, TMU" }
+  - { date: 2025-02, end: present, text: "Member, USITT Research and Creative Endeavours Committee" }
+  - { date: 2024-12, end: present, text: "Member, Faculty Tenure Committee, The Creative School, TMU" }
+  - { date: 2024-11, end: present, text: "Board Member, UKAI Projects" }
+  - { date: 2024-06, end: present, text: "Reviewer, International Journal of Performance Arts and Digital Media" }
+  - { date: 2023-10, end: present, text: "Jury Member, CATR Scholarship and Grant Committee (Heather McCallum Scholarship, Robert Lawrence Scholarship, CATR Grants)" }
+  - { date: 2023, end: present, text: "Reviewer, EVA London Conference on Electronic Visualisation and the Arts" }
+  - { date: 2023, end: 2024, text: "Technical Advisory Board Member, UKAI Projects" }
+  - { date: 2023, end: 2024, text: "Member, 360 Working Group, School of Performance, TMU" }
+  - { date: 2023, text: "Reviewer, Canada Foundation for Innovation" }
+  - { date: 2022, end: 2024, text: "Senator (The Creative School faculty representative), TMU Senate" }
+  - { date: 2022-03, end: 2023, text: "Secretary of the Board, Guild Festival Theatre" }
+  - { date: 2020, end: present, text: "Coordinator, Global Campus Studio, TMU" }
+  - { date: 2018, end: 2020, text: "FCAD Teaching Committee; FCAD Interdisciplinary Advisory Committee" }
+  - { date: 2016, end: 2021, text: "Member, Stage Committee, Arts & Letters Club of Toronto" }
+
+funding_external:
+  - { date: 2021, sshrc: true, text: "SSHRC Partnership Engage Grant, COVID-19 Special Initiative — \"Visual Music: Enhancing the National Arts Centre Orchestra's remote connection with their audience during COVID-19 social restrictions through innovative digital tools.\" PI: Cintia Cristiá; Co-Is: Michael Bergmann, David Bouchard. $24,620." }
+  - { date: 2024-05, text: "Erasmus+ staff mobility funding, OAMK, Oulu, Finland" }
+  - { date: 2012, end: 2014, text: "Eldon Elder Fellowship, Yale University. $40,000 USD." }
+
+funding_internal:
+  - { date: 2024, text: "The Creative School Travel Grant, TMU — Shipwreck Iceland project. $1,000." }
+  - { date: 2022, text: "TMU Work Study RA Program — \"Mechanical Waves: Machine Learning gesture reactive human-robot installation.\" $3,800." }
+  - { date: 2022, text: "The Creative School Travel Grant — EVA London conference presentation. $2,000." }
+  - { date: 2019, text: "Cirque du Soleil Entertainment Group / Future of Live Entertainment Lab — \"l'automate: Expanding the possibility of performance through robotics.\" Co-I with Jonathon Anderson. $7,500." }
+  - { date: 2019, text: "FCAD Special Seed Grant — The Uncanny Robots Project. $4,000." }
+  - { date: 2019, text: "The Creative School Travel Grant — UCD Dublin conference presentation. $2,000." }
+  - { date: 2018, text: "Undergraduate Research Opportunity, OVPRI, Ryerson — \"Augmented-Reality based Pre-Visualization system for theatrical spaces.\" $9,888." }
+  - { date: 2018, text: "Learning and Teaching Enhancement Fund, Ryerson — \"The Creative Laboratory Project.\" Co-I with Pavlo Bosyy. $13,000. # NOTE: SSHRC Web CV says 2016 — resolve" }
+
+funding_scholarships:
+  - { date: 2022, end: 2026, text: "University of Guelph Graduate Tuition Scholarship. $8,000/yr." }
+  - { date: 2022, end: 2026, text: "University of Guelph University Graduate Scholarship. $7,500/yr." }
+
+publications:
+  - { date: 2022-07, sshrc: true, refereed: true, text: "Bouchard, D., Cristiá, C., Bergmann, M., and Robert, D. (2022). \"Augmented Symphony: An augmented reality application for immersive music listening.\" Proceedings of EVA London 2022, Electronic Workshops in Computing, BCS Learning & Development, London, UK, July 4–8, 2022. DOI: 10.14236/ewic/EVA2022.39." }
+  - { date: 2022-05, sshrc: true, text: "Cristiá, C., Bouchard, D., Bergmann, M., et al. (2022). Orchestra Remote Delivery during COVID-19 Database. Open data set, Open Science Framework, May 5, 2022. DOI: 10.17605/OSF.IO/WCDU2." }
+  - { date: 2021, text: "Bergmann, M. F., and McGuire, B. (2021). \"Uncanny Text.\" Belfield Literary Review: New TransAtlantic Dialogues, ed. Gregory Betts and Lucy Collins, Spring 2021, pp. 96–99." }
+
+forthcoming:
+  - { date: 2026, status: "TODO — submitted / accepted / in press", text: "Bergmann, M. \"Cultivating Empathy through Robotic Performance.\" Chapter in [collection — TODO], [publisher — TODO], [pages — TODO]." }
+  - { date: 2026, status: "in draft — do not list on SSHRC docs until submitted", text: "Bergmann, M., and McLeod, K. \"Improvising with Commercial AI: Questions of Care and Ethics.\"" }
+
+presentations:
+  - { date: 2025-09-12, other_refereed: true, text: "Bergmann, M. \"Hallucinating Children: Improvisation After the Algorithmic Shipwreck.\" Hugarflug: Unstable Systems, annual conference on artistic research, Iceland University of the Arts, Reykjavík, Iceland, September 12, 2025." }
+  - { date: 2024-10-16, other_refereed: true, text: "Bergmann, M. \"Beyond Tools: Reimaging Technology as Co-Participants in Performance Design.\" PQ Symposium: Technologies in Theatre, Performance and Exhibition Design, Prague, Czech Republic, October 16–18, 2024." }
+  - { date: 2024-03-20, other_refereed: true, text: "Bergmann, M., Nathan, H., and Vercosa, J. \"Robotics, AI, and the Future of Theatre.\" USITT Conference & Stage Expo, Seattle, WA, March 20, 2024." }
+  - { date: 2023-06, other_refereed: true, text: "Bergmann, M., with ChatGPT. \"Envisioning theatre with non-human collaborators: A Paramanifesto.\" CATR Conference, Dalhousie University, Halifax, NS, June 2023." }
+  - { date: 2023-06, other_refereed: true, text: "Bergmann, M. \"AI Sentience.\" Panel on the Implications of AI for Performance Theorists, CATR Conference (online), June 2023." }
+  - { date: 2022-05, other_refereed: true, text: "Bergmann, M., and Thomson, B. \"Stepping Back In: Taking the best of virtual delivery to a new in-person experience.\" Learning & Teaching Conference, TMU, May 2022." }
+  - { date: 2022-05, other_refereed: true, text: "Bergmann, M. \"Student-driven curriculum development for creative practice.\" Learning & Teaching Conference, TMU, May 2022." }
+  - { date: 2021-10, other_refereed: true, text: "Bergmann, M. \"Cultivating Empathy through Robotic Performance.\" Limits of the Human, Machines Without Limits? Contemporary stage and robotics, University of Lausanne (online), October 2021." }
+  - { date: 2021-06, other_refereed: true, text: "Bergmann, M., O'Brien, C., and Thomson, B. \"Unapologetically learning together: Adapting Production and Design curriculum to a virtual stage.\" University of the Arts London (online), June 2021." }
+  - { date: 2021-05, other_refereed: true, text: "Bergmann, M., O'Brien, C., and Thomson, B. \"Pandemic Performance: Adapting Production and Design curriculum to a virtual stage.\" Learning & Teaching Conference, Ryerson University, May 2021." }
+  - { date: 2019-05, other_refereed: true, text: "Bergmann, M., and Thomson, B. \"Putting Up the Show: The very large group project.\" Ryerson Learning & Teaching Conference, May 2019." }
+  - { date: 2019-04, other_refereed: true, text: "Bergmann, M. \"Theatre in TheatAR: Explorations of augmented reality in theatrical performance.\" TEXT/SOUND/PERFORMANCE: Making in Canadian Space, University College Dublin, April 2019." }
+  - { date: 2018-03, other_refereed: true, text: "Bergmann, M. \"Technology as a tool: Creating a mindset of embracing technology within a theatrical framework.\" Theatre and Performance Design Pedagogy, University of the Arts London, March 2018." }
+
+posters:
+  - { date: 2024-01-25, other_refereed: true, text: "Bergmann, M., Carravetta, L., Endahl, M., Robinson, A. D., and ARIA (AI). \"Almost Alchemy.\" Poster, RUBIX, TMU, January 25, 2024." }
+  - { date: 2020-11, other_refereed: true, text: "Bergmann, M., and Anderson, J. \"l'automate: Robotic Controlled Apparatuses for Circus Performance.\" Poster, RUBIX, TMU (online), November 2020." }
+  - { date: 2019-11, other_refereed: true, text: "Bergmann, M., Zhang, ?, Laberge-Côté, ?, and McGuire, B. \"Human-robot Interactions in Dance.\" Poster, RUBIX, TMU, November 2019. # TODO first names" }
+  - { date: 2018-11, other_refereed: true, text: "Bergmann, M. \"TheatAR: A previsualization system for theatrical design.\" Poster, RUBIX, TMU, November 2018." }
+  - { date: 2017-10, other_refereed: true, text: "Bergmann, M. \"Shadow-selves: Projection as a medium of exploring reflections of self in Belinda McGuire's Slaughterhouse/Requiem.\" Poster, RUBIX, TMU, October 2017." }
+  - { date: 2017-10, other_refereed: true, text: "Bergmann, M. \"Projecting on film: the surreal effect of rear projected backgrounds in the film Nuptials.\" Poster, RUBIX, TMU, October 2017." }
+
+invited_talks:
+  - { date: 2025-02-14, text: "Guest lecture on AI in visual generation, open-source models, and ethical usage, Advanced Professional Projection Design (graduate), Yale University, February 14, 2025." }
+  - { date: 2024-12-12, text: "Host: \"Beyond the Screen: Exploring AI Personhood and Their Representation in Media.\" The Creative School Catalyst, Toronto, December 12, 2024." }
+  - { date: 2024-11-22, text: "Closing keynote: \"Wellness for who? An examination of wellness through a research-creation student project.\" AVARA 2024, OAMK, Oulu, Finland, November 22, 2024." }
+  - { date: 2024-11-02, text: "Workshop on projection design, Peterborough Theatre Guild, Peterborough, ON, November 2–3, 2024." }
+  - { date: 2024-10-23, text: "Provocation: \"Personhood // AI.\" UKAI Carnival of Shipwreck, Toronto, October 23, 2024." }
+  - { date: 2024-07-22, text: "Invited talk on the future of AI in the creative industries. TechTO: AI, Toronto, July 22, 2024." }
+  - { date: 2024-04-12, text: "\"Improvnetics: Post-anthropocentric performance and improvisational modes for human-AI play.\" IICSI Research Studio Session, ImprovLab, University of Guelph, April 12, 2024." }
+  - { date: 2024-04-02, text: "Panelist on the future of AI in creativity and education, 1st Creative AI Symposium, Creative AI Hub, TMU, April 2, 2024." }
+  - { date: 2022-01-27, text: "Roundtable: \"What is the future of creativity and AI?\" with Debashis Sinha, Robert Clapperton, and Richard Lachman, RUBIX, TMU, January 27, 2022." }
+  - { date: 2019-11, text: "\"Research Creation with Michael Bergmann: The Uncanny Robots Project\" and \"Connecting through live performance\" (with Eugènie Pastor, LSBU). The Catalyst @ FCAD, TMU, November 2019." }
+
+creative:
+  - { date: 2026-04-22, end: 2026-05-09, text: "\"Before I Was This.\" Generative text work. flashDRIVE: Digital Arts Fundraiser Exhibition, InterAccess, Toronto, April 22 – May 9, 2026. Curated by Miriam Arbus." }
+  - { date: 2026-02-13, text: "Nuptials (feature film). Producer, projection design, and live in-camera VFX. Directed by Sean Braune, Para-sight Productions. Official release February 13, 2026 (Freestyle Digital Media). Best World Feature Film, Austin Revolution Film Festival, 2022." }
+  - { date: 2025-11-18, end: 2025-11-22, text: "The Frankenstein Project. Producer, with Debashis Sinha. Performance Studio Theatre, TMU, November 18–22, 2025." }
+  - { date: 2025-11-01, end: 2025-11-15, text: "291 by Jade O'Keeffe. Projection co-design with Kristen Ferguson; directed by Lisa Dixon. Peterborough Theatre Guild, November 1–15, 2025." }
+  - { date: 2025-04-02, text: "\"To my creators...\" Solo work exhibited at the Creative AI Symposium, TMU, April 2, 2025; created during the SÍM residency, Reykjavík." }
+  - { date: 2024-11-17, end: 2024-11-23, text: "AVARA 2024 installation. Led eight students in a semester-long research-creation installation presented at AVARA 2024, OAMK, Oulu, Finland." }
+  - { date: 2024-06-16, end: 2024-06-25, text: "Shipwreck. Group exhibition with UKAI Projects and five Canadian artists, SÍM Gallery, Reykjavík, Iceland, following a month-long residency; includes solo work \"To my creators...\"" }
+  - { date: 2024-04-19, text: "Labour and Us. Workshop series (March 14 – April 17, 2024) and performance, co-created and performed with Lucas Carravetta, Matt Endahl, and Aimée Dawn Robinson; roundtable with Alan Filewod, Tom Scholte, Cynthia Ashperger, and Judith Thompson. ImprovLab, University of Guelph, April 19, 2024." }
+  - { date: 2024-01-25, text: "Almost Alchemy. Two 360° video experiences of improvised research-creation performance. RUBIX, TMU, January 25, 2024." }
+  - { date: 2023-10-01, text: "\"rocketmanperson.\" Improvised performance with Lucas Carravetta, Matt Endahl, and Aimée Dawn Robinson. Silence, Guelph, October 1, 2023." }
+  - { date: 2023-04-01, text: "\"Who's There?\" Improvised performance with Lucas Carravetta, Matt Endahl, and Aimée Dawn Robinson. Silence, Guelph, April 1, 2023." }
+  - { date: 2023, text: "Living Newspaper 2.0. Projection design; directed by Julie Labagnara. George Luscombe Theatre, Toronto." }
+  - { date: 2019-10, text: "\"The Uncanny Robots Project: Phase 1.\" Research-creation premiere examining human-robot interaction through dance, commissioned for the opening of the Creative Technology Lab @ FCAD, TMU, October 2019." }
+  # TODO: add pre-2019 design credits (theatre, dance, opera) from the archival CV if wanted in the complete CV
+
+pending_submissions:
+  - { date: 2027, text: "Unseen/Witness: Ghostpass — Almost Alchemy. Submitted for Prague Quadrennial 2027. (List publicly only if accepted.)" }
+
+supervision:
+  summary: "Completed: 9 Master's, 0 Doctoral, 0 Postdoctoral. In progress: 0."
+  entries:
+    - { date: 2022, text: "Aya Elmeligy, MDM (Second Reader), \"Bridging Chasms: An Interactive Projection Mapping Installation for Cross-Cultural Exchange of Information.\" 2022." }
+    - { date: 2021, text: "Emilie Trimbee, MDM (Supervisor), \"AR-based Theatrical Design Pre-Visualization using Unreal.\" 2021." }
+    - { date: 2021, text: "Lindsay Christopher, MDM (Supervisor), \"Casting and Technology: Revamping the Audition Process.\" 2021." }
+    - { date: 2021, text: "Shelby Bushell, MDM (Supervisor), \"Collider: Using Virtual Reality for Immersive Theatre and the Performing Arts.\" 2021." }
+    - { date: 2020, text: "Riley Erin Cooper, MDM (Supervisor), \"Happiness In Your Hand: The power of compact Bright Light Therapy.\" 2020." }
+    - { date: 2020, text: "Yerachmiel Paquette, MDM (Supervisor), \"The Scoop: How to Protect Your Digital Privacy in the Age of Surveillance Capitalism.\" 2020." }
+    - { date: 2020, text: "Kenyth Thomason, MFA in Technical Direction and Production, Yale University (Reader), \"Live Video in Theatrical Productions.\" 2020." }
+    - { date: 2018, text: "Michael Castledine, MDM (Supervisor), \"Extending the human umwelt: Reframing our understanding of an environment via mixed reality and digital soundscapes/visualizations.\" 2018." }
+    - { date: 2017, text: "Soo Mahabir, MDM (Supervisor), \"The A.I. Storyteller: Perpetuating Orality Using Developments in Machine Learning.\" 2017." }
+
+teaching:
+  - "PFZ 100 — Performance Foundation (F2025) (created course)"
+  - "THP 350 — Projection Design (F 2019–24) (created course)"
+  - "THP 301–403 — Production Technique (FW 2016–present)"
+  - "THP 800 — Independent Study (W 2017–24)"
+  - "THT 582 — Show Systems Engineering (W 2020, F 2021, F 2023) (redesigned course)"
+  - "THP 102 — Production Technique II (W 2017, 2022–24) (projection design section)"
+  - "THP 202 — Production Technique IV (W 2018–24) (projection design section)"
+  - "THP 660 — Projection Design: Special Topics (W 2022) (created course)"
+  - "THF 101 — Elements of Production (F 2016, 2019, 2020)"
+  - "THM 301 — Technical Direction (F 2016)"
+
+interviews:
+  - { date: 2023, text: "\"Get the inside scoop on game-changing innovations in augmented reality with the new VisionPro.\" The Creative School Top 5, July 4, 2023." }
+  - { date: 2023, text: "Faculty Spotlight: Michael F Bergmann. Performance at The Creative School, June 27, 2023." }
+  - { date: 2022, text: "\"Students Are Excited And Hopeful For What The Metaverse May Bring.\" The Eyeopener, October 5, 2022." }
+  - { date: 2022, text: "\"Michael F. Bergmann On The Merging of Live Arts and Technology.\" Toronto Life, April 29, 2022." }
+  - { date: 2021, text: "\"Emerging technology that's here to stay.\" CityNews Toronto, June 18, 2021." }
+  - { date: 2020, text: "\"Can you feel empathy for a dancing robot?\" Ryerson Innovation Magazine, Issue 33, 2020." }
+  - { date: 2019, text: "\"Premiere of robot dance performance launches Creative Technology Lab.\" Ryerson University, November 2019." }
+  - { date: 2015, text: "Q&A Personal interview, Meghan Perkins, Live Design Magazine, 2015." }

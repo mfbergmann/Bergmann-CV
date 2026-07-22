@@ -46,6 +46,8 @@ Canadian English (colour, centre); Oxford comma; semicolons over em-dashes. Cita
 - UKAI Projects board: April 2025 (Michael confirmed; CV 2025.docx's "2024" is wrong)
 - Rough Draft "Performance Art: New Magic" (2017) is solo-authored; the CCV's co-author listing is wrong
 - Gold Medal committee: 2020–2023; PhD expected 2027; Watchout wording stays as-is (all confirmed July 2026)
+- Sabbaticals: Winter 2025 and Winter 2026 — teaching gaps in those terms are expected, not omissions
+- The New York City course ran as a Spring/Summer overload in both 2025 and 2026 (same course; the 2025 offering may have used a different course code than FCD 230)
 - "Beyond Tools: Reimaging Technology…" (PQ Symposium 2024): "Reimaging" is what appeared on the presentation — do not "correct" to "Reimagining"
 - The Design + Technology Lab Associate Director role is deliberately not listed (Michael's choice, July 2026)
 

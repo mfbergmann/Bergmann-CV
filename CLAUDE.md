@@ -27,11 +27,9 @@ Canadian English (colour, centre); Oxford comma; semicolons over em-dashes. Cita
 
 ## Known TODOs (search `TODO` in cv.yaml)
 
-- End date for the Design + Technology Lab Associate Director role (role has ended)
 - Page count and status confirmation for the transcript Verlag chapter (*Robots and Other Artificial Agents on Stage*)
-- LTEF grant year: 2016 (SSHRC Web CV) vs 2018 (CVs) — unresolved
-- First names for the 2019 RUBIX poster co-authors (Zhang, Laberge-Côté)
-- Pre-2019 theatre/dance design credits not yet entered in `creative`
+- Pre-2019 theatre/dance design credits not yet entered in `creative` (full list exists in "Bergmann - CV (Living Document)" on Google Drive)
+- LTEF grant year resolved: 2018 (four sources agree); the SSHRC Web CV still says 2016 and should be corrected there
 
 ## Facts that trip people up
 
@@ -41,6 +39,8 @@ Canadian English (colour, centre); Oxford comma; semicolons over em-dashes. Cita
 - *Nuptials*: official release date is 2026-02-13 (Freestyle Digital Media); design work 2018; award 2022
 - Michael is a PhD student (not yet ABD) — not "candidate"
 - Co-UPD role ended July 2023
+- "Beyond Tools: Reimaging Technology…" (PQ Symposium 2024): "Reimaging" is what appeared on the presentation — do not "correct" to "Reimagining"
+- The Design + Technology Lab Associate Director role is deliberately not listed (Michael's choice, July 2026)
 
 ## For SSHRC submissions
 

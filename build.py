@@ -54,7 +54,7 @@ def strsec(title, items):
 
 P = CV["personal"]
 head = (f"# {P['name']}\n\n{P['title']}  \nORCID: {P['orcid']} · {P['email']} · {P['website']}\n\n"
-        f"*Generated {TODAY.isoformat()} from cv.yaml — do not edit outputs directly.*\n")
+        f"<!-- Generated {TODAY.isoformat()} from cv.yaml — do not edit outputs directly. -->\n")
 
 # ---------- 1. Complete CV ----------
 doc = [head.replace("# ", "# Curriculum Vitae — ")]
@@ -94,7 +94,7 @@ doc.append(sec("I. Service and Professional Activities", CV["service"] + CV["mem
 
 # ---------- 3. SSHRC Research Contributions (six-year window) ----------
 w = lambda key: [e for e in CV[key] if in_window(e)]
-doc = [f"# Research Contributions and Relevant Experience — {P['name']}\n\n*Six-year window: contributions since {SIX_YEARS_AGO.isoformat()}. \\* = resulted from previous SSHRC support. Generated {TODAY.isoformat()}; prose sections (significance, training narrative, relevant experience) live in prose/sshrc-prose.md and are appended below.*\n"]
+doc = [f"# Research Contributions and Relevant Experience — {P['name']}\n\n*Six-year window: contributions since {SIX_YEARS_AGO.isoformat()}. \\* = resulted from previous SSHRC support.*\n\n<!-- Generated {TODAY.isoformat()}; prose sections (significance, training narrative, relevant experience) live in prose/sshrc-prose.md and are appended below. -->\n"]
 doc.append("\n# 1. Research Contributions Over the Last Six Years\n")
 doc.append(sec("Refereed contributions", [e for e in w("publications") if e.get("refereed")], star=True))
 doc.append(sec("Other refereed contributions", [e for e in w("presentations") + w("posters") if e.get("other_refereed")], star=True))

@@ -24,7 +24,6 @@ personal:
 
 employment:
   - { date: 2024-01, end: present, text: "Associate Professor (Tenured), Performance, The Creative School, Toronto Metropolitan University" }
-  - { date: 2024-01, end: "TODO-END-DATE", text: "Associate Director, Design + Technology Lab, Toronto Metropolitan University" }
   - { date: 2022-07, end: 2023-07, text: "Co-Undergraduate Program Director (Production), Performance, The Creative School, TMU" }
   - { date: 2019-08, end: 2024-01, text: "Assistant Professor, Performance, The Creative School, Toronto Metropolitan University" }
   - { date: 2017, end: present, text: "Full Member, Yeates School of Graduate Studies, TMU" }
@@ -97,7 +96,8 @@ funding_internal:
   - { date: 2019, text: "FCAD Special Seed Grant — The Uncanny Robots Project. $4,000." }
   - { date: 2019, text: "The Creative School Travel Grant — UCD Dublin conference presentation. $2,000." }
   - { date: 2018, text: "Undergraduate Research Opportunity, OVPRI, Ryerson — \"Augmented-Reality based Pre-Visualization system for theatrical spaces.\" $9,888." }
-  # TODO: SSHRC Web CV says 2016 for this LTEF grant; CVs say 2018 — resolve
+  # 2018 confirmed by four sources (OCGS 2025, Provost Award nomination, "3.5 Awards and grants",
+  # CV Living Document); the SSHRC Web CV's 2016 is an error to fix there
   - { date: 2018, text: "Learning and Teaching Enhancement Fund, Ryerson — \"The Creative Laboratory Project.\" Co-I with Pavlo Bosyy. $13,000." }
 
 funding_scholarships:
@@ -133,8 +133,7 @@ presentations:
 posters:
   - { date: 2024-01-25, other_refereed: true, text: "Bergmann, M., Carravetta, L., Endahl, M., Robinson, A. D., and ARIA (AI). \"Almost Alchemy.\" Poster, RUBIX, TMU, January 25, 2024." }
   - { date: 2020-11, other_refereed: true, text: "Bergmann, M., and Anderson, J. \"l'automate: Robotic Controlled Apparatuses for Circus Performance.\" Poster, RUBIX, TMU (online), November 2020." }
-  # TODO: first names/initials for Zhang and Laberge-Côté
-  - { date: 2019-11, other_refereed: true, text: "Bergmann, M., Zhang, ?, Laberge-Côté, ?, and McGuire, B. \"Human-robot Interactions in Dance.\" Poster, RUBIX, TMU, November 2019." }
+  - { date: 2019-11, other_refereed: true, text: "Bergmann, M., Zhang, L., Laberge-Côté, L., and McGuire, B. \"Human-robot Interactions in Dance.\" Poster, RUBIX, TMU, November 2019." }
   - { date: 2018-11, other_refereed: true, text: "Bergmann, M. \"TheatAR: A previsualization system for theatrical design.\" Poster, RUBIX, TMU, November 2018." }
   - { date: 2017-10, other_refereed: true, text: "Bergmann, M. \"Shadow-selves: Projection as a medium of exploring reflections of self in Belinda McGuire's Slaughterhouse/Requiem.\" Poster, RUBIX, TMU, October 2017." }
   - { date: 2017-10, other_refereed: true, text: "Bergmann, M. \"Projecting on film: the surreal effect of rear projected backgrounds in the film Nuptials.\" Poster, RUBIX, TMU, October 2017." }

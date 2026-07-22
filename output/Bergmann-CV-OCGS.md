@@ -3,7 +3,7 @@
 Associate Professor, Performance, The Creative School, Toronto Metropolitan University  
 ORCID: 0000-0002-5698-8121 · mfb@torontomu.ca · https://bergmann.ai
 
-*Generated 2026-07-22 from cv.yaml — do not edit outputs directly.*
+<!-- Generated 2026-07-21 from cv.yaml — do not edit outputs directly. -->
 
 
 ## A. Education
@@ -20,7 +20,6 @@ ORCID: 0000-0002-5698-8121 · mfb@torontomu.ca · https://bergmann.ai
 |  |  |
 |:------------------------|:----------------------------------------------------------------------------|
 | **2024-01 – present** | Associate Professor (Tenured), Performance, The Creative School, Toronto Metropolitan University |
-| **2024-01 – TODO-END-DATE** | Associate Director, Design + Technology Lab, Toronto Metropolitan University |
 | **2022-07 – 2023-07** | Co-Undergraduate Program Director (Production), Performance, The Creative School, TMU |
 | **2019-08 – 2024-01** | Assistant Professor, Performance, The Creative School, Toronto Metropolitan University |
 | **2017 – present** | Full Member, Yeates School of Graduate Studies, TMU |
@@ -97,7 +96,7 @@ Completed: 9 Master's, 0 Doctoral, 0 Postdoctoral. In progress: 0.
 | **2018-03** | Bergmann, M. "Technology as a tool: Creating a mindset of embracing technology within a theatrical framework." Theatre and Performance Design Pedagogy, University of the Arts London, March 2018. |
 | **2024-01** | Bergmann, M., Carravetta, L., Endahl, M., Robinson, A. D., and ARIA (AI). "Almost Alchemy." Poster, RUBIX, TMU, January 25, 2024. |
 | **2020-11** | Bergmann, M., and Anderson, J. "l'automate: Robotic Controlled Apparatuses for Circus Performance." Poster, RUBIX, TMU (online), November 2020. |
-| **2019-11** | Bergmann, M., Zhang, ?, Laberge-Côté, ?, and McGuire, B. "Human-robot Interactions in Dance." Poster, RUBIX, TMU, November 2019. |
+| **2019-11** | Bergmann, M., Zhang, L., Laberge-Côté, L., and McGuire, B. "Human-robot Interactions in Dance." Poster, RUBIX, TMU, November 2019. |
 | **2018-11** | Bergmann, M. "TheatAR: A previsualization system for theatrical design." Poster, RUBIX, TMU, November 2018. |
 | **2017-10** | Bergmann, M. "Shadow-selves: Projection as a medium of exploring reflections of self in Belinda McGuire's Slaughterhouse/Requiem." Poster, RUBIX, TMU, October 2017. |
 | **2017-10** | Bergmann, M. "Projecting on film: the surreal effect of rear projected backgrounds in the film Nuptials." Poster, RUBIX, TMU, October 2017. |

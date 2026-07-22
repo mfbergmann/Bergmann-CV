@@ -213,7 +213,7 @@ Completed: 9 Master's, 0 Doctoral, 0 Postdoctoral. In progress: 0.
 - PFZ 100 — Performance Foundation (F 2025) (created course)
 - THP 400 — Creative Performance Studies VII: The Frankenstein Project (F 2025) (created course, with Debashis Sinha)
 - FCD 816 — Global Campus Studio (F 2025)
-- FCD 230 — New York City Experience: Creative Enterprise (S 2025) (created travel intensive)
+- FCD 230 — New York City Experience: Creative Enterprise (S 2026) (created travel intensive)
 - THP 403 — Travel Intensive to Oulu, Finland (F 2024)
 - THP 350 — Projection Design (F 2019–24) (created course)
 - THP 301–403 — Production Technique (W 2017 – F 2022)

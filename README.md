@@ -1,37 +1,19 @@
-# Bergmann-CV
+# Michael F Bergmann — Curriculum Vitae
 
-Single-source CV system. **Edit `cv.yaml` only** — every document is generated from it.
+Performance designer, researcher, and Associate Professor in Performance at The Creative School, Toronto Metropolitan University. PhD student in Critical Studies in Improvisation, University of Guelph.
 
-## How it works
+[bergmann.ai](https://bergmann.ai) · [ORCID 0000-0002-5698-8121](https://orcid.org/0000-0002-5698-8121)
 
-```
-cv.yaml  ──►  build.py  ──►  output/*.md  ──►  GitHub Action  ──►  output/*.docx + *.pdf
-prose/sshrc-prose.md ─┘
-```
+## Download
 
-- `cv.yaml` — the canonical record: every position, publication, talk, credit, grant, and committee, tagged with dates and flags (`refereed`, `sshrc`, etc.).
-- `build.py` — generates three markdown documents:
-  - **Bergmann-CV-Complete** — everything, reverse chronological
-  - **Bergmann-CV-OCGS** — OCGS section ordering
-  - **Bergmann-SSHRC-Contributions** — auto-filtered to the rolling six-year window, SSHRC section structure, `*` markers on SSHRC-funded outputs
-- `prose/sshrc-prose.md` — the narrative SSHRC sections (significance statements, training, relevant experience), appended to the contributions doc. Edit per application.
-- `.github/workflows/build.yml` — on every push touching `cv.yaml`, `build.py`, or `prose/`, regenerates markdown, converts to `.docx` and `.pdf`, and commits them to `output/`.
+| Document | PDF | Word |
+| --- | --- | --- |
+| Complete CV | [PDF](https://raw.githubusercontent.com/mfbergmann/Bergmann-CV/main/output/Bergmann-CV-Complete.pdf) | [docx](https://raw.githubusercontent.com/mfbergmann/Bergmann-CV/main/output/Bergmann-CV-Complete.docx) |
+| OCGS CV | [PDF](https://raw.githubusercontent.com/mfbergmann/Bergmann-CV/main/output/Bergmann-CV-OCGS.pdf) | [docx](https://raw.githubusercontent.com/mfbergmann/Bergmann-CV/main/output/Bergmann-CV-OCGS.docx) |
+| Research Contributions (SSHRC format) | [PDF](https://raw.githubusercontent.com/mfbergmann/Bergmann-CV/main/output/Bergmann-SSHRC-Contributions.pdf) | [docx](https://raw.githubusercontent.com/mfbergmann/Bergmann-CV/main/output/Bergmann-SSHRC-Contributions.docx) |
 
-## Updating
+Documents regenerate automatically from a single data source ([`cv.yaml`](cv.yaml)) on every update; the links above always serve the latest build.
 
-1. Something happens (talk, credit, grant) → add one line to the right section of `cv.yaml`.
-2. Commit and push. PDFs rebuild automatically.
-3. Link from the website to the stable raw URLs, e.g.:
-   `https://raw.githubusercontent.com/mfbergmann/Bergmann-CV/main/output/Bergmann-CV-Complete.pdf`
+## How this repo works
 
-## Local build
-
-```
-pip install pyyaml && python build.py          # markdown only
-pandoc output/Bergmann-CV-Complete.md -o out.pdf --pdf-engine=xelatex   # optional
-```
-
-## Caveats
-
-- **SSHRC submissions**: the CI PDF uses Liberation Serif (metric-identical to Times New Roman, which isn't freely licensed). For an actual SSHRC upload, open the generated `.docx` in Word, set Times New Roman, and export the PDF — margins and size are already compliant.
-- Search `cv.yaml` for `TODO` — unresolved dates and details are marked inline.
+Everything is generated from `cv.yaml` by `build.py`, converted to PDF and Word by GitHub Actions, and committed to [`output/`](output/). Maintainer documentation is in [`CLAUDE.md`](CLAUDE.md).

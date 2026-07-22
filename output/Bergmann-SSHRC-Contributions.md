@@ -1,6 +1,6 @@
 # Research Contributions and Relevant Experience — Michael F Bergmann
 
-*Six-year window: contributions since 2020-07-21. \* = resulted from previous SSHRC support. Generated 2026-07-21; prose sections (significance, training narrative, relevant experience) live in prose/sshrc-prose.md and are appended below.*
+*Six-year window: contributions since 2020-07-22. \* = resulted from previous SSHRC support. Generated 2026-07-22; prose sections (significance, training narrative, relevant experience) live in prose/sshrc-prose.md and are appended below.*
 
 
 # 1. Research Contributions Over the Last Six Years
@@ -44,7 +44,7 @@
 
 ## Forthcoming contributions
 
-- **2026** — Bergmann, M. "Cultivating Empathy through Robotic Performance." Chapter in [collection — TODO], [publisher — TODO], [pages — TODO]. Status: TODO — submitted / accepted / in press
+- **2026** — Bergmann, M. "Cultivating Empathy through Robotic Performance." Chapter in Robots and Other Artificial Agents on Stage: Theoretical Concepts and Artistic Practices, edited by Erica Magris and Izabella Pluta, transcript Verlag (Theatre Studies series). [pages TODO] Status: in press — confirm with editors
 - **2026** — Bergmann, M., and McLeod, K. "Improvising with Commercial AI: Questions of Care and Ethics." Status: in draft — do not list on SSHRC docs until submitted
 
 

@@ -3,7 +3,7 @@
 Associate Professor, Performance, The Creative School, Toronto Metropolitan University  
 ORCID: 0000-0002-5698-8121 · mfb@torontomu.ca · https://bergmann.ai
 
-*Generated 2026-07-21 from cv.yaml — do not edit outputs directly.*
+*Generated 2026-07-22 from cv.yaml — do not edit outputs directly.*
 
 
 ## Employment
@@ -59,7 +59,7 @@ ORCID: 0000-0002-5698-8121 · mfb@torontomu.ca · https://bergmann.ai
 
 ## Forthcoming
 
-- **2026** — Bergmann, M. "Cultivating Empathy through Robotic Performance." Chapter in [collection — TODO], [publisher — TODO], [pages — TODO]. [TODO — submitted / accepted / in press]
+- **2026** — Bergmann, M. "Cultivating Empathy through Robotic Performance." Chapter in Robots and Other Artificial Agents on Stage: Theoretical Concepts and Artistic Practices, edited by Erica Magris and Izabella Pluta, transcript Verlag (Theatre Studies series). [pages TODO] [in press — confirm with editors]
 - **2026** — Bergmann, M., and McLeod, K. "Improvising with Commercial AI: Questions of Care and Ethics." [in draft — do not list on SSHRC docs until submitted]
 
 

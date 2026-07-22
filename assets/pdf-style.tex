@@ -1,0 +1,10 @@
+% Borderless, compact tables for CV entry lists (dates | items)
+\usepackage{booktabs}
+\setlength\heavyrulewidth{0pt}
+\setlength\lightrulewidth{0pt}
+\setlength\aboverulesep{0pt}
+\setlength\belowrulesep{0pt}
+\setlength\LTpre{0.4em}
+\setlength\LTpost{0.6em}
+\usepackage{etoolbox}
+\AtBeginEnvironment{longtable}{\renewcommand{\arraystretch}{1.15}}

@@ -1,6 +1,6 @@
 # Research Contributions and Relevant Experience — Michael F Bergmann
 
-*Six-year window: contributions since 2020-07-22. \* = resulted from previous SSHRC support. Generated 2026-07-22; prose sections (significance, training narrative, relevant experience) live in prose/sshrc-prose.md and are appended below.*
+*Six-year window: contributions since 2020-07-21. \* = resulted from previous SSHRC support. Generated 2026-07-21; prose sections (significance, training narrative, relevant experience) live in prose/sshrc-prose.md and are appended below.*
 
 
 # 1. Research Contributions Over the Last Six Years
@@ -8,60 +8,69 @@
 
 ## Refereed contributions
 
-- \* **2022-07** — Bouchard, D., Cristiá, C., Bergmann, M., and Robert, D. (2022). "Augmented Symphony: An augmented reality application for immersive music listening." Proceedings of EVA London 2022, Electronic Workshops in Computing, BCS Learning & Development, London, UK, July 4–8, 2022. DOI: 10.14236/ewic/EVA2022.39.
+|  |  |
+|:------------------------|:----------------------------------------------------------------------------|
+| **2022-07** | \* Bouchard, D., Cristiá, C., Bergmann, M., and Robert, D. (2022). "Augmented Symphony: An augmented reality application for immersive music listening." Proceedings of EVA London 2022, Electronic Workshops in Computing, BCS Learning & Development, London, UK, July 4–8, 2022. DOI: 10.14236/ewic/EVA2022.39. |
 
 
 ## Other refereed contributions
 
-- **2025-09** — Bergmann, M. "Hallucinating Children: Improvisation After the Algorithmic Shipwreck." Hugarflug: Unstable Systems, annual conference on artistic research, Iceland University of the Arts, Reykjavík, Iceland, September 12, 2025.
-- **2024-10** — Bergmann, M. "Beyond Tools: Reimaging Technology as Co-Participants in Performance Design." PQ Symposium: Technologies in Theatre, Performance and Exhibition Design, Prague, Czech Republic, October 16–18, 2024.
-- **2024-03** — Bergmann, M., Nathan, H., and Vercosa, J. "Robotics, AI, and the Future of Theatre." USITT Conference & Stage Expo, Seattle, WA, March 20, 2024.
-- **2023-06** — Bergmann, M., with ChatGPT. "Envisioning theatre with non-human collaborators: A Paramanifesto." CATR Conference, Dalhousie University, Halifax, NS, June 2023.
-- **2023-06** — Bergmann, M. "AI Sentience." Panel on the Implications of AI for Performance Theorists, CATR Conference (online), June 2023.
-- **2022-05** — Bergmann, M., and Thomson, B. "Stepping Back In: Taking the best of virtual delivery to a new in-person experience." Learning & Teaching Conference, TMU, May 2022.
-- **2022-05** — Bergmann, M. "Student-driven curriculum development for creative practice." Learning & Teaching Conference, TMU, May 2022.
-- **2021-10** — Bergmann, M. "Cultivating Empathy through Robotic Performance." Limits of the Human, Machines Without Limits? Contemporary stage and robotics, University of Lausanne (online), October 2021.
-- **2021-06** — Bergmann, M., O'Brien, C., and Thomson, B. "Unapologetically learning together: Adapting Production and Design curriculum to a virtual stage." University of the Arts London (online), June 2021.
-- **2021-05** — Bergmann, M., O'Brien, C., and Thomson, B. "Pandemic Performance: Adapting Production and Design curriculum to a virtual stage." Learning & Teaching Conference, Ryerson University, May 2021.
-- **2024-01** — Bergmann, M., Carravetta, L., Endahl, M., Robinson, A. D., and ARIA (AI). "Almost Alchemy." Poster, RUBIX, TMU, January 25, 2024.
-- **2020-11** — Bergmann, M., and Anderson, J. "l'automate: Robotic Controlled Apparatuses for Circus Performance." Poster, RUBIX, TMU (online), November 2020.
+|  |  |
+|:------------------------|:----------------------------------------------------------------------------|
+| **2025-09** | Bergmann, M. "Hallucinating Children: Improvisation After the Algorithmic Shipwreck." Hugarflug: Unstable Systems, annual conference on artistic research, Iceland University of the Arts, Reykjavík, Iceland, September 12, 2025. |
+| **2024-10** | Bergmann, M. "Beyond Tools: Reimaging Technology as Co-Participants in Performance Design." PQ Symposium: Technologies in Theatre, Performance and Exhibition Design, Prague, Czech Republic, October 16–18, 2024. |
+| **2024-03** | Bergmann, M., Nathan, H., and Vercosa, J. "Robotics, AI, and the Future of Theatre." USITT Conference & Stage Expo, Seattle, WA, March 20, 2024. |
+| **2023-06** | Bergmann, M., with ChatGPT. "Envisioning theatre with non-human collaborators: A Paramanifesto." CATR Conference, Dalhousie University, Halifax, NS, June 2023. |
+| **2023-06** | Bergmann, M. "AI Sentience." Panel on the Implications of AI for Performance Theorists, CATR Conference (online), June 2023. |
+| **2022-05** | Bergmann, M., and Thomson, B. "Stepping Back In: Taking the best of virtual delivery to a new in-person experience." Learning & Teaching Conference, TMU, May 2022. |
+| **2022-05** | Bergmann, M. "Student-driven curriculum development for creative practice." Learning & Teaching Conference, TMU, May 2022. |
+| **2021-10** | Bergmann, M. "Cultivating Empathy through Robotic Performance." Limits of the Human, Machines Without Limits? Contemporary stage and robotics, University of Lausanne (online), October 2021. |
+| **2021-06** | Bergmann, M., O'Brien, C., and Thomson, B. "Unapologetically learning together: Adapting Production and Design curriculum to a virtual stage." University of the Arts London (online), June 2021. |
+| **2021-05** | Bergmann, M., O'Brien, C., and Thomson, B. "Pandemic Performance: Adapting Production and Design curriculum to a virtual stage." Learning & Teaching Conference, Ryerson University, May 2021. |
+| **2024-01** | Bergmann, M., Carravetta, L., Endahl, M., Robinson, A. D., and ARIA (AI). "Almost Alchemy." Poster, RUBIX, TMU, January 25, 2024. |
+| **2020-11** | Bergmann, M., and Anderson, J. "l'automate: Robotic Controlled Apparatuses for Circus Performance." Poster, RUBIX, TMU (online), November 2020. |
 
 
 ## Non-refereed contributions
 
-- \* **2022-05** — Cristiá, C., Bouchard, D., Bergmann, M., et al. (2022). Orchestra Remote Delivery during COVID-19 Database. Open data set, Open Science Framework, May 5, 2022. DOI: 10.17605/OSF.IO/WCDU2.
-- **2021** — Bergmann, M. F., and McGuire, B. (2021). "Uncanny Text." Belfield Literary Review: New TransAtlantic Dialogues, ed. Gregory Betts and Lucy Collins, Spring 2021, pp. 96–99.
-- **2025-02** — Guest lecture on AI in visual generation, open-source models, and ethical usage, Advanced Professional Projection Design (graduate), Yale University, February 14, 2025.
-- **2024-12** — Host: "Beyond the Screen: Exploring AI Personhood and Their Representation in Media." The Creative School Catalyst, Toronto, December 12, 2024.
-- **2024-11** — Closing keynote: "Wellness for who? An examination of wellness through a research-creation student project." AVARA 2024, OAMK, Oulu, Finland, November 22, 2024.
-- **2024-11** — Workshop on projection design, Peterborough Theatre Guild, Peterborough, ON, November 2–3, 2024.
-- **2024-10** — Provocation: "Personhood // AI." UKAI Carnival of Shipwreck, Toronto, October 23, 2024.
-- **2024-07** — Invited talk on the future of AI in the creative industries. TechTO: AI, Toronto, July 22, 2024.
-- **2024-04** — "Improvnetics: Post-anthropocentric performance and improvisational modes for human-AI play." IICSI Research Studio Session, ImprovLab, University of Guelph, April 12, 2024.
-- **2024-04** — Panelist on the future of AI in creativity and education, 1st Creative AI Symposium, Creative AI Hub, TMU, April 2, 2024.
-- **2022-01** — Roundtable: "What is the future of creativity and AI?" with Debashis Sinha, Robert Clapperton, and Richard Lachman, RUBIX, TMU, January 27, 2022.
+|  |  |
+|:------------------------|:----------------------------------------------------------------------------|
+| **2022-05** | \* Cristiá, C., Bouchard, D., Bergmann, M., et al. (2022). Orchestra Remote Delivery during COVID-19 Database. Open data set, Open Science Framework, May 5, 2022. DOI: 10.17605/OSF.IO/WCDU2. |
+| **2021** | Bergmann, M. F., and McGuire, B. (2021). "Uncanny Text." Belfield Literary Review: New TransAtlantic Dialogues, ed. Gregory Betts and Lucy Collins, Spring 2021, pp. 96–99. |
+| **2025-02** | Guest lecture on AI in visual generation, open-source models, and ethical usage, Advanced Professional Projection Design (graduate), Yale University, February 14, 2025. |
+| **2024-12** | Host: "Beyond the Screen: Exploring AI Personhood and Their Representation in Media." The Creative School Catalyst, Toronto, December 12, 2024. |
+| **2024-11** | Closing keynote: "Wellness for who? An examination of wellness through a research-creation student project." AVARA 2024, OAMK, Oulu, Finland, November 22, 2024. |
+| **2024-11** | Workshop on projection design, Peterborough Theatre Guild, Peterborough, ON, November 2–3, 2024. |
+| **2024-10** | Provocation: "Personhood // AI." UKAI Carnival of Shipwreck, Toronto, October 23, 2024. |
+| **2024-07** | Invited talk on the future of AI in the creative industries. TechTO: AI, Toronto, July 22, 2024. |
+| **2024-04** | "Improvnetics: Post-anthropocentric performance and improvisational modes for human-AI play." IICSI Research Studio Session, ImprovLab, University of Guelph, April 12, 2024. |
+| **2024-04** | Panelist on the future of AI in creativity and education, 1st Creative AI Symposium, Creative AI Hub, TMU, April 2, 2024. |
+| **2022-01** | Roundtable: "What is the future of creativity and AI?" with Debashis Sinha, Robert Clapperton, and Richard Lachman, RUBIX, TMU, January 27, 2022. |
 
 
 ## Forthcoming contributions
 
-- **2026** — Bergmann, M. "Cultivating Empathy through Robotic Performance." Chapter in Robots and Other Artificial Agents on Stage: Theoretical Concepts and Artistic Practices, edited by Erica Magris and Izabella Pluta, transcript Verlag (Theatre Studies series). [pages TODO] Status: in press — confirm with editors
-- **2026** — Bergmann, M., and McLeod, K. "Improvising with Commercial AI: Questions of Care and Ethics." Status: in draft — do not list on SSHRC docs until submitted
+|  |  |
+|:------------------------|:----------------------------------------------------------------------------|
+| **2026** | Bergmann, M. "Cultivating Empathy through Robotic Performance." Chapter in Robots and Other Artificial Agents on Stage: Theoretical Concepts and Artistic Practices, edited by Erica Magris and Izabella Pluta, transcript Verlag (Theatre Studies series). Status: in press |
 
 
 ## Creative outputs
 
-- **2026-04 – 2026-05** — "Before I Was This." Generative text work. flashDRIVE: Digital Arts Fundraiser Exhibition, InterAccess, Toronto, April 22 – May 9, 2026. Curated by Miriam Arbus.
-- **2026-02** — Nuptials (feature film). Producer, projection design, and live in-camera VFX. Directed by Sean Braune, Para-sight Productions. Official release February 13, 2026 (Freestyle Digital Media). Best World Feature Film, Austin Revolution Film Festival, 2022.
-- **2025-11 – 2025-11** — The Frankenstein Project. Producer, with Debashis Sinha. Performance Studio Theatre, TMU, November 18–22, 2025.
-- **2025-11 – 2025-11** — 291 by Jade O'Keeffe. Projection co-design with Kristen Ferguson; directed by Lisa Dixon. Peterborough Theatre Guild, November 1–15, 2025.
-- **2025-04** — "To my creators..." Solo work exhibited at the Creative AI Symposium, TMU, April 2, 2025; created during the SÍM residency, Reykjavík.
-- **2024-11 – 2024-11** — AVARA 2024 installation. Led eight students in a semester-long research-creation installation presented at AVARA 2024, OAMK, Oulu, Finland.
-- **2024-06 – 2024-06** — Shipwreck. Group exhibition with UKAI Projects and five Canadian artists, SÍM Gallery, Reykjavík, Iceland, following a month-long residency; includes solo work "To my creators..."
-- **2024-04** — Labour and Us. Workshop series (March 14 – April 17, 2024) and performance, co-created and performed with Lucas Carravetta, Matt Endahl, and Aimée Dawn Robinson; roundtable with Alan Filewod, Tom Scholte, Cynthia Ashperger, and Judith Thompson. ImprovLab, University of Guelph, April 19, 2024.
-- **2024-01** — Almost Alchemy. Two 360° video experiences of improvised research-creation performance. RUBIX, TMU, January 25, 2024.
-- **2023-10** — "rocketmanperson." Improvised performance with Lucas Carravetta, Matt Endahl, and Aimée Dawn Robinson. Silence, Guelph, October 1, 2023.
-- **2023-04** — "Who's There?" Improvised performance with Lucas Carravetta, Matt Endahl, and Aimée Dawn Robinson. Silence, Guelph, April 1, 2023.
-- **2023** — Living Newspaper 2.0. Projection design; directed by Julie Labagnara. George Luscombe Theatre, Toronto.
+|  |  |
+|:------------------------|:----------------------------------------------------------------------------|
+| **2026-04 – 2026-05** | "Before I Was This." Generative text work. flashDRIVE: Digital Arts Fundraiser Exhibition, InterAccess, Toronto, April 22 – May 9, 2026. Curated by Miriam Arbus. |
+| **2026-02** | Nuptials (feature film). Producer, projection design, and live in-camera VFX. Directed by Sean Braune, Para-sight Productions. Official release February 13, 2026 (Freestyle Digital Media). Best World Feature Film, Austin Revolution Film Festival, 2022. |
+| **2025-11** | The Frankenstein Project. Producer, with Debashis Sinha. Performance Studio Theatre, TMU, November 18–22, 2025. |
+| **2025-11** | 291 by Jade O'Keeffe. Projection co-design with Kristen Ferguson; directed by Lisa Dixon. Peterborough Theatre Guild, November 1–15, 2025. |
+| **2025-04** | "To my creators..." Solo work exhibited at the Creative AI Symposium, TMU, April 2, 2025; created during the SÍM residency, Reykjavík. |
+| **2024-11** | AVARA 2024 installation. Led eight students in a semester-long research-creation installation presented at AVARA 2024, OAMK, Oulu, Finland. |
+| **2024-06** | Shipwreck. Group exhibition with UKAI Projects and five Canadian artists, SÍM Gallery, Reykjavík, Iceland, following a month-long residency; includes solo work "To my creators..." |
+| **2024-04** | Labour and Us. Workshop series (March 14 – April 17, 2024) and performance, co-created and performed with Lucas Carravetta, Matt Endahl, and Aimée Dawn Robinson; roundtable with Alan Filewod, Tom Scholte, Cynthia Ashperger, and Judith Thompson. ImprovLab, University of Guelph, April 19, 2024. |
+| **2024-01** | Almost Alchemy. Two 360° video experiences of improvised research-creation performance. RUBIX, TMU, January 25, 2024. |
+| **2023-10** | "rocketmanperson." Improvised performance with Lucas Carravetta, Matt Endahl, and Aimée Dawn Robinson. Silence, Guelph, October 1, 2023. |
+| **2023-04** | "Who's There?" Improvised performance with Lucas Carravetta, Matt Endahl, and Aimée Dawn Robinson. Silence, Guelph, April 1, 2023. |
+| **2023** | Living Newspaper 2.0. Projection design; directed by Julie Labagnara. George Luscombe Theatre, Toronto. |
 
 
 # 2. Other Research Contributions

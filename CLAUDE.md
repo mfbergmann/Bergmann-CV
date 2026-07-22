@@ -9,12 +9,15 @@ cv.yaml  ──►  build.py  ──►  output/*.md  ──►  GitHub Action  
 prose/sshrc-prose.md ─┘ (appended to the SSHRC doc)
 ```
 
+Entry sections render as two-column tables (bold date | item). The borders are removed by `assets/pdf-style.tex` (PDF, via pandoc `-H`) and `assets/reference.docx` (docx, via `--reference-doc`; its Table style has no borders and a flush-left first column). Column widths come from the dash ratio in the pipe-table separator row that `build.py` emits (~24/76).
+
 ## Rules
 
 1. **Edit `cv.yaml` only** for CV content. Never edit files in `output/` — they are overwritten on every build.
 2. **One entry per event.** New talk, credit, grant, or committee → one line in the correct section of `cv.yaml`, most sections sorted reverse chronological (build.py preserves file order; keep newest first).
 3. **Dates**: `YYYY`, `YYYY-MM`, or `YYYY-MM-DD`; `end: present` for ongoing roles.
-4. **Flags**: `refereed: true` (anonymous peer review of the full work), `other_refereed: true` (reviewed conference presentations/posters), `sshrc: true` (output of SSHRC funding — renders as `*` in the SSHRC doc). No flag → non-refereed.
+4. **Flags**: `refereed: true` (anonymous peer review of the full work), `other_refereed: true` (reviewed conference presentations/posters), `sshrc: true` (output of SSHRC funding — renders as `*` in the SSHRC doc), `sshrc_exclude: true` (forthcoming entry kept out of the SSHRC doc, e.g. drafts not yet submitted). No flag → non-refereed.
+4a. **Internal notes go in YAML comments** (`# TODO: ...` on their own line), never inside `text:` strings — anything in a string is rendered in every CV. Public-facing status (e.g. "in press") goes in `status:`; editor reminders go in comments.
 5. **SSHRC prose** (significance statements, training narrative, relevant experience) lives in `prose/sshrc-prose.md` and changes per application. The list sections regenerate automatically with a rolling six-year filter; the prose does not — review it before each submission.
 6. After editing, run `python build.py` locally (needs `pyyaml`) or just push — CI rebuilds and commits `output/`.
 

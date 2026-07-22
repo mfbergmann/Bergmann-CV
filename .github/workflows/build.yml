@@ -3,7 +3,7 @@ name: Build CV documents
 on:
   push:
     branches: [main]
-    paths: ['cv.yaml', 'build.py', 'prose/**', '.github/workflows/build.yml']
+    paths: ['cv.yaml', 'build.py', 'prose/**', 'assets/**', '.github/workflows/build.yml']
   workflow_dispatch:
 
 permissions:
@@ -31,8 +31,9 @@ jobs:
         run: |
           cd output
           for f in Bergmann-CV-Complete Bergmann-CV-OCGS Bergmann-SSHRC-Contributions; do
-            pandoc "$f.md" -o "$f.docx"
+            pandoc "$f.md" -o "$f.docx" --reference-doc=../assets/reference.docx
             pandoc "$f.md" -o "$f.pdf" --pdf-engine=xelatex \
+              -H ../assets/pdf-style.tex \
               -V mainfont="Liberation Serif" -V fontsize=12pt \
               -V geometry:margin=0.75in -V papersize=letter
           done

@@ -8,7 +8,10 @@
 #   end: same formats, or "present"
 #   sshrc: true  -> marked with * in the SSHRC contributions doc
 #   refereed: true / other_refereed: true -> SSHRC categorization
+#   sshrc_exclude: true -> forthcoming entry omitted from the SSHRC doc
 #   formats: which outputs include the entry (default: all)
+#   Internal notes go in YAML comments like this one — never inside
+#   text strings, or they end up in the rendered CVs.
 # ============================================================
 
 personal:
@@ -22,8 +25,8 @@ personal:
 employment:
   - { date: 2024-01, end: present, text: "Associate Professor (Tenured), Performance, The Creative School, Toronto Metropolitan University" }
   - { date: 2024-01, end: "TODO-END-DATE", text: "Associate Director, Design + Technology Lab, Toronto Metropolitan University" }
-  - { date: 2019-08, end: 2024-01, text: "Assistant Professor, Performance, The Creative School, Toronto Metropolitan University" }
   - { date: 2022-07, end: 2023-07, text: "Co-Undergraduate Program Director (Production), Performance, The Creative School, TMU" }
+  - { date: 2019-08, end: 2024-01, text: "Assistant Professor, Performance, The Creative School, Toronto Metropolitan University" }
   - { date: 2017, end: present, text: "Full Member, Yeates School of Graduate Studies, TMU" }
   - { date: 2016-08, end: 2019-08, text: "Assistant Professor (Limited Term Faculty), Performance, The Creative School, TMU" }
   - { date: 2014, end: 2016, text: "Technology Specialist / Media Server Programmer, WorldStage LAB, San Francisco / New York" }
@@ -82,8 +85,8 @@ service:
   - { date: 2016, end: 2021, text: "Member, Stage Committee, Arts & Letters Club of Toronto" }
 
 funding_external:
-  - { date: 2021, sshrc: true, text: "SSHRC Partnership Engage Grant, COVID-19 Special Initiative — \"Visual Music: Enhancing the National Arts Centre Orchestra's remote connection with their audience during COVID-19 social restrictions through innovative digital tools.\" PI: Cintia Cristiá; Co-Is: Michael Bergmann, David Bouchard. $24,620." }
   - { date: 2024-05, text: "Erasmus+ staff mobility funding, OAMK, Oulu, Finland" }
+  - { date: 2021, sshrc: true, text: "SSHRC Partnership Engage Grant, COVID-19 Special Initiative — \"Visual Music: Enhancing the National Arts Centre Orchestra's remote connection with their audience during COVID-19 social restrictions through innovative digital tools.\" PI: Cintia Cristiá; Co-Is: Michael Bergmann, David Bouchard. $24,620." }
   - { date: 2012, end: 2014, text: "Eldon Elder Fellowship, Yale University. $40,000 USD." }
 
 funding_internal:
@@ -94,7 +97,8 @@ funding_internal:
   - { date: 2019, text: "FCAD Special Seed Grant — The Uncanny Robots Project. $4,000." }
   - { date: 2019, text: "The Creative School Travel Grant — UCD Dublin conference presentation. $2,000." }
   - { date: 2018, text: "Undergraduate Research Opportunity, OVPRI, Ryerson — \"Augmented-Reality based Pre-Visualization system for theatrical spaces.\" $9,888." }
-  - { date: 2018, text: "Learning and Teaching Enhancement Fund, Ryerson — \"The Creative Laboratory Project.\" Co-I with Pavlo Bosyy. $13,000. # NOTE: SSHRC Web CV says 2016 — resolve" }
+  # TODO: SSHRC Web CV says 2016 for this LTEF grant; CVs say 2018 — resolve
+  - { date: 2018, text: "Learning and Teaching Enhancement Fund, Ryerson — \"The Creative Laboratory Project.\" Co-I with Pavlo Bosyy. $13,000." }
 
 funding_scholarships:
   - { date: 2022, end: 2026, text: "University of Guelph Graduate Tuition Scholarship. $8,000/yr." }
@@ -106,8 +110,10 @@ publications:
   - { date: 2021, text: "Bergmann, M. F., and McGuire, B. (2021). \"Uncanny Text.\" Belfield Literary Review: New TransAtlantic Dialogues, ed. Gregory Betts and Lucy Collins, Spring 2021, pp. 96–99." }
 
 forthcoming:
-  - { date: 2026, status: "in press — confirm with editors", text: "Bergmann, M. \"Cultivating Empathy through Robotic Performance.\" Chapter in Robots and Other Artificial Agents on Stage: Theoretical Concepts and Artistic Practices, edited by Erica Magris and Izabella Pluta, transcript Verlag (Theatre Studies series). [pages TODO]" }
-  - { date: 2026, status: "in draft — do not list on SSHRC docs until submitted", text: "Bergmann, M., and McLeod, K. \"Improvising with Commercial AI: Questions of Care and Ethics.\"" }
+  # TODO: confirm in-press status with editors; add page count when known
+  - { date: 2026, status: "in press", text: "Bergmann, M. \"Cultivating Empathy through Robotic Performance.\" Chapter in Robots and Other Artificial Agents on Stage: Theoretical Concepts and Artistic Practices, edited by Erica Magris and Izabella Pluta, transcript Verlag (Theatre Studies series)." }
+  # sshrc_exclude: do not list on SSHRC docs until submitted
+  - { date: 2026, status: "in draft", sshrc_exclude: true, text: "Bergmann, M., and McLeod, K. \"Improvising with Commercial AI: Questions of Care and Ethics.\"" }
 
 presentations:
   - { date: 2025-09-12, other_refereed: true, text: "Bergmann, M. \"Hallucinating Children: Improvisation After the Algorithmic Shipwreck.\" Hugarflug: Unstable Systems, annual conference on artistic research, Iceland University of the Arts, Reykjavík, Iceland, September 12, 2025." }
@@ -127,7 +133,8 @@ presentations:
 posters:
   - { date: 2024-01-25, other_refereed: true, text: "Bergmann, M., Carravetta, L., Endahl, M., Robinson, A. D., and ARIA (AI). \"Almost Alchemy.\" Poster, RUBIX, TMU, January 25, 2024." }
   - { date: 2020-11, other_refereed: true, text: "Bergmann, M., and Anderson, J. \"l'automate: Robotic Controlled Apparatuses for Circus Performance.\" Poster, RUBIX, TMU (online), November 2020." }
-  - { date: 2019-11, other_refereed: true, text: "Bergmann, M., Zhang, ?, Laberge-Côté, ?, and McGuire, B. \"Human-robot Interactions in Dance.\" Poster, RUBIX, TMU, November 2019. # TODO first names" }
+  # TODO: first names/initials for Zhang and Laberge-Côté
+  - { date: 2019-11, other_refereed: true, text: "Bergmann, M., Zhang, ?, Laberge-Côté, ?, and McGuire, B. \"Human-robot Interactions in Dance.\" Poster, RUBIX, TMU, November 2019." }
   - { date: 2018-11, other_refereed: true, text: "Bergmann, M. \"TheatAR: A previsualization system for theatrical design.\" Poster, RUBIX, TMU, November 2018." }
   - { date: 2017-10, other_refereed: true, text: "Bergmann, M. \"Shadow-selves: Projection as a medium of exploring reflections of self in Belinda McGuire's Slaughterhouse/Requiem.\" Poster, RUBIX, TMU, October 2017." }
   - { date: 2017-10, other_refereed: true, text: "Bergmann, M. \"Projecting on film: the surreal effect of rear projected backgrounds in the film Nuptials.\" Poster, RUBIX, TMU, October 2017." }

@@ -190,7 +190,7 @@ Completed: 9 Master's, 0 Doctoral, 0 Postdoctoral. In progress: 0.
 - **2023** — Reviewer, Canada Foundation for Innovation
 - **2022 – 2024** — Senator (The Creative School faculty representative), TMU Senate
 - **2022-03 – 2023** — Secretary of the Board, Guild Festival Theatre
-- **2020 – present** — Coordinator, Global Campus Studio, TMU
+- **2020 – present** — Coordinator, Global Campus Studio course, TMU
 - **2018 – 2020** — FCAD Teaching Committee; FCAD Interdisciplinary Advisory Committee
 - **2016 – 2021** — Member, Stage Committee, Arts & Letters Club of Toronto
 

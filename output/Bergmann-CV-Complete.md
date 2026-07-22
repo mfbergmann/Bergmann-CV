@@ -3,7 +3,7 @@
 Associate Professor, Performance, The Creative School, Toronto Metropolitan University  
 ORCID: 0000-0002-5698-8121 · mfb@torontomu.ca · https://bergmann.ai
 
-<!-- Generated 2026-07-22 from cv.yaml — do not edit outputs directly. -->
+<!-- Generated 2026-07-21 from cv.yaml — do not edit outputs directly. -->
 
 
 ## Employment
@@ -66,6 +66,7 @@ ORCID: 0000-0002-5698-8121 · mfb@torontomu.ca · https://bergmann.ai
 | **2022-07** | Bouchard, D., Cristiá, C., Bergmann, M., and Robert, D. (2022). "Augmented Symphony: An augmented reality application for immersive music listening." Proceedings of EVA London 2022, Electronic Workshops in Computing, BCS Learning & Development, London, UK, July 4–8, 2022. DOI: 10.14236/ewic/EVA2022.39. |
 | **2022-05** | Cristiá, C., Bouchard, D., Bergmann, M., et al. (2022). Orchestra Remote Delivery during COVID-19 Database. Open data set, Open Science Framework, May 5, 2022. DOI: 10.17605/OSF.IO/WCDU2. |
 | **2021** | Bergmann, M. F., and McGuire, B. (2021). "Uncanny Text." Belfield Literary Review: New TransAtlantic Dialogues, ed. Gregory Betts and Lucy Collins, Spring 2021, pp. 96–99. |
+| **2017-11** | Bergmann, M. F. (2017). "Performance Art: New Magic." Rough Draft, Vol. 2, No. 1, November 7, 2017. |
 
 
 ## Forthcoming
@@ -197,11 +198,15 @@ Completed: 9 Master's, 0 Doctoral, 0 Postdoctoral. In progress: 0.
 - THP 301–403 — Production Technique (FW 2016–present)
 - THP 800 — Independent Study (W 2017–24)
 - THT 582 — Show Systems Engineering (W 2020, F 2021, F 2023) (redesigned course)
+- THT 582 — Scenic Automation (F 2017)
+- THP 500 — Conceiving the Production (F 2018)
+- THF 501 — Research Methods (W 2018)
 - THP 102 — Production Technique II (W 2017, 2022–24) (projection design section)
 - THP 202 — Production Technique IV (W 2018–24) (projection design section)
 - THP 660 — Projection Design: Special Topics (W 2022) (created course)
 - THF 101 — Elements of Production (F 2016, 2019, 2020)
 - THM 301 — Technical Direction (F 2016)
+- CRI 815 — Creative Impact Supercourse I, Creative Industries (F 2018)
 
 
 ## Service
@@ -222,8 +227,18 @@ Completed: 9 Master's, 0 Doctoral, 0 Postdoctoral. In progress: 0.
 | **2023** | Reviewer, Canada Foundation for Innovation |
 | **2022 – 2024** | Senator (The Creative School faculty representative), TMU Senate |
 | **2022-03 – 2023** | Secretary of the Board, Guild Festival Theatre |
+| **2021 – 2022** | Member, Immersive Production Steering Committee, The Creative School, TMU |
+| **2021** | Member, Name Implementation Advisory Group (FCAD renaming to The Creative School), TMU |
+| **2020 – 2023** | Member, Gold Medal selection committee (FCAD/Creative School section), TMU |
+| **2020 – 2021** | Member, Departmental Hiring Committee, Performance, TMU |
 | **2020 – present** | Coordinator, Global Campus Studio course, TMU |
+| **2020** | Member, FCAD Virtual Task Force, TMU |
+| **2020** | Member, Limited Return of Human Participant & Field SRC Activity Advisory Group, TMU |
+| **2019 – 2022** | Member, Academic Integrity Committee, TMU |
+| **2018 – 2022** | School of Performance representative, RFA (now TFA) Representative's Council, TMU |
+| **2018 – 2023** | Member, Creative Innovation Studio Curatorial Committee, The Creative School, TMU |
 | **2018 – 2020** | FCAD Teaching Committee; FCAD Interdisciplinary Advisory Committee |
+| **2017 – 2022** | Member, Curriculum Committee, School of Performance, TMU |
 | **2016 – 2021** | Member, Stage Committee, Arts & Letters Club of Toronto |
 
 
@@ -250,5 +265,6 @@ Completed: 9 Master's, 0 Doctoral, 0 Postdoctoral. In progress: 0.
 | **2022** | "Michael F. Bergmann On The Merging of Live Arts and Technology." Toronto Life, April 29, 2022. |
 | **2021** | "Emerging technology that's here to stay." CityNews Toronto, June 18, 2021. |
 | **2020** | "Can you feel empathy for a dancing robot?" Ryerson Innovation Magazine, Issue 33, 2020. |
+| **2020** | "FCAD students embrace opportunity to redefine performance." Nicole Bartnicki, Ryerson University, May 2020. |
 | **2019** | "Premiere of robot dance performance launches Creative Technology Lab." Ryerson University, November 2019. |
 | **2015** | Q&A Personal interview, Meghan Perkins, Live Design Magazine, 2015. |

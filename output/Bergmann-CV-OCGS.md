@@ -3,7 +3,7 @@
 Associate Professor, Performance, The Creative School, Toronto Metropolitan University  
 ORCID: 0000-0002-5698-8121 · mfb@torontomu.ca · https://bergmann.ai
 
-<!-- Generated 2026-07-22 from cv.yaml — do not edit outputs directly. -->
+<!-- Generated 2026-07-21 from cv.yaml — do not edit outputs directly. -->
 
 
 ## A. Education
@@ -75,6 +75,7 @@ Completed: 9 Master's, 0 Doctoral, 0 Postdoctoral. In progress: 0.
 | **2022-07** | Bouchard, D., Cristiá, C., Bergmann, M., and Robert, D. (2022). "Augmented Symphony: An augmented reality application for immersive music listening." Proceedings of EVA London 2022, Electronic Workshops in Computing, BCS Learning & Development, London, UK, July 4–8, 2022. DOI: 10.14236/ewic/EVA2022.39. |
 | **2022-05** | Cristiá, C., Bouchard, D., Bergmann, M., et al. (2022). Orchestra Remote Delivery during COVID-19 Database. Open data set, Open Science Framework, May 5, 2022. DOI: 10.17605/OSF.IO/WCDU2. |
 | **2021** | Bergmann, M. F., and McGuire, B. (2021). "Uncanny Text." Belfield Literary Review: New TransAtlantic Dialogues, ed. Gregory Betts and Lucy Collins, Spring 2021, pp. 96–99. |
+| **2017-11** | Bergmann, M. F. (2017). "Performance Art: New Magic." Rough Draft, Vol. 2, No. 1, November 7, 2017. |
 
 
 ## G. Conference Presentations
@@ -139,8 +140,18 @@ Completed: 9 Master's, 0 Doctoral, 0 Postdoctoral. In progress: 0.
 | **2023** | Reviewer, Canada Foundation for Innovation |
 | **2022 – 2024** | Senator (The Creative School faculty representative), TMU Senate |
 | **2022-03 – 2023** | Secretary of the Board, Guild Festival Theatre |
+| **2021 – 2022** | Member, Immersive Production Steering Committee, The Creative School, TMU |
+| **2021** | Member, Name Implementation Advisory Group (FCAD renaming to The Creative School), TMU |
+| **2020 – 2023** | Member, Gold Medal selection committee (FCAD/Creative School section), TMU |
+| **2020 – 2021** | Member, Departmental Hiring Committee, Performance, TMU |
 | **2020 – present** | Coordinator, Global Campus Studio course, TMU |
+| **2020** | Member, FCAD Virtual Task Force, TMU |
+| **2020** | Member, Limited Return of Human Participant & Field SRC Activity Advisory Group, TMU |
+| **2019 – 2022** | Member, Academic Integrity Committee, TMU |
+| **2018 – 2022** | School of Performance representative, RFA (now TFA) Representative's Council, TMU |
+| **2018 – 2023** | Member, Creative Innovation Studio Curatorial Committee, The Creative School, TMU |
 | **2018 – 2020** | FCAD Teaching Committee; FCAD Interdisciplinary Advisory Committee |
+| **2017 – 2022** | Member, Curriculum Committee, School of Performance, TMU |
 | **2016 – 2021** | Member, Stage Committee, Arts & Letters Club of Toronto |
 | **2025 – present** | Canadian Artificial Intelligence Association |
 | **2023 – present** | Almost Alchemy — improvised, multi-disciplinary performance collective (founding member) |

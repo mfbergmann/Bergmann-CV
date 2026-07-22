@@ -79,8 +79,21 @@ service:
   - { date: 2023, text: "Reviewer, Canada Foundation for Innovation" }
   - { date: 2022, end: 2024, text: "Senator (The Creative School faculty representative), TMU Senate" }
   - { date: 2022-03, end: 2023, text: "Secretary of the Board, Guild Festival Theatre" }
+  - { date: 2021, end: 2022, text: "Member, Immersive Production Steering Committee, The Creative School, TMU" }
+  - { date: 2021, text: "Member, Name Implementation Advisory Group (FCAD renaming to The Creative School), TMU" }
+  # tenure binder (2023) says 2020–2022; OCGS 2025 says 2020–2023 — using the more recent OCGS
+  - { date: 2020, end: 2023, text: "Member, Gold Medal selection committee (FCAD/Creative School section), TMU" }
+  - { date: 2020, end: 2021, text: "Member, Departmental Hiring Committee, Performance, TMU" }
   - { date: 2020, end: present, text: "Coordinator, Global Campus Studio course, TMU" }
+  - { date: 2020, text: "Member, FCAD Virtual Task Force, TMU" }
+  - { date: 2020, text: "Member, Limited Return of Human Participant & Field SRC Activity Advisory Group, TMU" }
+  - { date: 2019, end: 2022, text: "Member, Academic Integrity Committee, TMU" }
+  - { date: 2018, end: 2022, text: "School of Performance representative, RFA (now TFA) Representative's Council, TMU" }
+  # binder (2023) said ongoing — end year TBC with Michael
+  - { date: 2018, end: 2023, text: "Member, Creative Innovation Studio Curatorial Committee, The Creative School, TMU" }
   - { date: 2018, end: 2020, text: "FCAD Teaching Committee; FCAD Interdisciplinary Advisory Committee" }
+  # service dossier says 2017–2022; the binder CV (July 2023) said ongoing — end year TBC with Michael
+  - { date: 2017, end: 2022, text: "Member, Curriculum Committee, School of Performance, TMU" }
   - { date: 2016, end: 2021, text: "Member, Stage Committee, Arts & Letters Club of Toronto" }
 
 funding_external:
@@ -108,6 +121,7 @@ publications:
   - { date: 2022-07, sshrc: true, refereed: true, text: "Bouchard, D., Cristiá, C., Bergmann, M., and Robert, D. (2022). \"Augmented Symphony: An augmented reality application for immersive music listening.\" Proceedings of EVA London 2022, Electronic Workshops in Computing, BCS Learning & Development, London, UK, July 4–8, 2022. DOI: 10.14236/ewic/EVA2022.39." }
   - { date: 2022-05, sshrc: true, text: "Cristiá, C., Bouchard, D., Bergmann, M., et al. (2022). Orchestra Remote Delivery during COVID-19 Database. Open data set, Open Science Framework, May 5, 2022. DOI: 10.17605/OSF.IO/WCDU2." }
   - { date: 2021, text: "Bergmann, M. F., and McGuire, B. (2021). \"Uncanny Text.\" Belfield Literary Review: New TransAtlantic Dialogues, ed. Gregory Betts and Lucy Collins, Spring 2021, pp. 96–99." }
+  - { date: 2017-11, text: "Bergmann, M. F. (2017). \"Performance Art: New Magic.\" Rough Draft, Vol. 2, No. 1, November 7, 2017." }
 
 forthcoming:
   # TODO: confirm in-press status with editors; add page count when known
@@ -188,11 +202,15 @@ teaching:
   - "THP 301–403 — Production Technique (FW 2016–present)"
   - "THP 800 — Independent Study (W 2017–24)"
   - "THT 582 — Show Systems Engineering (W 2020, F 2021, F 2023) (redesigned course)"
+  - "THT 582 — Scenic Automation (F 2017)"
+  - "THP 500 — Conceiving the Production (F 2018)"
+  - "THF 501 — Research Methods (W 2018)"
   - "THP 102 — Production Technique II (W 2017, 2022–24) (projection design section)"
   - "THP 202 — Production Technique IV (W 2018–24) (projection design section)"
   - "THP 660 — Projection Design: Special Topics (W 2022) (created course)"
   - "THF 101 — Elements of Production (F 2016, 2019, 2020)"
   - "THM 301 — Technical Direction (F 2016)"
+  - "CRI 815 — Creative Impact Supercourse I, Creative Industries (F 2018)"
 
 interviews:
   - { date: 2023, text: "\"Get the inside scoop on game-changing innovations in augmented reality with the new VisionPro.\" The Creative School Top 5, July 4, 2023." }
@@ -201,5 +219,6 @@ interviews:
   - { date: 2022, text: "\"Michael F. Bergmann On The Merging of Live Arts and Technology.\" Toronto Life, April 29, 2022." }
   - { date: 2021, text: "\"Emerging technology that's here to stay.\" CityNews Toronto, June 18, 2021." }
   - { date: 2020, text: "\"Can you feel empathy for a dancing robot?\" Ryerson Innovation Magazine, Issue 33, 2020." }
+  - { date: 2020, text: "\"FCAD students embrace opportunity to redefine performance.\" Nicole Bartnicki, Ryerson University, May 2020." }
   - { date: 2019, text: "\"Premiere of robot dance performance launches Creative Technology Lab.\" Ryerson University, November 2019." }
   - { date: 2015, text: "Q&A Personal interview, Meghan Perkins, Live Design Magazine, 2015." }

@@ -30,7 +30,7 @@ jobs:
       - name: Convert to docx and pdf
         run: |
           cd output
-          for f in Bergmann-CV-Complete Bergmann-CV-OCGS Bergmann-SSHRC-Contributions; do
+          for f in Bergmann-CV-Complete Bergmann-CV-OCGS Bergmann-SSHRC-Contributions Bergmann-CV-FullRecord; do
             pandoc "$f.md" -o "$f.docx" --reference-doc=../assets/reference.docx
             pandoc "$f.md" -o "$f.pdf" --pdf-engine=xelatex \
               -H ../assets/pdf-style.tex \

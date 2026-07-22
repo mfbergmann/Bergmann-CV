@@ -10,6 +10,12 @@
 #   refereed: true / other_refereed: true -> SSHRC categorization
 #   sshrc_exclude: true -> forthcoming entry omitted from the SSHRC doc
 #   formats: which outputs include the entry (default: all)
+#   archive_* sections render ONLY in Bergmann-CV-FullRecord (the "full
+#   life file"); they are the complete historical record and are excluded
+#   from the Complete/OCGS/SSHRC documents.
+#   Funding entries carry structured fields (source, program, ftype,
+#   amount, pi, purpose) for the OCGS tables; text remains the canonical
+#   citation for the other documents.
 #   Internal notes go in YAML comments like this one — never inside
 #   text strings, or they end up in the rendered CVs.
 # ============================================================
@@ -72,8 +78,7 @@ service:
   - { date: 2025-07, end: present, text: "Member, Creative AI Hub Steering Committee, The Creative School, TMU" }
   - { date: 2025-02, end: present, text: "Member, USITT Research and Creative Endeavours Committee" }
   - { date: 2024-12, end: present, text: "Member, Faculty Tenure Committee, The Creative School, TMU" }
-  # start date TBC: CCV (Jan 2026) says 2025/4; CV 2025.docx says 2024
-  - { date: 2024-11, end: present, text: "Board Member, UKAI Projects" }
+  - { date: 2025-04, end: present, text: "Board Member, UKAI Projects" }
   - { date: 2024-06, end: present, text: "Reviewer, International Journal of Performance Arts and Digital Media" }
   - { date: 2023-10, end: present, text: "Jury Member, CATR Scholarship and Grant Committee (Heather McCallum Scholarship, Robert Lawrence Scholarship, CATR Grants)" }
   - { date: 2023, end: present, text: "Reviewer, EVA London Conference on Electronic Visualisation and the Arts" }
@@ -84,7 +89,6 @@ service:
   - { date: 2022-03, end: 2023, text: "Secretary of the Board, Guild Festival Theatre" }
   - { date: 2021, end: 2022, text: "Member, Immersive Production Steering Committee, The Creative School, TMU" }
   - { date: 2021, text: "Member, Name Implementation Advisory Group (FCAD renaming to The Creative School), TMU" }
-  # tenure binder (2023) says 2020–2022; OCGS 2025 says 2020–2023 — using the more recent OCGS
   - { date: 2020, end: 2023, text: "Member, Gold Medal selection committee (FCAD/Creative School section), TMU" }
   - { date: 2020, end: 2021, text: "Member, Departmental Hiring Committee, Performance, TMU" }
   - { date: 2020, end: present, text: "Coordinator, Global Campus Studio course, TMU" }
@@ -101,39 +105,51 @@ service:
   - { date: 2016, end: 2021, text: "Member, Stage Committee, Arts & Letters Club of Toronto" }
 
 funding_external:
-  - { date: 2024-05, text: "Erasmus+ staff mobility funding, OAMK, Oulu, Finland" }
-  - { date: 2021, sshrc: true, text: "SSHRC Partnership Engage Grant, COVID-19 Special Initiative — \"Visual Music: Enhancing the National Arts Centre Orchestra's remote connection with their audience during COVID-19 social restrictions through innovative digital tools.\" PI: Cintia Cristiá; Co-Is: Michael Bergmann, David Bouchard. $24,620." }
+  - { date: 2024-05, source: "European Union / OAMK", program: "Erasmus+ staff mobility", ftype: G, pi: "Michael Bergmann", purpose: Travel,
+      text: "Erasmus+ staff mobility funding, OAMK, Oulu, Finland" }
+  - { date: 2021, sshrc: true, source: SSHRC, program: "Partnership Engage Grant, COVID-19 Special Initiative", ftype: C, amount: "$24,620", pi: "Cintia Cristiá", purpose: Research,
+      text: "SSHRC Partnership Engage Grant, COVID-19 Special Initiative — \"Visual Music: Enhancing the National Arts Centre Orchestra's remote connection with their audience during COVID-19 social restrictions through innovative digital tools.\" PI: Cintia Cristiá; Co-Is: Michael Bergmann, David Bouchard. $24,620." }
   # CCV lists 50,000 (CAD equivalent of the $40,000 USD); keep USD figure here
-  - { date: 2012, end: 2014, text: "Eldon Elder Fellowship, Yale University. $40,000 USD." }
+  - { date: 2012, end: 2014, source: "Yale University", program: "Eldon Elder Fellowship", ftype: O, amount: "$40,000 USD", pi: "Michael Bergmann", purpose: Fellowship,
+      text: "Eldon Elder Fellowship, Yale University. $40,000 USD." }
 
 funding_internal:
-  - { date: 2024, text: "The Creative School Travel Grant, TMU — Shipwreck Iceland project. $1,000." }
-  - { date: 2022, text: "TMU Work Study RA Program — \"Mechanical Waves: Machine Learning gesture reactive human-robot installation.\" $3,800." }
-  - { date: 2022, text: "The Creative School Travel Grant — EVA London conference presentation. $2,000." }
-  - { date: 2019, text: "Cirque du Soleil Entertainment Group / Future of Live Entertainment Lab — \"l'automate: Expanding the possibility of performance through robotics.\" Co-I with Jonathon Anderson. $7,500." }
-  - { date: 2019, text: "FCAD Special Seed Grant — The Uncanny Robots Project. $4,000." }
-  - { date: 2019, text: "The Creative School Travel Grant — UCD Dublin conference presentation. $2,000." }
-  - { date: 2018, text: "Undergraduate Research Opportunity, OVPRI, Ryerson — \"Augmented-Reality based Pre-Visualization system for theatrical spaces.\" $9,888." }
+  - { date: 2024, source: TMU, program: "The Creative School Travel Grant", ftype: O, amount: "$1,000", pi: "Michael Bergmann", purpose: Travel,
+      text: "The Creative School Travel Grant, TMU — Shipwreck Iceland project. $1,000." }
+  - { date: 2022, source: TMU, program: "Work Study RA Program", ftype: O, amount: "$3,800", pi: "Michael Bergmann", purpose: Research,
+      text: "TMU Work Study RA Program — \"Mechanical Waves: Machine Learning gesture reactive human-robot installation.\" $3,800." }
+  - { date: 2022, source: TMU, program: "The Creative School Travel Grant", ftype: O, amount: "$2,000", pi: "Michael Bergmann", purpose: Travel,
+      text: "The Creative School Travel Grant — EVA London conference presentation. $2,000." }
+  - { date: 2019, source: "Cirque du Soleil Entertainment Group / Ryerson", program: "Future of Live Entertainment Lab", ftype: O, amount: "$7,500", pi: "Co-I with Jonathon Anderson", purpose: Research,
+      text: "Cirque du Soleil Entertainment Group / Future of Live Entertainment Lab — \"l'automate: Expanding the possibility of performance through robotics.\" Co-I with Jonathon Anderson. $7,500." }
+  - { date: 2019, source: Ryerson, program: "FCAD Special Seed Grant", ftype: O, amount: "$4,000", pi: "Michael Bergmann", purpose: Research,
+      text: "FCAD Special Seed Grant — The Uncanny Robots Project. $4,000." }
+  - { date: 2019, source: Ryerson, program: "The Creative School Travel Grant", ftype: O, amount: "$2,000", pi: "Michael Bergmann", purpose: Travel,
+      text: "The Creative School Travel Grant — UCD Dublin conference presentation. $2,000." }
+  - { date: 2018, source: Ryerson, program: "Undergraduate Research Opportunity, OVPRI", ftype: O, amount: "$9,888", pi: "Michael Bergmann", purpose: Research,
+      text: "Undergraduate Research Opportunity, OVPRI, Ryerson — \"Augmented-Reality based Pre-Visualization system for theatrical spaces.\" $9,888." }
   # 2018 confirmed by all CVs; the CCV gives the funding period as 2017/1–2018/1 (workshops in
   # Jan 2017 and Jan 2018) and no source anywhere says 2016 — the old "2016" note was unfounded
-  - { date: 2018, text: "Learning and Teaching Enhancement Fund, Ryerson — \"The Creative Laboratory Project.\" Co-I with Pavlo Bosyy. $13,000." }
+  - { date: 2018, source: Ryerson, program: "Learning and Teaching Enhancement Fund", ftype: O, amount: "$13,000", pi: "Pavlo Bosyy", purpose: Research,
+      text: "Learning and Teaching Enhancement Fund, Ryerson — \"The Creative Laboratory Project.\" Co-I with Pavlo Bosyy. $13,000." }
 
 funding_scholarships:
   - { date: 2022, end: 2026, text: "University of Guelph Graduate Tuition Scholarship. $8,000/yr." }
   - { date: 2022, end: 2026, text: "University of Guelph University Graduate Scholarship. $7,500/yr." }
 
+# ocgs_category: refereed_proceedings | journal | chapter | other — drives the OCGS publication tables
 publications:
-  - { date: 2022-07, sshrc: true, refereed: true, text: "Bouchard, D., Cristiá, C., Robert, D., and Bergmann, M. (2022). \"Augmented Symphony: An augmented reality application for immersive music listening.\" Proceedings of EVA London 2022, Electronic Workshops in Computing, BCS Learning & Development, London, UK, July 4–8, 2022, pp. 208–209. DOI: 10.14236/ewic/EVA2022.39." }
-  - { date: 2022-05, sshrc: true, text: "Cristiá, C., Bouchard, D., Bergmann, M., et al. (2022). Orchestra Remote Delivery during COVID-19 Database. Open data set, Open Science Framework, May 5, 2022. DOI: 10.17605/OSF.IO/WCDU2." }
-  - { date: 2021, text: "Bergmann, M. F., and McGuire, B. (2021). \"Uncanny Text.\" Belfield Literary Review: New TransAtlantic Dialogues, ed. Gregory Betts and Lucy Collins, Spring 2021, pp. 96–99." }
-  # CCV lists this as co-authored — confirm co-author names with Michael
-  - { date: 2017-11, text: "Bergmann, M. F. (2017). \"Performance Art: New Magic.\" Rough Draft, Vol. 2, No. 1, ed. Laurence Butet-Roch, November 7, 2017." }
+  - { date: 2022-07, sshrc: true, refereed: true, ocgs_category: refereed_proceedings, text: "Bouchard, D., Cristiá, C., Robert, D., and Bergmann, M. (2022). \"Augmented Symphony: An augmented reality application for immersive music listening.\" Proceedings of EVA London 2022, Electronic Workshops in Computing, BCS Learning & Development, London, UK, July 4–8, 2022, pp. 208–209. DOI: 10.14236/ewic/EVA2022.39." }
+  - { date: 2022-05, sshrc: true, ocgs_category: other, text: "Cristiá, C., Bouchard, D., Bergmann, M., et al. (2022). Orchestra Remote Delivery during COVID-19 Database. Open data set, Open Science Framework, May 5, 2022. DOI: 10.17605/OSF.IO/WCDU2." }
+  - { date: 2021, ocgs_category: other, text: "Bergmann, M. F., and McGuire, B. (2021). \"Uncanny Text.\" Belfield Literary Review: New TransAtlantic Dialogues, ed. Gregory Betts and Lucy Collins, Spring 2021, pp. 96–99." }
+  # solo-authored (Michael, July 2026); the CCV's co-author listing is wrong
+  - { date: 2017-11, ocgs_category: other, text: "Bergmann, M. F. (2017). \"Performance Art: New Magic.\" Rough Draft, Vol. 2, No. 1, ed. Laurence Butet-Roch, November 7, 2017." }
 
 forthcoming:
   # TODO: confirm in-press status with editors; add page count when known
-  - { date: 2026, status: "in press", text: "Bergmann, M. \"Cultivating Empathy through Robotic Performance.\" Chapter in Robots and Other Artificial Agents on Stage: Theoretical Concepts and Artistic Practices, edited by Erica Magris and Izabella Pluta, transcript Verlag (Theatre Studies series)." }
+  - { date: 2026, status: "in press", ocgs_category: chapter, text: "Bergmann, M. \"Cultivating Empathy through Robotic Performance.\" Chapter in Robots and Other Artificial Agents on Stage: Theoretical Concepts and Artistic Practices, edited by Erica Magris and Izabella Pluta, transcript Verlag (Theatre Studies series)." }
   # sshrc_exclude: do not list on SSHRC docs until submitted
-  - { date: 2026, status: "in draft", sshrc_exclude: true, text: "Bergmann, M., and McLeod, K. \"Improvising with Commercial AI: Questions of Care and Ethics.\"" }
+  - { date: 2026, status: "in draft", sshrc_exclude: true, ocgs_category: journal, text: "Bergmann, M., and McLeod, K. \"Improvising with Commercial AI: Questions of Care and Ethics.\"" }
 
 presentations:
   - { date: 2025-09-12, other_refereed: true, text: "Bergmann, M. \"Hallucinating Children: Improvisation After the Algorithmic Shipwreck.\" Hugarflug: Unstable Systems, annual conference on artistic research, Iceland University of the Arts, Reykjavík, Iceland, September 12, 2025." }
@@ -189,6 +205,108 @@ creative:
   - { date: 2019-10, text: "\"The Uncanny Robots Project: Phase 1.\" Research-creation premiere examining human-robot interaction through dance, commissioned for the opening of the Creative Technology Lab @ FCAD, TMU, October 2019." }
   # TODO: add pre-2019 design credits (theatre, dance, opera) from the archival CV if wanted in the complete CV
 
+# ============================================================
+# ARCHIVE — full historical record ("full life file").
+# Rendered only in Bergmann-CV-FullRecord; source: "Bergmann - CV
+# (Living Document)" (Google Drive) and Old/Master/MFB CV Master.docx.
+# ============================================================
+
+archive_employment:
+  - { date: 2014, text: "Design associate, Wendall Harrington Studio, New York / New Haven (summer 2014)" }
+  - { date: 2011-09, end: 2014-05, text: "Teaching Assistant, Yale School of Drama, Yale University" }
+
+archive_residencies:
+  - { date: 2014-10, text: "Artist-in-residence, Ross Creek Centre for the Arts, NS — Incorporeus" }
+  - { date: 2014-06, text: "Workshop residency, ACCAD, The Ohio State University — echo::system Action Station #2: The Desert" }
+
+archive_projection_design:
+  - { date: 2019, text: "Crossing Borders. Projection co-design with Kristen Ferguson; directed by Gill Foster. International Arts Youth Festival, Kingston upon Thames, UK." }
+  - { date: 2019, text: "Foreign Tongue. Projection design; directed by Cynthia Ashperger. NextStage Festival, Toronto." }
+  - { date: 2018, text: "Nuptials (feature film). Projection design and live in-camera VFX; directed by Sean Braune. Para-sight Productions. (Released 2026; see Creative Research Output.)" }
+  - { date: 2018, text: "Crossing Borders. Projection co-design with Kristen Ferguson; directed by Peggy Shannon and Gill Foster. Parodos Festival, Toronto." }
+  - { date: 2018, text: "291. Projection co-design with Kristen Ferguson; directed by Rebecca Ballarin. Parodos Festival, Toronto." }
+  - { date: 2017, text: "Slaughterhouse/Requiem. Projection design; choreography by Belinda McGuire. Harbourfront NextSteps, Fleck Dance Theatre, Toronto." }
+  - { date: 2016, text: "YET. Projection design; choreography by Heidi Strauss. Ryerson Dances, Ryerson Theatre, Toronto." }
+  - { date: 2016, text: "Slaughterhouse/Requiem. Projection design; choreography by Belinda McGuire. Belinda McGuire Dance Projects." }
+  - { date: 2014, text: "Incorporeus. Projection design; choreography by Belinda McGuire. Belinda McGuire Dance Projects." }
+  - { date: 2014, text: "He Left Quietly. Projection design; directed by Leora Morris. SummerWorks Performance Festival, Toronto. Best Production, 2014." }
+  - { date: 2013, end: 2014, text: "Accidental Death of an Anarchist. Projection design; directed by Christopher Bayes. Yale Repertory Theatre / Berkeley Repertory Theatre." }
+  - { date: 2012, text: "Iphigenia Among the Stars. Projection design; directed by Jack Tamburri. Yale School of Drama." }
+  - { date: 2012, text: "Fox Play. Projection design; directed by Lileana Blain-Cruz. Yale School of Drama." }
+  - { date: 2012, text: "Dracula. Projection design; directed by Jack Tamburri. Yale Cabaret." }
+  - { date: 2011, text: "Creation 2011. Projection design; directed by Sarah Krasnow. Yale Cabaret." }
+  - { date: 2010, text: "Leer. Projection design. BergARTS, Toronto." }
+  - { date: 2006, text: "Terre Rouge. Projection design; directed by Guillaume Bernardi. Theatre Glendon, Toronto." }
+  - { date: 2006, text: "The Marriage of Bette and Boo. Projection design; directed by Mel Couture. Theatre Glendon, Toronto." }
+
+archive_assistant_design:
+  - { date: 2017, text: "Disney's Newsies: The Broadway Musical! (film adaptation). Assistant projection design (designer: Daniel Brodie); directed by Jeff Calhoun. Disney Theatrical." }
+  - { date: 2014, text: "Newsies, First National Tour. Assistant projection design (designer: Daniel Brodie); directed by Jeff Calhoun. Disney Theatrical." }
+  - { date: 2013, text: "In a Year With 13 Moons. Assistant projection design (designer: Peter Nigrini); directed by Robert Woodruff. Yale Repertory Theatre." }
+  - { date: 2012, text: "The Seagull. Assistant projection design (designer: Paul Lieber); directed by Alexandru Mihail. Yale School of Drama." }
+  - { date: 2011, text: "Angels in America — Part 2: Perestroika. Assistant projection design (designer: Edward Morris); directed by Ron Van Lieu. Yale School of Drama." }
+
+archive_direction:
+  - { date: 2010, text: "Leer. Direction. BergARTS, Toronto." }
+  - { date: 2010, text: "Three Sisters. Assistant direction; directed by Cynthia Ashperger. Ryerson Theatre (Abrams), Toronto." }
+  - { date: 2009, text: "This Still Night. Co-direction with Meghan Gennings. Prague Fringe Festival. Spirit of the Fringe award, 2009." }
+  - { date: 2009, text: "Mother Courage. Assistant direction; directed by Richard Greenblatt. Ryerson Theatre, Toronto." }
+  - { date: 2007, text: "Koi-san. Direction. Theatre Glendon, Toronto." }
+  - { date: 2006, text: "Chimera: A Telling of Jekyll and Hyde. Direction. Theatre Glendon, Toronto." }
+
+archive_lighting:
+  - { date: 2010, text: "The Centre of Everything Civilized. Lighting design; directed by John Jack Patterson. Toronto Fringe Festival." }
+  - { date: 2010, text: "WET. Lighting design; directed by John Jack Patterson. Toronto Fringe Festival." }
+  - { date: 2009, text: "A Summer's Day. Lighting design; directed by Cynthia Ashperger. Alley Theatre, Toronto." }
+  - { date: 2009, text: "A Glendale Christmas. Lighting design; directed by Tom Haxell. Hamilton Fringe Festival." }
+  - { date: 2009, text: "Blood Buds. Lighting design; directed by Barbara Johnston. Ryerson Theatre (Abrams), Toronto." }
+  - { date: 2009, text: "Le Nez. Lighting design; directed by Rebecca Vandevelde. Theatre Glendon, Toronto." }
+  - { date: 2008, text: "LOFT Christmas Concert. Lighting design. St. James Cathedral, Toronto." }
+  - { date: 2008, text: "Romeo & Juliet. Lighting design; directed by Ian Watson. Ryerson Theatre (Abrams), Toronto." }
+
+archive_installation:
+  - { date: 2014, text: "echo::system Action Station #2: The Desert. Video design and system design team; choreography by Grisha Coleman. ACCAD, The Ohio State University." }
+  - { date: 2014, text: "TECHknowSELF. Wrote, directed, and designed this multimedia performance (MFA thesis). Becton Engineering Center, Yale University." }
+  - { date: 2013, text: "Water Closeted (projection installation). Gallery + Drama, Yale University Art Gallery." }
+  - { date: 2013, text: "AlgoRhythym. Visual component for Matt Otto's sound performance thesis. Yale School of Drama." }
+  - { date: 2012, text: "On Guard (projection installation). Group showing, Gallery + Drama, Yale University Art Gallery." }
+
+archive_film:
+  # year conflict in sources: older CVs say 2006, CV 2025 and the Portfolio folder say 2009
+  - { date: 2009, text: "An Encounter (short). Cinematography and editing. Roving Eye Productions." }
+  - { date: 2009, text: "Transmigration (short). Cinematography and editing. Bergmann & Braune." }
+  - { date: 2005, text: "Most Guys Today (feature). Cinematography and editing. Greek Chorus Productions." }
+  - { date: 2004, text: "Who Goes to Movies? (short). Cinematography and editing. Hammergate Productions." }
+  - { date: 2003, text: "Blind Hindsight (short). Cinematography and editing. Bergmann & Braune." }
+
+archive_systems:
+  - { date: 2018, text: "Parodos Festival. Watchout programming and system design. Ryerson School of Performance, Toronto." }
+  - { date: 2017, text: "Slaughterhouse/Requiem. QLab programming and system design. Fleck Dance Theatre, Toronto." }
+  - { date: 2016, text: "Peace. Watchout programming and system design. Ryerson Theatre, Toronto." }
+  - { date: 2016, text: "YET (Ryerson Dances). QLab programming and system design. Ryerson Theatre, Toronto." }
+  - { date: 2016, text: "SW Steakhouse (WorldStage). D3, Widget Designer, and BlackTrax programming for a permanent dining stage show with 4K projection mapping, LED wall, and live automation tracking. Wynn Palace Cotai, Macau SAR, PRC." }
+  - { date: 2016, text: "Propeller Fest (WorldStage). Pandora server technician and programmer; three LED walls supporting Nokia Bell Labs' Human Digital Orchestra. Pier A, Hoboken, USA." }
+  - { date: 2016, text: "Maya & Marty (WorldStage). Pandora server technician, Widget Designer and Pandora programming; six-panel mobile LED wall. NBC Studios, New York City." }
+  - { date: 2015, text: "Waterfall (WorldStage). Pandora server technician and programmer; projection-mapped set with six projectors tracking automated set pieces. 5th Avenue Theatre, Seattle." }
+  - { date: 2015, text: "Intel Developer Forum (WorldStage). Watchout server technician and Widget Designer programmer; main keynote hall. Moscone Center West, San Francisco." }
+  - { date: 2015, text: "Boehringer Ingelheim product launch (WorldStage). D3 server technician and Widget Designer programmer; tracking projection surface. The Venetian, Las Vegas." }
+  - { date: 2015, text: "NCM Upfront (WorldStage). Pandoras Box server technician and content manager. AMC Theatre, New York City." }
+  - { date: 2015, text: "Road of Promise (WorldStage). Watchout server technician; projection design by Wendall Harrington. Carnegie Hall, New York City." }
+  - { date: 2015, text: "NYU Tisch Gala (WorldStage). Watchout programming and server technician. Jazz @ Lincoln Center, New York City." }
+  - { date: 2015, text: "BET Upfront Party (WorldStage). Brightsign system manager. Jazz @ Lincoln Center, New York City." }
+  - { date: 2015, text: "Sanofi product launch (WorldStage). D3 server technician and content manager; five flying automated LED screens. Hilton Anatole, Dallas." }
+  - { date: 2015, text: "Intel booth, CES 2015 (WorldStage). Media server technician and operator. Las Vegas Convention Center." }
+  - { date: 2014, text: "Incorporeus. Projection system design, Isadora programming, and live video. Ross Creek Centre for the Arts residency, NS." }
+  - { date: 2014, text: "echo::system Action Station #2: The Desert. Projection system design, Isadora programming, show control design and programming. ACCAD residency, The Ohio State University." }
+  - { date: 2014, text: "The World is Round. Projection system design and implementation (projection design: Hannah Wasileski); Obie Award-winning production by Ripe Time. BAM Fisher, Brooklyn." }
+  - { date: 2014, text: "La Bohème. Projection system design and Watchout programming. Yale Opera, New Haven." }
+  - { date: 2013, text: "AlgoRhythym. Projection system design, Isadora programming, show control design and programming. Yale School of Drama." }
+  - { date: 2012, text: "Dear Elizabeth. Watchout programming. Yale Repertory Theatre." }
+  - { date: 2012, text: "THIS. Projection system design and Watchout programming. Yale Cabaret." }
+  - { date: 2012, text: "The Fatal Eggs. Projection system consultation. Yale Cabaret." }
+  - { date: 2011, text: "Doctor Faustus Lights the Lights. Watchout programming. Yale School of Drama." }
+  - { date: 2011, text: "Angels in America — Part 2: Perestroika. Watchout programming. Yale School of Drama." }
+
 pending_submissions:
   - { date: 2027, text: "Unseen/Witness: Ghostpass — Almost Alchemy. Submitted for Prague Quadrennial 2027. (List publicly only if accepted.)" }
 
@@ -205,19 +323,22 @@ supervision:
     - { date: 2018, text: "Michael Castledine, MDM (Supervisor), \"Extending the human umwelt: Reframing our understanding of an environment via mixed reality and digital soundscapes/visualizations.\" 2018." }
     - { date: 2017, text: "Soo Mahabir, MDM (Supervisor), \"The A.I. Storyteller: Perpetuating Orality Using Developments in Machine Learning.\" 2017." }
 
+# terms verified against Annual Reports 2017–2025 (Google Drive), July 2026;
+# no 2024-25 annual report exists, so F2024/W2025 terms are unverifiable
 teaching:
-  - "PFZ 100 — Performance Foundation (F2025) (created course)"
-  - "THP 350 — Projection Design (F 2019–24) (created course)"
-  - "THP 301–403 — Production Technique (FW 2016–present)"
-  - "THP 403 — Travel Intensive to Oulu, Finland (W 2024)"
+  - "PFZ 100 — Performance Foundation (F 2025) (created course)"
+  - "THP 400 — Creative Performance Studies VII: The Frankenstein Project (F 2025) (created course, with Debashis Sinha)"
   - "FCD 816 — Global Campus Studio (F 2025)"
-  - "FCD 230 — New York Experience (S 2025)"
-  - "THP 800 — Independent Study (W 2017–24)"
+  - "FCD 230 — New York City Experience: Creative Enterprise (S 2025) (created travel intensive)"
+  - "THP 403 — Travel Intensive to Oulu, Finland (F 2024)"
+  - "THP 350 — Projection Design (F 2019–24) (created course)"
+  - "THP 301–403 — Production Technique (W 2017 – F 2022)"
+  - "THP 800 — Independent Study (W 2017–20, F 2020, W 2022, W 2024)"
   - "THT 582 — Show Systems Engineering (W 2020, F 2021, F 2023) (redesigned course)"
   - "THT 582 — Scenic Automation (F 2017)"
   - "THP 500 — Conceiving the Production (F 2018)"
-  - "THF 501 — Research Methods (W 2018)"
-  - "THP 102 — Production Technique II (W 2017, 2022–24) (projection design section)"
+  - "THF 501 — Research Methods (W 2018–19)"
+  - "THP 102 — Production Technique II (W 2017, 2021–24) (lighting section 2017; projection design section 2022–24)"
   - "THP 202 — Production Technique IV (W 2018–24) (projection design section)"
   - "THP 660 — Projection Design: Special Topics (W 2022) (created course)"
   - "THF 101 — Elements of Production (F 2016, 2019, 2020)"

@@ -9,6 +9,8 @@ cv.yaml  ──►  build.py  ──►  output/*.md  ──►  GitHub Action  
 prose/sshrc-prose.md ─┘ (appended to the SSHRC doc)
 ```
 
+Four documents: **Complete** (public CV), **OCGS** (follows the official OCGS template sections a–i; funding renders as tables from the structured fields on funding entries; publications categorized via `ocgs_category` with a life-time count summary), **SSHRC-Contributions** (six-year window + prose), and **FullRecord** (the "full life file": everything, including `archive_*` sections — the complete historical design/production record that stays out of the other three).
+
 Entry sections render as two-column tables (bold date | item). The borders are removed by `assets/pdf-style.tex` (PDF, via pandoc `-H`) and `assets/reference.docx` (docx, via `--reference-doc`; its Table style has no borders and a flush-left first column). Column widths come from the dash ratio in the pipe-table separator row that `build.py` emits (~24/76).
 
 ## Rules
@@ -18,7 +20,8 @@ Entry sections render as two-column tables (bold date | item). The borders are r
 3. **Dates**: `YYYY`, `YYYY-MM`, or `YYYY-MM-DD`; `end: present` for ongoing roles.
 4. **Flags**: `refereed: true` (anonymous peer review of the full work), `other_refereed: true` (reviewed conference presentations/posters), `sshrc: true` (output of SSHRC funding — renders as `*` in the SSHRC doc), `sshrc_exclude: true` (forthcoming entry kept out of the SSHRC doc, e.g. drafts not yet submitted). No flag → non-refereed.
 4a. **Internal notes go in YAML comments** (`# TODO: ...` on their own line), never inside `text:` strings — anything in a string is rendered in every CV. Public-facing status (e.g. "in press") goes in `status:`; editor reminders go in comments.
-5. **SSHRC prose** (significance statements, training narrative, relevant experience) lives in `prose/sshrc-prose.md` and changes per application. The list sections regenerate automatically with a rolling six-year filter; the prose does not — review it before each submission.
+5. **SSHRC prose** (significance statements, training narrative, relevant experience) lives in `prose/sshrc-prose.md` as a **generic base**: HTML-comment placeholders mark where each application's specific tie-ins go (comments don't render). The list sections regenerate automatically with a rolling six-year filter; the prose does not — tailor it before each submission.
+5a. **Archival credits** (pre-2019 design/lighting/direction/film/systems work, early employment) go in the `archive_*` sections and appear only in the FullRecord document. New historical finds go there, not in the main sections.
 6. After editing, run `python build.py` locally (needs `pyyaml`) or just push — CI rebuilds and commits `output/`.
 
 ## Style
@@ -28,11 +31,6 @@ Canadian English (colour, centre); Oxford comma; semicolons over em-dashes. Cita
 ## Known TODOs (search `TODO` in cv.yaml)
 
 - Page count and status confirmation for the transcript Verlag chapter (*Robots and Other Artificial Agents on Stage*)
-- Pre-2019 design credits not yet entered in `creative` (full lists in "Bergmann - CV (Living Document)" on Google Drive and "Old/Master/MFB CV Master.docx")
-- UKAI Projects board start date: cv.yaml says 2024-11, CCV (Jan 2026) says 2025/4 — confirm
-- Gold Medal selection committee end year: tenure binder says 2022, OCGS 2025 says 2023 (using 2023)
-- Rough Draft "Performance Art: New Magic" (2017): CCV lists it as co-authored — confirm co-authors
-- PhD expected year: cv.yaml says 2027; the 2025-era CVs said 2026 (cv.yaml presumed current)
 
 ## Facts that trip people up
 
@@ -45,6 +43,9 @@ Canadian English (colour, centre); Oxford comma; semicolons over em-dashes. Cita
 - LTEF "Creative Laboratory Project" grant: 2018 (funding period 2017/1–2018/1 per CCV); the old "2016" note was unfounded — no source says 2016
 - Eldon Elder Fellowship amount: $40,000 USD; the CCV's "50,000" is the CAD equivalent, not a conflict
 - Augmented Symphony author order: Bouchard, Cristiá, Robert, Bergmann (Bergmann last)
+- UKAI Projects board: April 2025 (Michael confirmed; CV 2025.docx's "2024" is wrong)
+- Rough Draft "Performance Art: New Magic" (2017) is solo-authored; the CCV's co-author listing is wrong
+- Gold Medal committee: 2020–2023; PhD expected 2027; Watchout wording stays as-is (all confirmed July 2026)
 - "Beyond Tools: Reimaging Technology…" (PQ Symposium 2024): "Reimaging" is what appeared on the presentation — do not "correct" to "Reimagining"
 - The Design + Technology Lab Associate Director role is deliberately not listed (Michael's choice, July 2026)
 

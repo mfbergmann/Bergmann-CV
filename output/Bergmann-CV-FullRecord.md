@@ -1,9 +1,12 @@
-# Curriculum Vitae — Michael F Bergmann
+# Full Record — Michael F Bergmann
 
 Associate Professor, Performance, The Creative School, Toronto Metropolitan University  
 ORCID: 0000-0002-5698-8121 · mfb@torontomu.ca · https://bergmann.ai
 
 <!-- Generated 2026-07-22 from cv.yaml — do not edit outputs directly. -->
+
+
+*The complete record. Archive sections at the end hold historical credits excluded from the rendered CVs; filter from here when building any application-specific version.*
 
 
 ## Employment
@@ -16,6 +19,8 @@ ORCID: 0000-0002-5698-8121 · mfb@torontomu.ca · https://bergmann.ai
 | **2017 – present** | Full Member, Yeates School of Graduate Studies, TMU |
 | **2016-08 – 2019-08** | Assistant Professor (Limited Term Faculty), Performance, The Creative School, TMU |
 | **2014 – 2016** | Technology Specialist / Media Server Programmer, WorldStage LAB, San Francisco / New York |
+| **2014** | Design associate, Wendall Harrington Studio, New York / New Haven (summer 2014) |
+| **2011-09 – 2014-05** | Teaching Assistant, Yale School of Drama, Yale University |
 | **2007 – 2010** | Projection Specialist, Meet The Dude Productions, Toronto |
 
 
@@ -58,6 +63,8 @@ ORCID: 0000-0002-5698-8121 · mfb@torontomu.ca · https://bergmann.ai
 | **2024-06** | Artist-in-residence, SÍM Residency (with UKAI Projects), Reykjavík, Iceland — Shipwreck, June 2–30, 2024 |
 | **2022-04** | Artist-in-residence, Ingenuity Labs Research Institute, Queen's University, Kingston |
 | **2021-10 – 2022-10** | Ferment AI Residency artist; residency output presented in Berlin, October 2022 |
+| **2014-10** | Artist-in-residence, Ross Creek Centre for the Arts, NS — Incorporeus |
+| **2014-06** | Workshop residency, ACCAD, The Ohio State University — echo::system Action Station #2: The Desert |
 
 
 ## Publications
@@ -76,6 +83,13 @@ ORCID: 0000-0002-5698-8121 · mfb@torontomu.ca · https://bergmann.ai
 |:------------------------|:----------------------------------------------------------------------------|
 | **2026** | Bergmann, M. "Cultivating Empathy through Robotic Performance." Chapter in Robots and Other Artificial Agents on Stage: Theoretical Concepts and Artistic Practices, edited by Erica Magris and Izabella Pluta, transcript Verlag (Theatre Studies series). [in press] |
 | **2026** | Bergmann, M., and McLeod, K. "Improvising with Commercial AI: Questions of Care and Ethics." [in draft] |
+
+
+## Pending Submissions (not yet public)
+
+|  |  |
+|:------------------------|:----------------------------------------------------------------------------|
+| **2027** | Unseen/Witness: Ghostpass — Almost Alchemy. Submitted for Prague Quadrennial 2027. (List publicly only if accepted.) |
 
 
 ## Conference Presentations
@@ -276,3 +290,121 @@ Completed: 9 Master's, 0 Doctoral, 0 Postdoctoral. In progress: 0.
 | **2020** | "FCAD students embrace opportunity to redefine performance." Nicole Bartnicki, Ryerson University, May 2020. |
 | **2019** | "Premiere of robot dance performance launches Creative Technology Lab." Ryerson University, November 2019. |
 | **2015** | Q&A Personal interview, Meghan Perkins, Live Design Magazine, 2015. |
+
+
+# Archive: Complete Design and Production Record
+
+
+## Projection Design
+
+|  |  |
+|:------------------------|:----------------------------------------------------------------------------|
+| **2019** | Crossing Borders. Projection co-design with Kristen Ferguson; directed by Gill Foster. International Arts Youth Festival, Kingston upon Thames, UK. |
+| **2019** | Foreign Tongue. Projection design; directed by Cynthia Ashperger. NextStage Festival, Toronto. |
+| **2018** | Nuptials (feature film). Projection design and live in-camera VFX; directed by Sean Braune. Para-sight Productions. (Released 2026; see Creative Research Output.) |
+| **2018** | Crossing Borders. Projection co-design with Kristen Ferguson; directed by Peggy Shannon and Gill Foster. Parodos Festival, Toronto. |
+| **2018** | 291. Projection co-design with Kristen Ferguson; directed by Rebecca Ballarin. Parodos Festival, Toronto. |
+| **2017** | Slaughterhouse/Requiem. Projection design; choreography by Belinda McGuire. Harbourfront NextSteps, Fleck Dance Theatre, Toronto. |
+| **2016** | YET. Projection design; choreography by Heidi Strauss. Ryerson Dances, Ryerson Theatre, Toronto. |
+| **2016** | Slaughterhouse/Requiem. Projection design; choreography by Belinda McGuire. Belinda McGuire Dance Projects. |
+| **2014** | Incorporeus. Projection design; choreography by Belinda McGuire. Belinda McGuire Dance Projects. |
+| **2014** | He Left Quietly. Projection design; directed by Leora Morris. SummerWorks Performance Festival, Toronto. Best Production, 2014. |
+| **2013 – 2014** | Accidental Death of an Anarchist. Projection design; directed by Christopher Bayes. Yale Repertory Theatre / Berkeley Repertory Theatre. |
+| **2012** | Iphigenia Among the Stars. Projection design; directed by Jack Tamburri. Yale School of Drama. |
+| **2012** | Fox Play. Projection design; directed by Lileana Blain-Cruz. Yale School of Drama. |
+| **2012** | Dracula. Projection design; directed by Jack Tamburri. Yale Cabaret. |
+| **2011** | Creation 2011. Projection design; directed by Sarah Krasnow. Yale Cabaret. |
+| **2010** | Leer. Projection design. BergARTS, Toronto. |
+| **2006** | Terre Rouge. Projection design; directed by Guillaume Bernardi. Theatre Glendon, Toronto. |
+| **2006** | The Marriage of Bette and Boo. Projection design; directed by Mel Couture. Theatre Glendon, Toronto. |
+
+
+## Assistant Projection Design
+
+|  |  |
+|:------------------------|:----------------------------------------------------------------------------|
+| **2017** | Disney's Newsies: The Broadway Musical! (film adaptation). Assistant projection design (designer: Daniel Brodie); directed by Jeff Calhoun. Disney Theatrical. |
+| **2014** | Newsies, First National Tour. Assistant projection design (designer: Daniel Brodie); directed by Jeff Calhoun. Disney Theatrical. |
+| **2013** | In a Year With 13 Moons. Assistant projection design (designer: Peter Nigrini); directed by Robert Woodruff. Yale Repertory Theatre. |
+| **2012** | The Seagull. Assistant projection design (designer: Paul Lieber); directed by Alexandru Mihail. Yale School of Drama. |
+| **2011** | Angels in America — Part 2: Perestroika. Assistant projection design (designer: Edward Morris); directed by Ron Van Lieu. Yale School of Drama. |
+
+
+## Direction
+
+|  |  |
+|:------------------------|:----------------------------------------------------------------------------|
+| **2010** | Leer. Direction. BergARTS, Toronto. |
+| **2010** | Three Sisters. Assistant direction; directed by Cynthia Ashperger. Ryerson Theatre (Abrams), Toronto. |
+| **2009** | This Still Night. Co-direction with Meghan Gennings. Prague Fringe Festival. Spirit of the Fringe award, 2009. |
+| **2009** | Mother Courage. Assistant direction; directed by Richard Greenblatt. Ryerson Theatre, Toronto. |
+| **2007** | Koi-san. Direction. Theatre Glendon, Toronto. |
+| **2006** | Chimera: A Telling of Jekyll and Hyde. Direction. Theatre Glendon, Toronto. |
+
+
+## Lighting Design
+
+|  |  |
+|:------------------------|:----------------------------------------------------------------------------|
+| **2010** | The Centre of Everything Civilized. Lighting design; directed by John Jack Patterson. Toronto Fringe Festival. |
+| **2010** | WET. Lighting design; directed by John Jack Patterson. Toronto Fringe Festival. |
+| **2009** | A Summer's Day. Lighting design; directed by Cynthia Ashperger. Alley Theatre, Toronto. |
+| **2009** | A Glendale Christmas. Lighting design; directed by Tom Haxell. Hamilton Fringe Festival. |
+| **2009** | Blood Buds. Lighting design; directed by Barbara Johnston. Ryerson Theatre (Abrams), Toronto. |
+| **2009** | Le Nez. Lighting design; directed by Rebecca Vandevelde. Theatre Glendon, Toronto. |
+| **2008** | LOFT Christmas Concert. Lighting design. St. James Cathedral, Toronto. |
+| **2008** | Romeo & Juliet. Lighting design; directed by Ian Watson. Ryerson Theatre (Abrams), Toronto. |
+
+
+## Installation and Video Art
+
+|  |  |
+|:------------------------|:----------------------------------------------------------------------------|
+| **2014** | echo::system Action Station #2: The Desert. Video design and system design team; choreography by Grisha Coleman. ACCAD, The Ohio State University. |
+| **2014** | TECHknowSELF. Wrote, directed, and designed this multimedia performance (MFA thesis). Becton Engineering Center, Yale University. |
+| **2013** | Water Closeted (projection installation). Gallery + Drama, Yale University Art Gallery. |
+| **2013** | AlgoRhythym. Visual component for Matt Otto's sound performance thesis. Yale School of Drama. |
+| **2012** | On Guard (projection installation). Group showing, Gallery + Drama, Yale University Art Gallery. |
+
+
+## Film
+
+|  |  |
+|:------------------------|:----------------------------------------------------------------------------|
+| **2009** | An Encounter (short). Cinematography and editing. Roving Eye Productions. |
+| **2009** | Transmigration (short). Cinematography and editing. Bergmann & Braune. |
+| **2005** | Most Guys Today (feature). Cinematography and editing. Greek Chorus Productions. |
+| **2004** | Who Goes to Movies? (short). Cinematography and editing. Hammergate Productions. |
+| **2003** | Blind Hindsight (short). Cinematography and editing. Bergmann & Braune. |
+
+
+## Projection and Live Event Systems
+
+|  |  |
+|:------------------------|:----------------------------------------------------------------------------|
+| **2018** | Parodos Festival. Watchout programming and system design. Ryerson School of Performance, Toronto. |
+| **2017** | Slaughterhouse/Requiem. QLab programming and system design. Fleck Dance Theatre, Toronto. |
+| **2016** | Peace. Watchout programming and system design. Ryerson Theatre, Toronto. |
+| **2016** | YET (Ryerson Dances). QLab programming and system design. Ryerson Theatre, Toronto. |
+| **2016** | SW Steakhouse (WorldStage). D3, Widget Designer, and BlackTrax programming for a permanent dining stage show with 4K projection mapping, LED wall, and live automation tracking. Wynn Palace Cotai, Macau SAR, PRC. |
+| **2016** | Propeller Fest (WorldStage). Pandora server technician and programmer; three LED walls supporting Nokia Bell Labs' Human Digital Orchestra. Pier A, Hoboken, USA. |
+| **2016** | Maya & Marty (WorldStage). Pandora server technician, Widget Designer and Pandora programming; six-panel mobile LED wall. NBC Studios, New York City. |
+| **2015** | Waterfall (WorldStage). Pandora server technician and programmer; projection-mapped set with six projectors tracking automated set pieces. 5th Avenue Theatre, Seattle. |
+| **2015** | Intel Developer Forum (WorldStage). Watchout server technician and Widget Designer programmer; main keynote hall. Moscone Center West, San Francisco. |
+| **2015** | Boehringer Ingelheim product launch (WorldStage). D3 server technician and Widget Designer programmer; tracking projection surface. The Venetian, Las Vegas. |
+| **2015** | NCM Upfront (WorldStage). Pandoras Box server technician and content manager. AMC Theatre, New York City. |
+| **2015** | Road of Promise (WorldStage). Watchout server technician; projection design by Wendall Harrington. Carnegie Hall, New York City. |
+| **2015** | NYU Tisch Gala (WorldStage). Watchout programming and server technician. Jazz @ Lincoln Center, New York City. |
+| **2015** | BET Upfront Party (WorldStage). Brightsign system manager. Jazz @ Lincoln Center, New York City. |
+| **2015** | Sanofi product launch (WorldStage). D3 server technician and content manager; five flying automated LED screens. Hilton Anatole, Dallas. |
+| **2015** | Intel booth, CES 2015 (WorldStage). Media server technician and operator. Las Vegas Convention Center. |
+| **2014** | Incorporeus. Projection system design, Isadora programming, and live video. Ross Creek Centre for the Arts residency, NS. |
+| **2014** | echo::system Action Station #2: The Desert. Projection system design, Isadora programming, show control design and programming. ACCAD residency, The Ohio State University. |
+| **2014** | The World is Round. Projection system design and implementation (projection design: Hannah Wasileski); Obie Award-winning production by Ripe Time. BAM Fisher, Brooklyn. |
+| **2014** | La Bohème. Projection system design and Watchout programming. Yale Opera, New Haven. |
+| **2013** | AlgoRhythym. Projection system design, Isadora programming, show control design and programming. Yale School of Drama. |
+| **2012** | Dear Elizabeth. Watchout programming. Yale Repertory Theatre. |
+| **2012** | THIS. Projection system design and Watchout programming. Yale Cabaret. |
+| **2012** | The Fatal Eggs. Projection system consultation. Yale Cabaret. |
+| **2011** | Doctor Faustus Lights the Lights. Watchout programming. Yale School of Drama. |
+| **2011** | Angels in America — Part 2: Perestroika. Watchout programming. Yale School of Drama. |

@@ -36,7 +36,7 @@ ORCID: 0000-0002-5698-8121 · mfb@torontomu.ca · https://bergmann.ai
 | **2019** | SEDA Recognised Teacher, University Teaching Development Programme (SEDA, UK and Ireland) |
 | **2019** | Apple Certified Teacher, Apple |
 | **2018** | Watchout Certified User and Operator, Dataton |
-| **2015** | Pandoras Box Certified, Christie |
+| **2015** | Pandoras Box Media Server Training (Basic, Advanced, Expert Warping & Particles, Widget Designer), coolux |
 
 
 ## Awards and Distinctions
@@ -47,6 +47,7 @@ ORCID: 0000-0002-5698-8121 · mfb@torontomu.ca · https://bergmann.ai
 | **2014** | Best Production: He Left Quietly, SummerWorks Performance Festival (as designer) |
 | **2012 – 2014** | Eldon Elder Fellowship, Yale University ($40,000 USD; held throughout the MFA) |
 | **2009** | Spirit of the Fringe, Prague Fringe Festival |
+| **2006** | Short-listed, Prix Molière, Theatre Glendon |
 
 
 ## Residencies and Invited Positions
@@ -56,17 +57,17 @@ ORCID: 0000-0002-5698-8121 · mfb@torontomu.ca · https://bergmann.ai
 | **2025-12 – 2026-02** | Mentor, Setsubun Digital Media Residency, Japanese Canadian Cultural Centre, Toronto |
 | **2024-06** | Artist-in-residence, SÍM Residency (with UKAI Projects), Reykjavík, Iceland — Shipwreck, June 2–30, 2024 |
 | **2022-04** | Artist-in-residence, Ingenuity Labs Research Institute, Queen's University, Kingston |
-| **2021-09 – 2022** | Ferment AI Residency artist |
+| **2021-10 – 2022-10** | Ferment AI Residency artist; residency output presented in Berlin, October 2022 |
 
 
 ## Publications
 
 |  |  |
 |:------------------------|:----------------------------------------------------------------------------|
-| **2022-07** | Bouchard, D., Cristiá, C., Bergmann, M., and Robert, D. (2022). "Augmented Symphony: An augmented reality application for immersive music listening." Proceedings of EVA London 2022, Electronic Workshops in Computing, BCS Learning & Development, London, UK, July 4–8, 2022. DOI: 10.14236/ewic/EVA2022.39. |
+| **2022-07** | Bouchard, D., Cristiá, C., Robert, D., and Bergmann, M. (2022). "Augmented Symphony: An augmented reality application for immersive music listening." Proceedings of EVA London 2022, Electronic Workshops in Computing, BCS Learning & Development, London, UK, July 4–8, 2022, pp. 208–209. DOI: 10.14236/ewic/EVA2022.39. |
 | **2022-05** | Cristiá, C., Bouchard, D., Bergmann, M., et al. (2022). Orchestra Remote Delivery during COVID-19 Database. Open data set, Open Science Framework, May 5, 2022. DOI: 10.17605/OSF.IO/WCDU2. |
 | **2021** | Bergmann, M. F., and McGuire, B. (2021). "Uncanny Text." Belfield Literary Review: New TransAtlantic Dialogues, ed. Gregory Betts and Lucy Collins, Spring 2021, pp. 96–99. |
-| **2017-11** | Bergmann, M. F. (2017). "Performance Art: New Magic." Rough Draft, Vol. 2, No. 1, November 7, 2017. |
+| **2017-11** | Bergmann, M. F. (2017). "Performance Art: New Magic." Rough Draft, Vol. 2, No. 1, ed. Laurence Butet-Roch, November 7, 2017. |
 
 
 ## Forthcoming
@@ -86,6 +87,7 @@ ORCID: 0000-0002-5698-8121 · mfb@torontomu.ca · https://bergmann.ai
 | **2024-03** | Bergmann, M., Nathan, H., and Vercosa, J. "Robotics, AI, and the Future of Theatre." USITT Conference & Stage Expo, Seattle, WA, March 20, 2024. |
 | **2023-06** | Bergmann, M., with ChatGPT. "Envisioning theatre with non-human collaborators: A Paramanifesto." CATR Conference, Dalhousie University, Halifax, NS, June 2023. |
 | **2023-06** | Bergmann, M. "AI Sentience." Panel on the Implications of AI for Performance Theorists, CATR Conference (online), June 2023. |
+| **2022-07** | Bergmann, M. "Augmented Symphony: An augmented reality application for immersive music listening." Paper presented at EVA London 2022, London, UK, July 2022. |
 | **2022-05** | Bergmann, M., and Thomson, B. "Stepping Back In: Taking the best of virtual delivery to a new in-person experience." Learning & Teaching Conference, TMU, May 2022. |
 | **2022-05** | Bergmann, M. "Student-driven curriculum development for creative practice." Learning & Teaching Conference, TMU, May 2022. |
 | **2021-10** | Bergmann, M. "Cultivating Empathy through Robotic Performance." Limits of the Human, Machines Without Limits? Contemporary stage and robotics, University of Lausanne (online), October 2021. |
@@ -104,6 +106,7 @@ ORCID: 0000-0002-5698-8121 · mfb@torontomu.ca · https://bergmann.ai
 | **2020-11** | Bergmann, M., and Anderson, J. "l'automate: Robotic Controlled Apparatuses for Circus Performance." Poster, RUBIX, TMU (online), November 2020. |
 | **2019-11** | Bergmann, M., Zhang, L., Laberge-Côté, L., and McGuire, B. "Human-robot Interactions in Dance." Poster, RUBIX, TMU, November 2019. |
 | **2018-11** | Bergmann, M. "TheatAR: A previsualization system for theatrical design." Poster, RUBIX, TMU, November 2018. |
+| **2018-05** | Bosyy, P., and Bergmann, M. "The Creative Laboratory Project." Poster, Ryerson Learning & Teaching Conference, May 2018. |
 | **2017-10** | Bergmann, M. "Shadow-selves: Projection as a medium of exploring reflections of self in Belinda McGuire's Slaughterhouse/Requiem." Poster, RUBIX, TMU, October 2017. |
 | **2017-10** | Bergmann, M. "Projecting on film: the surreal effect of rear projected backgrounds in the film Nuptials." Poster, RUBIX, TMU, October 2017. |
 
@@ -196,6 +199,9 @@ Completed: 9 Master's, 0 Doctoral, 0 Postdoctoral. In progress: 0.
 - PFZ 100 — Performance Foundation (F2025) (created course)
 - THP 350 — Projection Design (F 2019–24) (created course)
 - THP 301–403 — Production Technique (FW 2016–present)
+- THP 403 — Travel Intensive to Oulu, Finland (W 2024)
+- FCD 816 — Global Campus Studio (F 2025)
+- FCD 230 — New York Experience (S 2025)
 - THP 800 — Independent Study (W 2017–24)
 - THT 582 — Show Systems Engineering (W 2020, F 2021, F 2023) (redesigned course)
 - THT 582 — Scenic Automation (F 2017)
@@ -233,12 +239,13 @@ Completed: 9 Master's, 0 Doctoral, 0 Postdoctoral. In progress: 0.
 | **2020 – 2021** | Member, Departmental Hiring Committee, Performance, TMU |
 | **2020 – present** | Coordinator, Global Campus Studio course, TMU |
 | **2020** | Member, FCAD Virtual Task Force, TMU |
-| **2020** | Member, Limited Return of Human Participant & Field SRC Activity Advisory Group, TMU |
+| **2020-09 – 2021-09** | Member, Limited Return of Human Participant & Field SRC Activity Advisory Group, TMU |
 | **2019 – 2022** | Member, Academic Integrity Committee, TMU |
 | **2018 – 2022** | School of Performance representative, RFA (now TFA) Representative's Council, TMU |
 | **2018 – 2023** | Member, Creative Innovation Studio Curatorial Committee, The Creative School, TMU |
 | **2018 – 2020** | FCAD Teaching Committee; FCAD Interdisciplinary Advisory Committee |
-| **2017 – 2022** | Member, Curriculum Committee, School of Performance, TMU |
+| **2017 – present** | Member, Curriculum Committee, School of Performance, TMU |
+| **2017 – present** | Member, Production Department Committee, School of Performance, TMU |
 | **2016 – 2021** | Member, Stage Committee, Arts & Letters Club of Toronto |
 
 

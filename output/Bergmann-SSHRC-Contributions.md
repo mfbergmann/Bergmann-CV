@@ -12,7 +12,7 @@
 
 |  |  |
 |:------------------------|:----------------------------------------------------------------------------|
-| **2022-07** | \* Bouchard, D., Cristiá, C., Bergmann, M., and Robert, D. (2022). "Augmented Symphony: An augmented reality application for immersive music listening." Proceedings of EVA London 2022, Electronic Workshops in Computing, BCS Learning & Development, London, UK, July 4–8, 2022. DOI: 10.14236/ewic/EVA2022.39. |
+| **2022-07** | \* Bouchard, D., Cristiá, C., Robert, D., and Bergmann, M. (2022). "Augmented Symphony: An augmented reality application for immersive music listening." Proceedings of EVA London 2022, Electronic Workshops in Computing, BCS Learning & Development, London, UK, July 4–8, 2022, pp. 208–209. DOI: 10.14236/ewic/EVA2022.39. |
 
 
 ## Other refereed contributions
@@ -24,6 +24,7 @@
 | **2024-03** | Bergmann, M., Nathan, H., and Vercosa, J. "Robotics, AI, and the Future of Theatre." USITT Conference & Stage Expo, Seattle, WA, March 20, 2024. |
 | **2023-06** | Bergmann, M., with ChatGPT. "Envisioning theatre with non-human collaborators: A Paramanifesto." CATR Conference, Dalhousie University, Halifax, NS, June 2023. |
 | **2023-06** | Bergmann, M. "AI Sentience." Panel on the Implications of AI for Performance Theorists, CATR Conference (online), June 2023. |
+| **2022-07** | \* Bergmann, M. "Augmented Symphony: An augmented reality application for immersive music listening." Paper presented at EVA London 2022, London, UK, July 2022. |
 | **2022-05** | Bergmann, M., and Thomson, B. "Stepping Back In: Taking the best of virtual delivery to a new in-person experience." Learning & Teaching Conference, TMU, May 2022. |
 | **2022-05** | Bergmann, M. "Student-driven curriculum development for creative practice." Learning & Teaching Conference, TMU, May 2022. |
 | **2021-10** | Bergmann, M. "Cultivating Empathy through Robotic Performance." Limits of the Human, Machines Without Limits? Contemporary stage and robotics, University of Lausanne (online), October 2021. |

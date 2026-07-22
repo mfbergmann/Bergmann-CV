@@ -28,8 +28,11 @@ Canadian English (colour, centre); Oxford comma; semicolons over em-dashes. Cita
 ## Known TODOs (search `TODO` in cv.yaml)
 
 - Page count and status confirmation for the transcript Verlag chapter (*Robots and Other Artificial Agents on Stage*)
-- Pre-2019 theatre/dance design credits not yet entered in `creative` (full list exists in "Bergmann - CV (Living Document)" on Google Drive)
-- LTEF grant year resolved: 2018 (four sources agree); the SSHRC Web CV still says 2016 and should be corrected there
+- Pre-2019 design credits not yet entered in `creative` (full lists in "Bergmann - CV (Living Document)" on Google Drive and "Old/Master/MFB CV Master.docx")
+- UKAI Projects board start date: cv.yaml says 2024-11, CCV (Jan 2026) says 2025/4 — confirm
+- Gold Medal selection committee end year: tenure binder says 2022, OCGS 2025 says 2023 (using 2023)
+- Rough Draft "Performance Art: New Magic" (2017): CCV lists it as co-authored — confirm co-authors
+- PhD expected year: cv.yaml says 2027; the 2025-era CVs said 2026 (cv.yaml presumed current)
 
 ## Facts that trip people up
 
@@ -39,6 +42,9 @@ Canadian English (colour, centre); Oxford comma; semicolons over em-dashes. Cita
 - *Nuptials*: official release date is 2026-02-13 (Freestyle Digital Media); design work 2018; award 2022
 - Michael is a PhD student (not yet ABD) — not "candidate"
 - Co-UPD role ended July 2023
+- LTEF "Creative Laboratory Project" grant: 2018 (funding period 2017/1–2018/1 per CCV); the old "2016" note was unfounded — no source says 2016
+- Eldon Elder Fellowship amount: $40,000 USD; the CCV's "50,000" is the CAD equivalent, not a conflict
+- Augmented Symphony author order: Bouchard, Cristiá, Robert, Bergmann (Bergmann last)
 - "Beyond Tools: Reimaging Technology…" (PQ Symposium 2024): "Reimaging" is what appeared on the presentation — do not "correct" to "Reimagining"
 - The Design + Technology Lab Associate Director role is deliberately not listed (Michael's choice, July 2026)
 

@@ -41,19 +41,21 @@ qualifications:
   - { date: 2019, text: "SEDA Recognised Teacher, University Teaching Development Programme (SEDA, UK and Ireland)" }
   - { date: 2019, text: "Apple Certified Teacher, Apple" }
   - { date: 2018, text: "Watchout Certified User and Operator, Dataton" }
-  - { date: 2015, text: "Pandoras Box Certified, Christie" }
+  # source CVs list four separate coolux trainings, no "Certified" credential; coolux later acquired by Christie
+  - { date: 2015, text: "Pandoras Box Media Server Training (Basic, Advanced, Expert Warping & Particles, Widget Designer), coolux" }
 
 awards:
   - { date: 2022, text: "Best World Feature Film: Nuptials, Austin Revolution Film Festival (as producer)" }
   - { date: 2014, text: "Best Production: He Left Quietly, SummerWorks Performance Festival (as designer)" }
   - { date: 2012, end: 2014, text: "Eldon Elder Fellowship, Yale University ($40,000 USD; held throughout the MFA)" }
   - { date: 2009, text: "Spirit of the Fringe, Prague Fringe Festival" }
+  - { date: 2006, text: "Short-listed, Prix Molière, Theatre Glendon" }
 
 invited_positions:
   - { date: 2025-12, end: 2026-02, text: "Mentor, Setsubun Digital Media Residency, Japanese Canadian Cultural Centre, Toronto" }
   - { date: 2024-06, text: "Artist-in-residence, SÍM Residency (with UKAI Projects), Reykjavík, Iceland — Shipwreck, June 2–30, 2024" }
   - { date: 2022-04, text: "Artist-in-residence, Ingenuity Labs Research Institute, Queen's University, Kingston" }
-  - { date: 2021-09, end: 2022, text: "Ferment AI Residency artist" }
+  - { date: 2021-10, end: 2022-10, text: "Ferment AI Residency artist; residency output presented in Berlin, October 2022" }
 
 memberships:
   - { date: 2025, end: present, text: "Canadian Artificial Intelligence Association" }
@@ -70,6 +72,7 @@ service:
   - { date: 2025-07, end: present, text: "Member, Creative AI Hub Steering Committee, The Creative School, TMU" }
   - { date: 2025-02, end: present, text: "Member, USITT Research and Creative Endeavours Committee" }
   - { date: 2024-12, end: present, text: "Member, Faculty Tenure Committee, The Creative School, TMU" }
+  # start date TBC: CCV (Jan 2026) says 2025/4; CV 2025.docx says 2024
   - { date: 2024-11, end: present, text: "Board Member, UKAI Projects" }
   - { date: 2024-06, end: present, text: "Reviewer, International Journal of Performance Arts and Digital Media" }
   - { date: 2023-10, end: present, text: "Jury Member, CATR Scholarship and Grant Committee (Heather McCallum Scholarship, Robert Lawrence Scholarship, CATR Grants)" }
@@ -86,19 +89,21 @@ service:
   - { date: 2020, end: 2021, text: "Member, Departmental Hiring Committee, Performance, TMU" }
   - { date: 2020, end: present, text: "Coordinator, Global Campus Studio course, TMU" }
   - { date: 2020, text: "Member, FCAD Virtual Task Force, TMU" }
-  - { date: 2020, text: "Member, Limited Return of Human Participant & Field SRC Activity Advisory Group, TMU" }
+  - { date: 2020-09, end: 2021-09, text: "Member, Limited Return of Human Participant & Field SRC Activity Advisory Group, TMU" }
   - { date: 2019, end: 2022, text: "Member, Academic Integrity Committee, TMU" }
   - { date: 2018, end: 2022, text: "School of Performance representative, RFA (now TFA) Representative's Council, TMU" }
   # binder (2023) said ongoing — end year TBC with Michael
   - { date: 2018, end: 2023, text: "Member, Creative Innovation Studio Curatorial Committee, The Creative School, TMU" }
   - { date: 2018, end: 2020, text: "FCAD Teaching Committee; FCAD Interdisciplinary Advisory Committee" }
-  # service dossier says 2017–2022; the binder CV (July 2023) said ongoing — end year TBC with Michael
-  - { date: 2017, end: 2022, text: "Member, Curriculum Committee, School of Performance, TMU" }
+  # Bergmann - CV 2025.docx lists both as ongoing
+  - { date: 2017, end: present, text: "Member, Curriculum Committee, School of Performance, TMU" }
+  - { date: 2017, end: present, text: "Member, Production Department Committee, School of Performance, TMU" }
   - { date: 2016, end: 2021, text: "Member, Stage Committee, Arts & Letters Club of Toronto" }
 
 funding_external:
   - { date: 2024-05, text: "Erasmus+ staff mobility funding, OAMK, Oulu, Finland" }
   - { date: 2021, sshrc: true, text: "SSHRC Partnership Engage Grant, COVID-19 Special Initiative — \"Visual Music: Enhancing the National Arts Centre Orchestra's remote connection with their audience during COVID-19 social restrictions through innovative digital tools.\" PI: Cintia Cristiá; Co-Is: Michael Bergmann, David Bouchard. $24,620." }
+  # CCV lists 50,000 (CAD equivalent of the $40,000 USD); keep USD figure here
   - { date: 2012, end: 2014, text: "Eldon Elder Fellowship, Yale University. $40,000 USD." }
 
 funding_internal:
@@ -109,8 +114,8 @@ funding_internal:
   - { date: 2019, text: "FCAD Special Seed Grant — The Uncanny Robots Project. $4,000." }
   - { date: 2019, text: "The Creative School Travel Grant — UCD Dublin conference presentation. $2,000." }
   - { date: 2018, text: "Undergraduate Research Opportunity, OVPRI, Ryerson — \"Augmented-Reality based Pre-Visualization system for theatrical spaces.\" $9,888." }
-  # 2018 confirmed by four sources (OCGS 2025, Provost Award nomination, "3.5 Awards and grants",
-  # CV Living Document); the SSHRC Web CV's 2016 is an error to fix there
+  # 2018 confirmed by all CVs; the CCV gives the funding period as 2017/1–2018/1 (workshops in
+  # Jan 2017 and Jan 2018) and no source anywhere says 2016 — the old "2016" note was unfounded
   - { date: 2018, text: "Learning and Teaching Enhancement Fund, Ryerson — \"The Creative Laboratory Project.\" Co-I with Pavlo Bosyy. $13,000." }
 
 funding_scholarships:
@@ -118,10 +123,11 @@ funding_scholarships:
   - { date: 2022, end: 2026, text: "University of Guelph University Graduate Scholarship. $7,500/yr." }
 
 publications:
-  - { date: 2022-07, sshrc: true, refereed: true, text: "Bouchard, D., Cristiá, C., Bergmann, M., and Robert, D. (2022). \"Augmented Symphony: An augmented reality application for immersive music listening.\" Proceedings of EVA London 2022, Electronic Workshops in Computing, BCS Learning & Development, London, UK, July 4–8, 2022. DOI: 10.14236/ewic/EVA2022.39." }
+  - { date: 2022-07, sshrc: true, refereed: true, text: "Bouchard, D., Cristiá, C., Robert, D., and Bergmann, M. (2022). \"Augmented Symphony: An augmented reality application for immersive music listening.\" Proceedings of EVA London 2022, Electronic Workshops in Computing, BCS Learning & Development, London, UK, July 4–8, 2022, pp. 208–209. DOI: 10.14236/ewic/EVA2022.39." }
   - { date: 2022-05, sshrc: true, text: "Cristiá, C., Bouchard, D., Bergmann, M., et al. (2022). Orchestra Remote Delivery during COVID-19 Database. Open data set, Open Science Framework, May 5, 2022. DOI: 10.17605/OSF.IO/WCDU2." }
   - { date: 2021, text: "Bergmann, M. F., and McGuire, B. (2021). \"Uncanny Text.\" Belfield Literary Review: New TransAtlantic Dialogues, ed. Gregory Betts and Lucy Collins, Spring 2021, pp. 96–99." }
-  - { date: 2017-11, text: "Bergmann, M. F. (2017). \"Performance Art: New Magic.\" Rough Draft, Vol. 2, No. 1, November 7, 2017." }
+  # CCV lists this as co-authored — confirm co-author names with Michael
+  - { date: 2017-11, text: "Bergmann, M. F. (2017). \"Performance Art: New Magic.\" Rough Draft, Vol. 2, No. 1, ed. Laurence Butet-Roch, November 7, 2017." }
 
 forthcoming:
   # TODO: confirm in-press status with editors; add page count when known
@@ -135,6 +141,7 @@ presentations:
   - { date: 2024-03-20, other_refereed: true, text: "Bergmann, M., Nathan, H., and Vercosa, J. \"Robotics, AI, and the Future of Theatre.\" USITT Conference & Stage Expo, Seattle, WA, March 20, 2024." }
   - { date: 2023-06, other_refereed: true, text: "Bergmann, M., with ChatGPT. \"Envisioning theatre with non-human collaborators: A Paramanifesto.\" CATR Conference, Dalhousie University, Halifax, NS, June 2023." }
   - { date: 2023-06, other_refereed: true, text: "Bergmann, M. \"AI Sentience.\" Panel on the Implications of AI for Performance Theorists, CATR Conference (online), June 2023." }
+  - { date: 2022-07, other_refereed: true, sshrc: true, text: "Bergmann, M. \"Augmented Symphony: An augmented reality application for immersive music listening.\" Paper presented at EVA London 2022, London, UK, July 2022." }
   - { date: 2022-05, other_refereed: true, text: "Bergmann, M., and Thomson, B. \"Stepping Back In: Taking the best of virtual delivery to a new in-person experience.\" Learning & Teaching Conference, TMU, May 2022." }
   - { date: 2022-05, other_refereed: true, text: "Bergmann, M. \"Student-driven curriculum development for creative practice.\" Learning & Teaching Conference, TMU, May 2022." }
   - { date: 2021-10, other_refereed: true, text: "Bergmann, M. \"Cultivating Empathy through Robotic Performance.\" Limits of the Human, Machines Without Limits? Contemporary stage and robotics, University of Lausanne (online), October 2021." }
@@ -149,6 +156,8 @@ posters:
   - { date: 2020-11, other_refereed: true, text: "Bergmann, M., and Anderson, J. \"l'automate: Robotic Controlled Apparatuses for Circus Performance.\" Poster, RUBIX, TMU (online), November 2020." }
   - { date: 2019-11, other_refereed: true, text: "Bergmann, M., Zhang, L., Laberge-Côté, L., and McGuire, B. \"Human-robot Interactions in Dance.\" Poster, RUBIX, TMU, November 2019." }
   - { date: 2018-11, other_refereed: true, text: "Bergmann, M. \"TheatAR: A previsualization system for theatrical design.\" Poster, RUBIX, TMU, November 2018." }
+  # refereed status of this L&T poster unconfirmed — no flag for now
+  - { date: 2018-05, text: "Bosyy, P., and Bergmann, M. \"The Creative Laboratory Project.\" Poster, Ryerson Learning & Teaching Conference, May 2018." }
   - { date: 2017-10, other_refereed: true, text: "Bergmann, M. \"Shadow-selves: Projection as a medium of exploring reflections of self in Belinda McGuire's Slaughterhouse/Requiem.\" Poster, RUBIX, TMU, October 2017." }
   - { date: 2017-10, other_refereed: true, text: "Bergmann, M. \"Projecting on film: the surreal effect of rear projected backgrounds in the film Nuptials.\" Poster, RUBIX, TMU, October 2017." }
 
@@ -200,6 +209,9 @@ teaching:
   - "PFZ 100 — Performance Foundation (F2025) (created course)"
   - "THP 350 — Projection Design (F 2019–24) (created course)"
   - "THP 301–403 — Production Technique (FW 2016–present)"
+  - "THP 403 — Travel Intensive to Oulu, Finland (W 2024)"
+  - "FCD 816 — Global Campus Studio (F 2025)"
+  - "FCD 230 — New York Experience (S 2025)"
   - "THP 800 — Independent Study (W 2017–24)"
   - "THT 582 — Show Systems Engineering (W 2020, F 2021, F 2023) (redesigned course)"
   - "THT 582 — Scenic Automation (F 2017)"

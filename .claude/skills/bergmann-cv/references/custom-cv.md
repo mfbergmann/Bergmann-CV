@@ -16,6 +16,18 @@ repo's own `assets/`, so a tailored CV looks like the canonical ones; if pandoc
 isn't installed, the script prints the exact commands to run elsewhere and
 leaves the markdown in place.
 
+**Finding the repo.** The script needs `cv.yaml`, and it may be running from
+inside the checkout (Claude Code) or from a skills directory somewhere else
+entirely (the desktop app). It looks in order at `--repo`, `$BERGMANN_CV_REPO`,
+the current directory and its parents, its own directory and its parents, then
+the usual homes (`~/Bergmann-CV`, `~/Documents/Bergmann-CV`, and similar). If
+none of that lands, it says so rather than guessing:
+
+```bash
+python custom_cv.py spec.yaml --repo ~/Documents/Bergmann-CV
+export BERGMANN_CV_REPO=~/Documents/Bergmann-CV   # or set it once
+```
+
 ## Spec format
 
 ### Document level

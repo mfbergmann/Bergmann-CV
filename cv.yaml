@@ -9,7 +9,10 @@
 #   sshrc: true  -> marked with * in the SSHRC contributions doc
 #   refereed: true / other_refereed: true -> SSHRC categorization
 #   sshrc_exclude: true -> forthcoming entry omitted from the SSHRC doc
-#   formats: which outputs include the entry (default: all)
+#   formats: restrict an entry to certain documents, e.g. formats: [complete]
+#   or [complete, sshrc]. Names: complete, ocgs, sshrc, fullrecord. Omit the
+#   key for "every document" — that is the normal case. FullRecord always
+#   shows every entry, so formats: [fullrecord] means "this one document only".
 #   archive_* sections render ONLY in Bergmann-CV-FullRecord (the "full
 #   life file"); they are the complete historical record and are excluded
 #   from the Complete/OCGS/SSHRC documents.

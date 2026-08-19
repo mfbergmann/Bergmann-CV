@@ -85,13 +85,26 @@ councils, `G` government, `F` foundations, `O` other), `amount`, `pi`,
 `purpose`. The other three documents use `text:` as the citation, so both must
 be filled in and must agree with each other.
 
-### A note on `formats:`
+### Restricting an entry with `formats:`
 
-The header comment in `cv.yaml` documents a `formats:` key for restricting an
-entry to certain outputs. **`build.py` does not implement it** — no entry
-currently uses it, and setting it will silently do nothing. Which documents an
-entry reaches is decided by which section it lives in and by the flags above.
-Either implement it or leave it alone; don't rely on it.
+Normally an entry's section and flags decide which documents it reaches, and
+that covers nearly every case. For the exception — an entry that belongs on the
+public CV but not an OCGS appraisal, say — `formats:` narrows it:
+
+```yaml
+  - { date: 2026-01, formats: [complete], text: "…" }          # Complete (+ FullRecord)
+  - { date: 2026-01, formats: [complete, sshrc], text: "…" }   # everything except OCGS
+  - { date: 2026-01, formats: [fullrecord], text: "…" }        # kept out of all three rendered CVs
+```
+
+Names are `complete`, `ocgs`, `sshrc`, `fullrecord`. Omitting the key means
+every document, which is what almost every entry should do. FullRecord ignores
+the key entirely — it is the full record by definition — so `[fullrecord]` is
+the idiom for "on file, but not on any CV I hand out".
+
+Reach for this sparingly. If an entry is being hidden from most documents, ask
+whether it belongs in an `archive_*` section instead; that separation is the
+structural answer, and `formats:` is the per-entry escape hatch.
 
 ## Building
 
@@ -128,10 +141,15 @@ by adding options to `build.py` — the canonical documents stay stable, and a
 one-off spec file is easier to reuse next time than a hand-edited markdown file.
 
 ```bash
-python .claude/skills/bergmann-cv/scripts/custom_cv.py --list      # sections, counts, date ranges
-python .claude/skills/bergmann-cv/scripts/custom_cv.py spec.yaml   # -> custom/<name>.md
-python .claude/skills/bergmann-cv/scripts/custom_cv.py spec.yaml --docx --pdf
+python <skill>/scripts/custom_cv.py --list                # sections, counts, date ranges
+python <skill>/scripts/custom_cv.py spec.yaml             # -> custom/<name>.md
+python <skill>/scripts/custom_cv.py spec.yaml --docx --pdf
 ```
+
+`<skill>` is `.claude/skills/bergmann-cv` in this repo, or wherever the skill is
+installed elsewhere. The script locates `cv.yaml` on its own; if it is running
+far from the checkout, pass `--repo /path/to/Bergmann-CV` or set
+`BERGMANN_CV_REPO`.
 
 A spec picks sections, filters them, and orders them for the reader:
 

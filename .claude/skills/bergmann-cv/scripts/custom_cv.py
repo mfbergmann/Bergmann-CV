@@ -16,11 +16,13 @@ Usage:
     python custom_cv.py spec.yaml                  # -> custom/<slug>.md
     python custom_cv.py spec.yaml --docx --pdf     # also convert, if pandoc is installed
     python custom_cv.py spec.yaml -o path/to.md    # explicit output path
+    python custom_cv.py spec.yaml --repo ~/Bergmann-CV   # when the repo isn't nearby
 
 See references/custom-cv.md for the spec format and worked examples.
 """
 import argparse
 import datetime
+import os
 import pathlib
 import re
 import shutil
@@ -29,20 +31,57 @@ import sys
 
 import yaml
 
+TODAY = datetime.date.today()
+REPO = None      # set by load_repo()
+CV = None
+
 
 # ---------------------------------------------------------------- repo layout
 
-def find_repo(start: pathlib.Path) -> pathlib.Path:
-    """Walk up until cv.yaml turns up, so the script runs from anywhere."""
-    for d in [start, *start.parents]:
-        if (d / "cv.yaml").exists():
-            return d
-    sys.exit("cv.yaml not found — run this from inside the Bergmann-CV repo.")
+def find_repo(explicit=None) -> pathlib.Path:
+    """Locate the Bergmann-CV checkout.
+
+    The script may sit inside the repo (Claude Code, .claude/skills/…) or well
+    outside it (a skill installed into the desktop app's own directory), so try
+    the explicit answer first, then the obvious neighbourhoods, then the usual
+    places a checkout lives.
+    """
+    def walk_up(p):
+        for d in [p, *p.parents]:
+            if (d / "cv.yaml").exists() and (d / "build.py").exists():
+                return d
+        return None
+
+    if explicit:
+        p = pathlib.Path(explicit).expanduser().resolve()
+        if (p / "cv.yaml").exists():
+            return p
+        sys.exit(f"No cv.yaml in {p}")
+
+    env = os.environ.get("BERGMANN_CV_REPO")
+    if env:
+        return find_repo(env)
+
+    for start in (pathlib.Path.cwd(), pathlib.Path(__file__).resolve().parent):
+        found = walk_up(start)
+        if found:
+            return found
+
+    home = pathlib.Path.home()
+    for guess in (home / "Bergmann-CV", home / "Documents/Bergmann-CV",
+                  home / "Developer/Bergmann-CV", home / "src/Bergmann-CV",
+                  home / "Projects/Bergmann-CV"):
+        if (guess / "cv.yaml").exists():
+            return guess
+
+    sys.exit("Could not find the Bergmann-CV repo. Run this from inside a checkout, "
+             "pass --repo /path/to/Bergmann-CV, or set BERGMANN_CV_REPO.")
 
 
-REPO = find_repo(pathlib.Path(__file__).resolve().parent)
-CV = yaml.safe_load((REPO / "cv.yaml").read_text())
-TODAY = datetime.date.today()
+def load_repo(explicit=None):
+    global REPO, CV
+    REPO = find_repo(explicit)
+    CV = yaml.safe_load((REPO / "cv.yaml").read_text())
 
 # Rendering below is deliberately a copy of build.py's helpers rather than an
 # import: importing build.py would run it and rewrite output/, producing diff
@@ -220,7 +259,10 @@ def main():
     ap.add_argument("--docx", action="store_true", help="also convert to .docx via pandoc")
     ap.add_argument("--pdf", action="store_true", help="also convert to .pdf via pandoc+xelatex")
     ap.add_argument("--list", action="store_true", help="list cv.yaml sections and exit")
+    ap.add_argument("--repo", help="path to the Bergmann-CV checkout (default: auto-detect)")
     args = ap.parse_args()
+
+    load_repo(args.repo)
 
     if args.list:
         list_sections()

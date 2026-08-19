@@ -1,8 +1,8 @@
 # Research Contributions and Relevant Experience — Michael F Bergmann
 
-*Six-year window: contributions since 2020-07-22. \* = resulted from previous SSHRC support.*
+*Six-year window: contributions since 2020-08-19. \* = resulted from previous SSHRC support.*
 
-<!-- Generated 2026-07-22; prose sections (significance, training narrative, relevant experience) live in prose/sshrc-prose.md and are appended below. -->
+<!-- Generated 2026-08-19; prose sections (significance, training narrative, relevant experience) live in prose/sshrc-prose.md and are appended below. -->
 
 
 # 1. Research Contributions Over the Last Six Years

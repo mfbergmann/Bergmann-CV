@@ -3,7 +3,7 @@ name: Build CV documents
 on:
   push:
     branches: [main]
-    paths: ['cv.yaml', 'build.py', 'prose/**', 'assets/**', '.github/workflows/build.yml']
+    paths: ['cv.yaml', 'build.py', 'convert.sh', 'prose/**', 'assets/**', '.github/workflows/build.yml']
   workflow_dispatch:
 
 permissions:
@@ -22,21 +22,16 @@ jobs:
         run: |
           pip install pyyaml
           sudo apt-get update -qq
-          sudo apt-get install -y -qq pandoc texlive-xetex texlive-fonts-recommended fonts-liberation
+          sudo apt-get install -y -qq pandoc texlive-xetex texlive-fonts-recommended \
+            fonts-atkinson-hyperlegible fonts-liberation
+          fc-cache -f
 
       - name: Generate markdown
-        run: python build.py
+        run: python3 build.py
 
+      # Fonts and pandoc flags live in convert.sh so CI and local builds agree.
       - name: Convert to docx and pdf
-        run: |
-          cd output
-          for f in Bergmann-CV-Complete Bergmann-CV-OCGS Bergmann-SSHRC-Contributions Bergmann-CV-FullRecord; do
-            pandoc "$f.md" -o "$f.docx" --reference-doc=../assets/reference.docx
-            pandoc "$f.md" -o "$f.pdf" --pdf-engine=xelatex \
-              -H ../assets/pdf-style.tex \
-              -V mainfont="Liberation Serif" -V fontsize=12pt \
-              -V geometry:margin=0.75in -V papersize=letter
-          done
+        run: ./convert.sh
 
       - name: Commit generated files
         run: |

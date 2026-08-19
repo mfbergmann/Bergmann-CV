@@ -26,7 +26,7 @@ falling back to any similarly-named sibling. If none of that lands, it says so
 rather than guessing:
 
 ```bash
-python custom_cv.py spec.yaml --repo ~/Documents/Bergmann-CV
+python3 custom_cv.py spec.yaml --repo ~/Documents/Bergmann-CV
 export BERGMANN_CV_REPO=~/Documents/Bergmann-CV   # or set it once
 ```
 
@@ -39,6 +39,7 @@ export BERGMANN_CV_REPO=~/Documents/Bergmann-CV   # or set it once
 | `title` | `Curriculum Vitae` | Rendered as `# <title> — Michael F Bergmann`. |
 | `subtitle` | none | Italic line under the title. Good place to name the application and date. |
 | `contact` | `true` | The title/ORCID/email/website block from `personal`. Set `false` when the application form already collects it. |
+| `font` | `default` | Which font set `--pdf` uses: `default` is Atkinson Hyperlegible, `sshrc` is Times New Roman. Set it to `sshrc` only when a funder demands that face. |
 | `sections` | — | Ordered list; the order here is the order the reader sees. |
 
 ### Section level

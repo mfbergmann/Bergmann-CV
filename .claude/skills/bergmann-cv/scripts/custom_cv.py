@@ -12,11 +12,11 @@ cv.yaml, and writes markdown using the same two-column table layout as
 build.py, so pandoc renders it with the repo's existing styling.
 
 Usage:
-    python custom_cv.py --list                     # what sections exist, with date ranges
-    python custom_cv.py spec.yaml                  # -> custom/<slug>.md
-    python custom_cv.py spec.yaml --docx --pdf     # also convert, if pandoc is installed
-    python custom_cv.py spec.yaml -o path/to.md    # explicit output path
-    python custom_cv.py spec.yaml --repo ~/Bergmann-CV   # when the repo isn't nearby
+    python3 custom_cv.py --list                     # what sections exist, with date ranges
+    python3 custom_cv.py spec.yaml                  # -> custom/<slug>.md
+    python3 custom_cv.py spec.yaml --docx --pdf     # also convert, if pandoc is installed
+    python3 custom_cv.py spec.yaml -o path/to.md    # explicit output path
+    python3 custom_cv.py spec.yaml --repo ~/Bergmann-CV   # when the repo isn't nearby
 
 See references/custom-cv.md for the spec format and worked examples.
 """
@@ -29,7 +29,37 @@ import shutil
 import subprocess
 import sys
 
-import yaml
+try:
+    import yaml
+except ModuleNotFoundError:
+    # find_repo() is defined below and needs yaml itself, so repeat the cheap
+    # part of it here: enough to name a real path in the error rather than a
+    # placeholder the reader has to translate.
+    def _guess_repo():
+        seen = [pathlib.Path.cwd(), pathlib.Path(__file__).resolve().parent]
+        for start in seen:
+            for d in [start, *start.parents]:
+                if (d / "cv.yaml").exists() and (d / "build.py").exists():
+                    return d
+        home = pathlib.Path.home()
+        for parent in (home / "projects", home / "Projects", home, home / "Documents",
+                       home / "Developer", home / "src", home / "code", home / "repos"):
+            for name in ("Bergmann-CV", "bergmann-cv"):
+                if (parent / name / "cv.yaml").exists():
+                    return parent / name
+        return None
+
+    repo = _guess_repo()
+    where = str(repo) if repo else "/path/to/Bergmann-CV"
+    venv = f"{where}/.venv/bin/python"
+    hint = (f"  {venv} " + " ".join(sys.argv)) if pathlib.Path(venv).exists() else (
+        f"  cd {where} && python3 -m venv .venv && .venv/bin/pip install pyyaml\n"
+        f"  then re-run with {where}/.venv/bin/python")
+    sys.exit(
+        "This needs pyyaml, and the interpreter running it does not have it:\n"
+        f"  {sys.executable}\n\n"
+        "The repo keeps one in a virtual environment:\n" + hint
+    )
 
 TODAY = datetime.date.today()
 REPO = None      # set by load_repo()
@@ -218,16 +248,45 @@ def render(spec):
     return "\n".join(doc)
 
 
-def convert(md_path, want_docx, want_pdf):
+# Keep these lists in step with convert.sh, which does the same job for the four
+# canonical documents. Atkinson Hyperlegible is the house font; a spec sets
+# `font: sshrc` when the document has to satisfy SSHRC's Times New Roman rule.
+FONT_SETS = {
+    "default": ["Atkinson Hyperlegible", "Atkinson Hyperlegible Next", "DejaVu Serif"],
+    "sshrc": ["Times New Roman", "Liberation Serif", "DejaVu Serif"],
+}
+
+
+def installed_families():
+    """Font families fontconfig can see. Empty set if fc-list isn't available."""
+    if not shutil.which("fc-list"):
+        return set()
+    out = subprocess.run(["fc-list", ":", "family"], capture_output=True, text=True)
+    return {name.strip() for line in out.stdout.splitlines() for name in line.split(",")}
+
+
+def pick_font(font_set):
+    candidates = FONT_SETS.get(font_set or "default", FONT_SETS["default"])
+    have = installed_families()
+    if not have:
+        return candidates[0]      # no fontconfig; let xelatex have a go at the first choice
+    for f in candidates:
+        if f in have:
+            return f
+    return None
+
+
+def convert(md_path, want_docx, want_pdf, font_set=None):
     if not (want_docx or want_pdf):
         return
+    font = pick_font(font_set)
     if not shutil.which("pandoc"):
         print("\npandoc is not installed here, so only markdown was written.\n"
-              "Convert where pandoc is available:\n"
+              "Install it with `brew install pandoc`, or convert where it is available:\n"
               f"  pandoc {md_path.name} -o {md_path.stem}.docx "
               f"--reference-doc={REPO/'assets/reference.docx'}\n"
               f"  pandoc {md_path.name} -o {md_path.stem}.pdf --pdf-engine=xelatex "
-              f"-H {REPO/'assets/pdf-style.tex'} -V mainfont='Liberation Serif' "
+              f"-H {REPO/'assets/pdf-style.tex'} -V mainfont='{font or FONT_SETS['default'][0]}' "
               "-V fontsize=12pt -V geometry:margin=0.75in -V papersize=letter",
               file=sys.stderr)
         return
@@ -238,12 +297,20 @@ def convert(md_path, want_docx, want_pdf):
                        cwd=md_path.parent, check=True)
         print(f"Wrote {md_path.with_suffix('.docx')}")
     if want_pdf:
+        if not shutil.which("xelatex"):
+            print("xelatex is not installed, so no PDF was written. "
+                  "`brew install --cask basictex` provides it.", file=sys.stderr)
+            return
+        if not font:
+            print(f"None of {FONT_SETS.get(font_set or 'default')} is installed, "
+                  "so no PDF was written.", file=sys.stderr)
+            return
         subprocess.run(["pandoc", md_path.name, "-o", f"{md_path.stem}.pdf",
                         "--pdf-engine=xelatex", "-H", str(REPO / "assets/pdf-style.tex"),
-                        "-V", "mainfont=Liberation Serif", "-V", "fontsize=12pt",
+                        "-V", f"mainfont={font}", "-V", "fontsize=12pt",
                         "-V", "geometry:margin=0.75in", "-V", "papersize=letter"],
                        cwd=md_path.parent, check=True)
-        print(f"Wrote {md_path.with_suffix('.pdf')}")
+        print(f"Wrote {md_path.with_suffix('.pdf')} ({font})")
 
 
 def list_sections():
@@ -286,7 +353,7 @@ def main():
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(render(spec))
     print(f"Wrote {out}")
-    convert(out, args.docx, args.pdf)
+    convert(out, args.docx, args.pdf, spec.get("font"))
 
 
 if __name__ == "__main__":

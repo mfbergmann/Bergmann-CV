@@ -5,8 +5,8 @@ Single-source CV system for Michael F Bergmann. One canonical data file generate
 ## Architecture
 
 ```
-cv.yaml  ──►  build.py  ──►  output/*.md  ──►  GitHub Action  ──►  output/*.docx + *.pdf
-prose/sshrc-prose.md ─┘ (appended to the SSHRC doc)
+cv.yaml  ──►  build.py  ──►  output/*.md  ──►  convert.sh  ──►  output/*.docx + *.pdf
+prose/sshrc-prose.md ─┘ (appended to the SSHRC doc)      └─ run by CI, or by hand
 ```
 
 Four documents: **Complete** (public CV), **OCGS** (follows the official OCGS template sections a–i; funding renders as tables from the structured fields on funding entries; publications categorized via `ocgs_category` with a life-time count summary), **SSHRC-Contributions** (six-year window + prose), and **FullRecord** (the "full life file": everything, including `archive_*` sections — the complete historical design/production record that stays out of the other three).
@@ -22,7 +22,8 @@ Entry sections render as two-column tables (bold date | item). The borders are r
 4a. **Internal notes go in YAML comments** (`# TODO: ...` on their own line), never inside `text:` strings — anything in a string is rendered in every CV. Public-facing status (e.g. "in press") goes in `status:`; editor reminders go in comments.
 5. **SSHRC prose** (significance statements, training narrative, relevant experience) lives in `prose/sshrc-prose.md` as a **generic base**: HTML-comment placeholders mark where each application's specific tie-ins go (comments don't render). The list sections regenerate automatically with a rolling six-year filter; the prose does not — tailor it before each submission.
 5a. **Archival credits** (pre-2019 design/lighting/direction/film/systems work, early employment) go in the `archive_*` sections and appear only in the FullRecord document. New historical finds go there, not in the main sections.
-6. After editing, run `python build.py` locally (needs `pyyaml`) or just push — CI rebuilds and commits `output/`.
+6. After editing, run `python3 build.py` locally (needs `pyyaml`) or just push — CI rebuilds and commits `output/`.
+7. **Fonts and pandoc flags live in `convert.sh`**, which CI and local builds both call, so a locally built PDF matches the committed one. Change a font there, not in the workflow.
 
 ## Style
 
@@ -53,4 +54,8 @@ Canadian English (colour, centre); Oxford comma; semicolons over em-dashes. Cita
 
 ## For SSHRC submissions
 
-CI PDFs use Liberation Serif (metric clone of Times New Roman). For actual uploads: open the generated `.docx` in Word, set Times New Roman 12pt, export PDF. Margins (0.75") and page size (US Letter) are already compliant. Page limit for the contributions attachment: 5.
+The SSHRC document is built in Times New Roman 12pt, so a locally built PDF is submission-ready as generated — the old "open the .docx in Word and reset the font" step is no longer needed. CI has no Times New Roman (it is not redistributable), so the committed PDF falls back to Liberation Serif, a metric clone: identical metrics, same line breaks and page count, slightly different letterforms. Build locally with `./convert.sh Bergmann-SSHRC-Contributions` for the real thing.
+
+Margins (0.75") and page size (US Letter) are already compliant. The contributions attachment has a **5-page limit and currently sits at exactly 5** — check the page count after any addition, because the next entry is what pushes it over.
+
+The other three documents use Atkinson Hyperlegible, which is a deliberate legibility choice and not something to "fix" back to a serif.

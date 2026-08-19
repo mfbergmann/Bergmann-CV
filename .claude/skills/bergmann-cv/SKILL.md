@@ -109,14 +109,41 @@ structural answer, and `formats:` is the per-entry escape hatch.
 ## Building
 
 ```bash
-python build.py          # needs pyyaml; writes the four markdown files
+python3 build.py         # needs pyyaml; writes the four markdown files
+./convert.sh             # markdown -> .docx + .pdf (needs pandoc, xelatex)
 git diff --stat output/  # confirm only the intended entries moved
 ```
 
-Markdown is the source of truth for the layout; `.docx` and `.pdf` are produced
-by pandoc. Locally that needs `pandoc` plus `texlive-xetex` for PDF, which is
-often not installed — building markdown and letting CI do the conversion is the
-normal path.
+Markdown is the source of truth for the layout; `.docx` and `.pdf` come from
+pandoc via `convert.sh`. **Fonts and pandoc flags live in that one script**, and
+CI calls it too, so a PDF built on a laptop matches the one the Action commits.
+Change a font there, never in the workflow or in a one-off pandoc command.
+
+| Document | Font | Why |
+| --- | --- | --- |
+| Complete, OCGS, FullRecord | Atkinson Hyperlegible | House font; drawn for legibility |
+| SSHRC-Contributions | Times New Roman | What SSHRC asks for |
+
+Each is a preference list, and the first installed family wins. On a runner
+without Times New Roman — it isn't redistributable, so CI never has it — the
+SSHRC document falls back to Liberation Serif, a metric clone that holds the
+same line breaks and page count. Build locally for the real face.
+
+`convert.sh` degrades rather than failing: no xelatex means `.docx` only, and it
+says which font it used on every line it writes.
+
+**On an Apple Silicon Mac**, check the Python being used is a native build
+before debugging anything else; macOS warns about Intel-only binaries, and an
+Intel Python under Rosetta is on borrowed time:
+
+```bash
+python3 -c "import platform; print(platform.machine())"   # want arm64, not x86_64
+python3 -m venv .venv && source .venv/bin/activate         # then: pip install pyyaml
+```
+
+A virtual environment in the repo keeps `pyyaml` off the system Python
+entirely, which sidesteps both the architecture question and macOS's
+externally-managed-environment refusal. `.venv/` is already gitignored.
 
 **On an Apple Silicon Mac**, check the Python being used is a native build
 before debugging anything else; macOS warns about Intel-only binaries, and an
@@ -135,7 +162,7 @@ CI (`.github/workflows/build.yml`) rebuilds and commits `output/` **only on
 pushes to `main`**, and only when `cv.yaml`, `build.py`, `prose/**`, `assets/**`,
 or the workflow itself changed. Two consequences worth planning around:
 
-- On a feature branch, nothing rebuilds. Either run `python build.py` and commit
+- On a feature branch, nothing rebuilds. Either run `python3 build.py` and commit
   the markdown yourself so the diff is reviewable, or expect the `.docx`/`.pdf`
   to regenerate when the branch merges. Say which one you did.
 - `output/` is machine-written and committed by `cv-bot`. Never hand-edit a file
@@ -154,9 +181,9 @@ by adding options to `build.py` — the canonical documents stay stable, and a
 one-off spec file is easier to reuse next time than a hand-edited markdown file.
 
 ```bash
-python <skill>/scripts/custom_cv.py --list                # sections, counts, date ranges
-python <skill>/scripts/custom_cv.py spec.yaml             # -> custom/<name>.md
-python <skill>/scripts/custom_cv.py spec.yaml --docx --pdf
+python3 <skill>/scripts/custom_cv.py --list                # sections, counts, date ranges
+python3 <skill>/scripts/custom_cv.py spec.yaml             # -> custom/<name>.md
+python3 <skill>/scripts/custom_cv.py spec.yaml --docx --pdf
 ```
 
 `<skill>` is `.claude/skills/bergmann-cv` in this repo, or wherever the skill is
@@ -205,11 +232,15 @@ Before a submission: replace those placeholders with sentences aimed at *this*
 application, confirm the "present" claims are still true, and check what the
 six-year window currently includes.
 
-Formatting for actual uploads: CI PDFs use Liberation Serif, a metric clone of
-Times New Roman, which is close but not what SSHRC asks for. Open the generated
-`.docx` in Word, set Times New Roman 12pt, and export the PDF from there.
+Formatting for actual uploads: build it locally with
+`./convert.sh Bergmann-SSHRC-Contributions` and the PDF comes out in real Times
+New Roman 12pt, ready to submit. The copy CI commits uses Liberation Serif
+instead — metrically identical, so it is safe for checking length, but build
+locally for the file you actually upload.
+
 Margins (0.75") and US Letter page size are already compliant. The contributions
-attachment has a 5-page limit — check the page count before sending.
+attachment has a **5-page limit and currently sits at exactly 5**, so check the
+page count after any addition — there is no headroom left.
 
 ## The archive, and other places facts live
 

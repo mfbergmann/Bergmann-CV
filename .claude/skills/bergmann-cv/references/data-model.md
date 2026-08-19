@@ -27,6 +27,8 @@ Almost every section is a list of one-line flow mappings:
 | `status` | forthcoming only | e.g. `in press`, `in draft`. Rendered in brackets. |
 | `ocgs_category` | publications, forthcoming | `chapter`, `journal`, `refereed_proceedings`, `other`. |
 | `formats` | no | Restricts the entry to the listed documents (`complete`, `ocgs`, `sshrc`, `fullrecord`). Omit for all. FullRecord ignores it. |
+| `mentorship` | no | Marks the entry as mentorship or training evidence. Renders nothing; it exists to be selected on. |
+| `hqp` | no | List of supervised highly qualified personnel named in `text`. Renders nothing by default. |
 | funding fields | funding only | `source`, `program`, `ftype`, `amount`, `pi`, `purpose`. |
 
 Two sections break the pattern:
@@ -117,6 +119,33 @@ Everything: all current sections, `pending_submissions`, and the seven
 `archive_*` sections under an "Archive: Complete Design and Production Record"
 heading. This is the document to read when curating a tailored CV — it is the
 only place the whole record appears at once.
+
+## Mentorship and HQP
+
+Two keys record facts the four canonical documents do not print. Both were added
+for the tri-agency CV, whose third section is about mentorship and whose citation
+convention asterisks supervised personnel; neither changes existing output.
+
+**`mentorship: true`** goes on any entry in any section whose substance is
+mentorship or training. It is a tag, not a section, because the underlying events
+already belong somewhere — an installation students built is a `creative` entry
+and always was. Duplicating it into a mentorship section would break one-entry-per-event;
+tagging it lets the same entry be gathered as evidence without moving.
+
+Gather them with `custom_cv.py` — `from: all` plus `flags: [mentorship]` sweeps
+every section at once. `supervision` stays separate: it is the formal graduate
+record and OCGS section f) renders it as such.
+
+**`hqp: [names]`** lists supervised people named in that entry's citation. The
+tri-agency instructions want an asterisk after each such name, and the lead author
+bolded when not listed first. Because that convention belongs to that document
+alone, `hqp_text()` in `build.py` (mirrored in `custom_cv.py`) applies the
+asterisks on demand and nothing in the four documents calls it. A spec opts in
+with `hqp: true`.
+
+`build.py` warns at build time when an `hqp` name does not appear in the `text`
+it annotates — the failure mode is a name spelled differently on the two sides,
+which is invisible until a reviewer sees an unmarked student.
 
 ## Rendering mechanics
 

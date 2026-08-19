@@ -64,6 +64,8 @@ editor" belongs in a comment.
 | `sshrc_exclude: true` | Keep out of the SSHRC doc | Only honoured on `forthcoming` entries |
 | `status:` | Public-facing state of a forthcoming work | Rendered in brackets |
 | `ocgs_category:` | `chapter`, `journal`, `refereed_proceedings`, or `other` | Bins the entry in the OCGS publication tables |
+| `mentorship: true` | The entry is mentorship or training evidence | Renders nothing; selectable with `flags: [mentorship]` |
+| `hqp: [names]` | Supervised people named in the citation | Renders nothing; asterisked on demand for the tri-agency CV |
 
 Two things about flags are easy to get wrong. `refereed` and `other_refereed`
 are not interchangeable: a refereed conference *paper* in published proceedings
@@ -76,6 +78,29 @@ so leave the flag off only when that is the true answer.
 edited, and major invited contributions have no key because there is nothing to
 put in them yet; adding the first one means editing `PUB_CATS` in `build.py`,
 not inventing a category string.
+
+### Mentorship and supervised personnel
+
+`supervision` is the formal graduate record — nine MDM and MFA students, rendered
+as OCGS section f). Mentorship that is not thesis supervision lives everywhere
+else in the file, because the events belong to their own sections first: the
+AVARA installation is creative work that eight students built, the Setsubun
+residency is an invited position, the Work Study RA is a grant. Tag those
+`mentorship: true` rather than copying them into a section of their own, and
+gather them when needed:
+
+```yaml
+sections:
+  - heading: "Mentorship and Training"
+    from: all              # every section at once
+    flags: [mentorship]
+```
+
+`hqp: ["First Last"]` records supervised personnel named in a citation. Nothing
+prints it today; the tri-agency CV asks for an asterisk after each such name, and
+`hqp_text()` applies that only where a spec sets `hqp: true`. Add the names as
+they come up — the key is worth filling in before it is needed, because working
+out years later which co-author was a student is the kind of fact that gets lost.
 
 ### Funding entries
 
@@ -131,19 +156,6 @@ same line breaks and page count. Build locally for the real face.
 
 `convert.sh` degrades rather than failing: no xelatex means `.docx` only, and it
 says which font it used on every line it writes.
-
-**On an Apple Silicon Mac**, check the Python being used is a native build
-before debugging anything else; macOS warns about Intel-only binaries, and an
-Intel Python under Rosetta is on borrowed time:
-
-```bash
-python3 -c "import platform; print(platform.machine())"   # want arm64, not x86_64
-python3 -m venv .venv && source .venv/bin/activate         # then: pip install pyyaml
-```
-
-A virtual environment in the repo keeps `pyyaml` off the system Python
-entirely, which sidesteps both the architecture question and macOS's
-externally-managed-environment refusal. `.venv/` is already gitignored.
 
 **On an Apple Silicon Mac**, check the Python being used is a native build
 before debugging anything else; macOS warns about Intel-only binaries, and an

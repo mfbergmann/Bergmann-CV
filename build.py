@@ -35,6 +35,39 @@ def in_window(e):
     except ValueError:
         return True
 
+def hqp_text(e):
+    """The entry's citation with supervised HQP marked, per tri-agency convention.
+
+    The tri-agency CV asks for an asterisk after the name of any highly qualified
+    person the applicant supervised. That convention belongs to that document
+    alone — the Complete, OCGS, and SSHRC CVs have their own citation styles — so
+    `hqp:` is recorded on the entry here and rendered only where it is asked for.
+    Nothing in the four canonical documents calls this.
+    """
+    text = e["text"]
+    for name in e.get("hqp", []):
+        if name in text:
+            text = text.replace(name, f"{name}*", 1)
+    return text
+
+
+def check_hqp(cv):
+    """Warn when an hqp: name is not in the citation it annotates — almost always
+    a typo or a name that changed on one side only, and silent until submission."""
+    problems = []
+    for section, v in cv.items():
+        entries = v.get("entries", []) if isinstance(v, dict) else v
+        if not isinstance(entries, list):
+            continue
+        for e in entries:
+            if not isinstance(e, dict):
+                continue
+            for name in e.get("hqp", []):
+                if name not in e.get("text", ""):
+                    problems.append(f"  {section}: {name!r} not found in {e.get('text','')[:60]!r}")
+    return problems
+
+
 def rows(entries, star=False, dated=True):
     """Two-column pipe table: date | item. Dash ratio sets column widths (~24/76)."""
     lines = ["|  |  |", "|:" + "-" * 24 + "|:" + "-" * 76 + "|"]
@@ -190,5 +223,8 @@ doc.append(sec("Installation and Video Art", CV["archive_installation"]))
 doc.append(sec("Film", CV["archive_film"]))
 doc.append(sec("Projection and Live Event Systems", CV["archive_systems"]))
 (OUT / "Bergmann-CV-FullRecord.md").write_text("\n".join(doc))
+
+for problem in check_hqp(CV):
+    print(f"warning: hqp name not in citation\n{problem}")
 
 print(f"Built 4 documents in output/ (six-year window: since {SIX_YEARS_AGO.isoformat()})")

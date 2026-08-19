@@ -146,19 +146,38 @@ def dstr(e):
     return d
 
 
-def rows(entries, dated=True):
+def hqp_text(e):
+    """Citation with supervised HQP marked by an asterisk after the name.
+
+    This is the tri-agency CV's convention, not the house style, so it applies
+    only where a spec asks for it. Mirrors hqp_text() in build.py.
+    """
+    text = e["text"]
+    for name in e.get("hqp", []):
+        if name in text:
+            text = text.replace(name, f"{name}*", 1)
+    return text
+
+
+def rows(entries, dated=True, hqp=False):
     """Two-column pipe table: date | item. Dash ratio sets column widths (~24/76)."""
     lines = ["|  |  |", "|:" + "-" * 24 + "|:" + "-" * 76 + "|"]
     for e in entries:
         d = f"**{dstr(e)}**" if dated and e.get("date") else ""
-        lines.append(f"| {d} | {e['text']} |")
+        lines.append(f"| {d} | {hqp_text(e) if hqp else e['text']} |")
     return "\n".join(lines)
 
 
 # ---------------------------------------------------------------- selection
 
+# Sections that are not part of the record proper, so `from: all` skips them.
+NOT_A_SECTION = {"personal"}
+
+
 def source_entries(names):
     """Collect entries from one or more cv.yaml keys, normalising the odd shapes."""
+    if list(names) == ["all"]:
+        names = [k for k in CV if k not in NOT_A_SECTION]
     out = []
     for name in names:
         if name not in CV:
@@ -200,7 +219,8 @@ def select(spec):
 
     # A single source keeps cv.yaml's hand-maintained order (build.py does the
     # same); merged sources need an explicit sort to interleave sensibly.
-    multi = isinstance(spec["from"], list) and len(spec["from"]) > 1
+    multi = spec["from"] == "all" or (
+        isinstance(spec["from"], list) and len(spec["from"]) > 1)
     sort = spec.get("sort", "date-desc" if multi else "file")
     if sort == "date-desc":
         entries = sorted(entries, key=lambda e: str(e.get("date", "")), reverse=True)
@@ -243,7 +263,8 @@ def render(spec):
         if sec.get("bullets"):
             doc.append("\n" + "\n".join(f"- {e['text']}" for e in entries) + "\n")
         else:
-            doc.append("\n" + rows(entries, dated=sec.get("dated", True)) + "\n")
+            doc.append("\n" + rows(entries, dated=sec.get("dated", True),
+                                    hqp=sec.get("hqp", spec.get("hqp", False))) + "\n")
 
     return "\n".join(doc)
 

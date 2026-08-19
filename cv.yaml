@@ -61,7 +61,7 @@ awards:
   - { date: 2006, text: "Short-listed, Prix Molière, Theatre Glendon" }
 
 invited_positions:
-  - { date: 2025-12, end: 2026-02, text: "Mentor, Setsubun Digital Media Residency, Japanese Canadian Cultural Centre, Toronto" }
+  - { date: 2025-12, end: 2026-02, mentorship: true, text: "Mentor, Setsubun Digital Media Residency, Japanese Canadian Cultural Centre, Toronto" }
   - { date: 2024-06, text: "Artist-in-residence, SÍM Residency (with UKAI Projects), Reykjavík, Iceland — Shipwreck, June 2–30, 2024" }
   - { date: 2022-04, text: "Artist-in-residence, Ingenuity Labs Research Institute, Queen's University, Kingston" }
   - { date: 2021-10, end: 2022-10, text: "Ferment AI Residency artist; residency output presented in Berlin, October 2022" }
@@ -119,7 +119,9 @@ funding_external:
 funding_internal:
   - { date: 2024, source: TMU, program: "The Creative School Travel Grant", ftype: O, amount: "$1,000", pi: "Michael Bergmann", purpose: Travel,
       text: "The Creative School Travel Grant, TMU — Shipwreck Iceland project. $1,000." }
+  # TODO: name the Work Study RA in hqp: — they are HQP Michael supervised.
   - { date: 2022, source: TMU, program: "Work Study RA Program", ftype: O, amount: "$3,800", pi: "Michael Bergmann", purpose: Research,
+      mentorship: true,
       text: "TMU Work Study RA Program — \"Mechanical Waves: Machine Learning gesture reactive human-robot installation.\" $3,800." }
   - { date: 2022, source: TMU, program: "The Creative School Travel Grant", ftype: O, amount: "$2,000", pi: "Michael Bergmann", purpose: Travel,
       text: "The Creative School Travel Grant — EVA London conference presentation. $2,000." }
@@ -183,8 +185,10 @@ posters:
 invited_talks:
   - { date: 2025-02-14, text: "Guest lecture on AI in visual generation, open-source models, and ethical usage, Advanced Professional Projection Design (graduate), Yale University, February 14, 2025." }
   - { date: 2024-12-12, text: "Host: \"Beyond the Screen: Exploring AI Personhood and Their Representation in Media.\" The Creative School Catalyst, Toronto, December 12, 2024." }
+  # TODO: mentorship: true? This reports on a student project rather than being a
+  # mentorship activity itself. Michael's call.
   - { date: 2024-11-22, text: "Closing keynote: \"Wellness for who? An examination of wellness through a research-creation student project.\" AVARA 2024, OAMK, Oulu, Finland, November 22, 2024." }
-  - { date: 2024-11-02, text: "Workshop on projection design, Peterborough Theatre Guild, Peterborough, ON, November 2–3, 2024." }
+  - { date: 2024-11-02, mentorship: true, text: "Workshop on projection design, Peterborough Theatre Guild, Peterborough, ON, November 2–3, 2024." }
   - { date: 2024-10-23, text: "Provocation: \"Personhood // AI.\" UKAI Carnival of Shipwreck, Toronto, October 23, 2024." }
   - { date: 2024-07-22, text: "Invited talk on the future of AI in the creative industries. TechTO: AI, Toronto, July 22, 2024." }
   - { date: 2024-04-12, text: "\"Improvnetics: Post-anthropocentric performance and improvisational modes for human-AI play.\" IICSI Research Studio Session, ImprovLab, University of Guelph, April 12, 2024." }
@@ -198,7 +202,7 @@ creative:
   - { date: 2025-11-18, end: 2025-11-22, text: "The Frankenstein Project. Producer, with Debashis Sinha. Performance Studio Theatre, TMU, November 18–22, 2025." }
   - { date: 2025-11-01, end: 2025-11-15, text: "291 by Jade O'Keeffe. Projection co-design with Kristen Ferguson; directed by Lisa Dixon. Peterborough Theatre Guild, November 1–15, 2025." }
   - { date: 2025-04-02, text: "\"To my creators...\" Solo work exhibited at the Creative AI Symposium, TMU, April 2, 2025; created during the SÍM residency, Reykjavík." }
-  - { date: 2024-11-17, end: 2024-11-23, text: "AVARA 2024 installation. Led eight students in a semester-long research-creation installation presented at AVARA 2024, OAMK, Oulu, Finland." }
+  - { date: 2024-11-17, end: 2024-11-23, mentorship: true, text: "AVARA 2024 installation. Led eight students in a semester-long research-creation installation presented at AVARA 2024, OAMK, Oulu, Finland." }
   - { date: 2024-06-16, end: 2024-06-25, text: "Shipwreck. Group exhibition with UKAI Projects and five Canadian artists, SÍM Gallery, Reykjavík, Iceland, following a month-long residency; includes solo work \"To my creators...\"" }
   - { date: 2024-04-19, text: "Labour and Us. Workshop series (March 14 – April 17, 2024) and performance, co-created and performed with Lucas Carravetta, Matt Endahl, and Aimée Dawn Robinson; roundtable with Alan Filewod, Tom Scholte, Cynthia Ashperger, and Judith Thompson. ImprovLab, University of Guelph, April 19, 2024." }
   - { date: 2024-01-25, text: "Almost Alchemy. Two 360° video experiences of improvised research-creation performance. RUBIX, TMU, January 25, 2024." }

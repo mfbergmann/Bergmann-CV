@@ -39,6 +39,7 @@ export BERGMANN_CV_REPO=~/Documents/Bergmann-CV   # or set it once
 | `title` | `Curriculum Vitae` | Rendered as `# <title> — Michael F Bergmann`. |
 | `subtitle` | none | Italic line under the title. Good place to name the application and date. |
 | `contact` | `true` | The title/ORCID/email/website block from `personal`. Set `false` when the application form already collects it. |
+| `hqp` | `false` | Mark supervised HQP with an asterisk in every citation, per tri-agency convention. A section can override it. |
 | `font` | `default` | Which font set `--pdf` uses: `default` is Atkinson Hyperlegible, `sshrc` is Times New Roman. Set it to `sshrc` only when a funder demands that face. |
 | `sections` | — | Ordered list; the order here is the order the reader sees. |
 
@@ -50,12 +51,13 @@ holds a block of `text`.
 | Key | Notes |
 | --- | --- |
 | `heading` | Section heading. Omit on a `text` block for an unheaded preamble. |
-| `from` | One section name, or a list of them. A list is merged and sorted newest-first. |
+| `from` | One section name, or a list of them. A list is merged and sorted newest-first. `all` sweeps every section at once, which is how `flags: [mentorship]` gathers evidence that is scattered across sections by design. |
 | `since` / `until` | Year or `YYYY-MM`. `since` also keeps entries with `end: present`, matching the SSHRC window's logic. |
-| `flags` | List of flag names; an entry must have all of them true. e.g. `[refereed]`, `[other_refereed]`, `[sshrc]`. |
+| `flags` | List of flag names; an entry must have all of them true. e.g. `[refereed]`, `[other_refereed]`, `[sshrc]`, `[mentorship]`. |
 | `match` | Case-insensitive regex over `text`. Keeps matches. Single-quote it in YAML so backslashes survive, and use `\b` boundaries on short acronyms. |
 | `exclude` | Case-insensitive regex over `text`. Drops matches. |
 | `limit` | Keep the first N after filtering and sorting. |
+| `hqp` | Override the document-level HQP marking for this section only. |
 | `sort` | `date-desc`, `date-asc`, or `file`. Defaults to `file` for a single source (preserving the hand-maintained order) and `date-desc` for merged sources. |
 | `dated` | `false` suppresses the date column — useful for a bare list of titles. |
 | `bullets` | `true` renders a bullet list instead of a table. Required for `teaching`, which has no dates. |

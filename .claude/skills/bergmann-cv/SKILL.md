@@ -118,6 +118,19 @@ by pandoc. Locally that needs `pandoc` plus `texlive-xetex` for PDF, which is
 often not installed — building markdown and letting CI do the conversion is the
 normal path.
 
+**On an Apple Silicon Mac**, check the Python being used is a native build
+before debugging anything else; macOS warns about Intel-only binaries, and an
+Intel Python under Rosetta is on borrowed time:
+
+```bash
+python3 -c "import platform; print(platform.machine())"   # want arm64, not x86_64
+python3 -m venv .venv && source .venv/bin/activate         # then: pip install pyyaml
+```
+
+A virtual environment in the repo keeps `pyyaml` off the system Python
+entirely, which sidesteps both the architecture question and macOS's
+externally-managed-environment refusal. `.venv/` is already gitignored.
+
 CI (`.github/workflows/build.yml`) rebuilds and commits `output/` **only on
 pushes to `main`**, and only when `cv.yaml`, `build.py`, `prose/**`, `assets/**`,
 or the workflow itself changed. Two consequences worth planning around:

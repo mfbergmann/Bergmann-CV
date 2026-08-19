@@ -1,1 +1,10 @@
 .DS_Store
+.venv/
+__pycache__/
+
+# Tailored CVs: generated documents are regenerable, so keep them out.
+# Spec files (custom/*.yaml) are worth committing — they record how a past
+# application was framed — so they are deliberately not ignored.
+custom/*.md
+custom/*.docx
+custom/*.pdf

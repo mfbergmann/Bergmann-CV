@@ -67,12 +67,22 @@ def find_repo(explicit=None) -> pathlib.Path:
         if found:
             return found
 
+    # Common places a checkout lives. Look for the repo by name first, then for
+    # any similarly-named sibling, since the clone directory's capitalisation
+    # varies and some volumes are case-sensitive.
     home = pathlib.Path.home()
-    for guess in (home / "Bergmann-CV", home / "Documents/Bergmann-CV",
-                  home / "Developer/Bergmann-CV", home / "src/Bergmann-CV",
-                  home / "Projects/Bergmann-CV"):
-        if (guess / "cv.yaml").exists():
-            return guess
+    parents = [home / "projects", home / "Projects", home, home / "Documents",
+               home / "Developer", home / "src", home / "code", home / "repos"]
+    for parent in parents:
+        for name in ("Bergmann-CV", "bergmann-cv"):
+            if (parent / name / "cv.yaml").exists():
+                return parent / name
+    for parent in parents:
+        if not parent.is_dir():
+            continue
+        for child in sorted(parent.iterdir()):
+            if "bergmann" in child.name.lower() and (child / "cv.yaml").exists():
+                return child
 
     sys.exit("Could not find the Bergmann-CV repo. Run this from inside a checkout, "
              "pass --repo /path/to/Bergmann-CV, or set BERGMANN_CV_REPO.")

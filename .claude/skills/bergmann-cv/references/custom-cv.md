@@ -20,8 +20,10 @@ leaves the markdown in place.
 inside the checkout (Claude Code) or from a skills directory somewhere else
 entirely (the desktop app). It looks in order at `--repo`, `$BERGMANN_CV_REPO`,
 the current directory and its parents, its own directory and its parents, then
-the usual homes (`~/Bergmann-CV`, `~/Documents/Bergmann-CV`, and similar). If
-none of that lands, it says so rather than guessing:
+the usual homes — `~/projects/Bergmann-CV` first, then `~/`, `~/Documents`,
+`~/Developer`, `~/src`, `~/code`, `~/repos`, matching either capitalisation and
+falling back to any similarly-named sibling. If none of that lands, it says so
+rather than guessing:
 
 ```bash
 python custom_cv.py spec.yaml --repo ~/Documents/Bergmann-CV

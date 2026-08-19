@@ -26,6 +26,7 @@ Almost every section is a list of one-line flow mappings:
 | `sshrc_exclude` | no | Honoured **only** on `forthcoming`. |
 | `status` | forthcoming only | e.g. `in press`, `in draft`. Rendered in brackets. |
 | `ocgs_category` | publications, forthcoming | `chapter`, `journal`, `refereed_proceedings`, `other`. |
+| `formats` | no | Restricts the entry to the listed documents (`complete`, `ocgs`, `sshrc`, `fullrecord`). Omit for all. FullRecord ignores it. |
 | funding fields | funding only | `source`, `program`, `ftype`, `amount`, `pi`, `purpose`. |
 
 Two sections break the pattern:
@@ -75,9 +76,15 @@ Two sections break the pattern:
 
 ## How each document selects
 
+Before any of the below, `view(doc)` in `build.py` drops entries whose
+`formats:` list omits that document. Complete, OCGS, and SSHRC each work from
+their own filtered view; FullRecord reads `CV` directly, so it always holds
+everything.
+
 ### Complete
-Straight pass over the current sections in a fixed order. No filtering. Anything
-in a non-archive section appears here, which is the reason the archive exists.
+Straight pass over the current sections in a fixed order. No date filtering.
+Anything in a non-archive section appears here, which is the reason the archive
+exists.
 
 ### OCGS
 Follows the official template's sections a–i. Two mechanisms to know about:

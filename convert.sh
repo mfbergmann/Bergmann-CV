@@ -46,13 +46,24 @@ HAVE_PDF=1
 command -v xelatex >/dev/null || { echo "note: xelatex not found, writing .docx only" >&2; HAVE_PDF=0; }
 command -v fc-list >/dev/null || echo "note: fc-list not found, font detection will fall through" >&2
 
+# With no arguments, convert everything that is publishable. The artist CVs come
+# from committed specs via custom_cv.py rather than from build.py, so they may
+# legitimately be absent on a checkout where only build.py has run — the default
+# sweep skips what is missing, while an explicitly named document must exist.
 DOCS=("$@")
+EXPLICIT=1
 if [ ${#DOCS[@]} -eq 0 ]; then
-  DOCS=(Bergmann-CV-Complete Bergmann-CV-OCGS Bergmann-SSHRC-Contributions Bergmann-CV-FullRecord)
+  EXPLICIT=0
+  DOCS=(Bergmann-CV-Complete Bergmann-CV-OCGS Bergmann-SSHRC-Contributions Bergmann-CV-FullRecord
+        Bergmann-CV-Artist Bergmann-CV-Artist-Short)
 fi
 
 for f in "${DOCS[@]}"; do
-  [ -f "output/$f.md" ] || { echo "output/$f.md does not exist; run build.py first." >&2; exit 1; }
+  if [ ! -f "output/$f.md" ]; then
+    [ "$EXPLICIT" = 1 ] && { echo "output/$f.md does not exist; run build.py first." >&2; exit 1; }
+    echo "note: output/$f.md not present, skipping" >&2
+    continue
+  fi
 
   pandoc "output/$f.md" -o "output/$f.docx" --reference-doc=assets/reference.docx
   echo "Wrote output/$f.docx"

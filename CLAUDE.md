@@ -6,7 +6,8 @@ Single-source CV system for Michael F Bergmann. One canonical data file generate
 
 ```
 cv.yaml  ──►  build.py  ──►  output/*.md  ──►  convert.sh  ──►  output/*.docx + *.pdf
-prose/sshrc-prose.md ─┘ (appended to the SSHRC doc)      └─ run by CI, or by hand
+   │     prose/sshrc-prose.md ─┘ (SSHRC doc)   ▲            └─ run by CI, or by hand
+   └──►  custom_cv.py + custom/artist-cv*.yaml ┘ (the two artist CVs, in CI)
 ```
 
 Four documents: **Complete** (public CV), **OCGS** (follows the official OCGS template sections a–i; funding renders as tables from the structured fields on funding entries; publications categorized via `ocgs_category` with a life-time count summary), **SSHRC-Contributions** (six-year window + prose), and **FullRecord** (the "full life file": everything, including `archive_*` sections — the complete historical design/production record that stays out of the other three).
@@ -15,7 +16,7 @@ Entry sections render as two-column tables (bold date | item). The borders are r
 
 ## Rules
 
-1. **Edit `cv.yaml` only** for CV content. Never edit files in `output/` — they are overwritten on every build.
+1. **Edit `cv.yaml` only** for CV content. Never edit files in `output/` — they are overwritten on every build. The artist CVs there (`Bergmann-CV-Artist`, `Bergmann-CV-Artist-Short`) are generated in CI from the specs in `custom/`; change the spec, not the output.
 2. **One entry per event.** New talk, credit, grant, or committee → one line in the correct section of `cv.yaml`, most sections sorted reverse chronological (build.py preserves file order; keep newest first).
 3. **Dates**: `YYYY`, `YYYY-MM`, or `YYYY-MM-DD`; `end: present` for ongoing roles.
 4. **Flags**: `refereed: true` (anonymous peer review of the full work), `other_refereed: true` (reviewed conference presentations/posters), `sshrc: true` (output of SSHRC funding — renders as `*` in the SSHRC doc), `sshrc_exclude: true` (forthcoming entry kept out of the SSHRC doc, e.g. drafts not yet submitted). No flag → non-refereed.

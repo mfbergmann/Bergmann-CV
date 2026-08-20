@@ -3,7 +3,8 @@ name: Build CV documents
 on:
   push:
     branches: [main]
-    paths: ['cv.yaml', 'build.py', 'convert.sh', 'prose/**', 'assets/**', '.github/workflows/build.yml']
+    paths: ['cv.yaml', 'build.py', 'convert.sh', 'prose/**', 'assets/**', 'custom/*.yaml',
+            '.claude/skills/bergmann-cv/scripts/custom_cv.py', '.github/workflows/build.yml']
   workflow_dispatch:
 
 permissions:
@@ -28,6 +29,14 @@ jobs:
 
       - name: Generate markdown
         run: python3 build.py
+
+      # The artist CVs come from committed specs rather than build.py, so the
+      # four canonical documents stay untouched while these still publish.
+      - name: Generate artist CVs
+        run: |
+          S=.claude/skills/bergmann-cv/scripts/custom_cv.py
+          python3 $S custom/artist-cv-canada-council.yaml --out output/Bergmann-CV-Artist.md
+          python3 $S custom/artist-cv.yaml --out output/Bergmann-CV-Artist-Short.md
 
       # Fonts and pandoc flags live in convert.sh so CI and local builds agree.
       - name: Convert to docx and pdf

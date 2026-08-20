@@ -30,6 +30,11 @@ several of those apparent errors are the verified answer.
 | `Bergmann-SSHRC-Contributions` | Rolling six-year window, refereed/other/non-refereed split, plus prose | SSHRC applications (5-page limit) |
 | `Bergmann-CV-FullRecord` | Everything, including `archive_*` and `pending_submissions` | The "full life file"; the source to curate from |
 
+Two more are published but not built by `build.py`: `Bergmann-CV-Artist` and
+`Bergmann-CV-Artist-Short` come from the committed specs in `custom/`, generated
+by CI and linked from the README. They are listed under
+[Artist CVs](#artist-cvs).
+
 Anything application-specific is a **fifth kind of document** — built ad hoc,
 never added to `build.py`. See [Tailored CVs](#tailored-cvs-for-applications).
 
@@ -227,8 +232,12 @@ matters more than the mechanics: **`references/custom-cv.md`**.
 
 Three habits keep this clean:
 
-- **Write output to `custom/`, never `output/`.** CI runs `git add output/`, so
-  anything left there gets committed as though it were canonical.
+- **Write output to `custom/`, never `output/`** — with one deliberate exception.
+  CI runs `git add output/`, so a stray file there gets committed as though it
+  were canonical. The exception is the two artist CVs: CI itself generates them
+  into `output/` under fixed names, because the README links to them and a
+  published link has to stay current. Adding a third means editing the workflow
+  and the README, not dropping a file into `output/` by hand.
 - **Filter, don't retype.** If a tailored CV needs an entry `cv.yaml` doesn't
   have, the entry is missing from the record — add it to `cv.yaml` first, then
   select it. Retyping it into the spec means the next document won't have it.

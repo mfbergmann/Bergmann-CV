@@ -226,7 +226,14 @@ The mechanics are the easy part. What makes a tailored CV work:
 
 Default output is `custom/<spec-name>.md` in the repo root. Keep it out of
 `output/`: CI runs `git add output/`, so a stray file there gets committed as
-though it were one of the four canonical documents.
+though it were one of the canonical documents.
+
+The two artist CVs are the deliberate exception. CI runs `custom_cv.py` on their
+committed specs and writes them into `output/` under fixed names —
+`Bergmann-CV-Artist` and `Bergmann-CV-Artist-Short` — because the README links
+to them and those links have to serve a current build. That is a workflow step,
+not something to reproduce by hand: a one-off written into `output/` locally
+would be committed as canonical and then silently overwritten on the next push.
 
 Whether to commit `custom/` at all is a judgement call. The spec files are worth
 keeping — they're small and they document how a past application was framed. The

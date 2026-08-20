@@ -46,8 +46,8 @@ HAVE_PDF=1
 command -v xelatex >/dev/null || { echo "note: xelatex not found, writing .docx only" >&2; HAVE_PDF=0; }
 command -v fc-list >/dev/null || echo "note: fc-list not found, font detection will fall through" >&2
 
-# With no arguments, convert everything that is publishable. The artist CVs come
-# from committed specs via custom_cv.py rather than from build.py, so they may
+# With no arguments, convert everything that is publishable. The artist CV comes
+# from a committed spec via custom_cv.py rather than from build.py, so it may
 # legitimately be absent on a checkout where only build.py has run — the default
 # sweep skips what is missing, while an explicitly named document must exist.
 DOCS=("$@")
@@ -55,7 +55,7 @@ EXPLICIT=1
 if [ ${#DOCS[@]} -eq 0 ]; then
   EXPLICIT=0
   DOCS=(Bergmann-CV-Complete Bergmann-CV-OCGS Bergmann-SSHRC-Contributions Bergmann-CV-FullRecord
-        Bergmann-CV-Artist Bergmann-CV-Artist-Short)
+        Bergmann-CV-Artist)
 fi
 
 for f in "${DOCS[@]}"; do

@@ -248,7 +248,15 @@ def render(spec):
     if spec.get("subtitle"):
         doc.append(f"*{spec['subtitle']}*\n")
     if spec.get("contact", True):
-        doc.append(f"{P['title']}  \nORCID: {P['orcid']} · {P['email']} · {P['website']}\n")
+        # Which address the document carries. Named as a key in cv.yaml's
+        # `personal` rather than written out here, so the address itself stays
+        # in one place: `contact_email: email_personal` for work that goes to
+        # juries and funders instead of to the university.
+        key = spec.get("contact_email", "email")
+        if key not in P:
+            sys.exit(f"contact_email: {key!r} is not a key in cv.yaml's personal block "
+                     f"(available: {', '.join(k for k in P if 'email' in k)})")
+        doc.append(f"{P['title']}  \nORCID: {P['orcid']} · {P[key]} · {P['website']}\n")
     doc.append(f"<!-- Generated {TODAY.isoformat()} from cv.yaml by custom_cv.py — "
                f"edit cv.yaml or the spec, never this file. -->\n")
 

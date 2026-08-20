@@ -28,6 +28,9 @@ personal:
   title: Associate Professor, Performance, The Creative School, Toronto Metropolitan University
   orcid: 0000-0002-5698-8121
   email: mfb@torontomu.ca
+  # Used by the artist CVs, which go to juries and funders rather than to
+  # the university; specs select it with `contact_email: email_personal`.
+  email_personal: michael@bergmann.ai
   website: https://bergmann.ai
   github: mfbergmann
 
@@ -185,8 +188,9 @@ posters:
 invited_talks:
   - { date: 2025-02-14, text: "Guest lecture on AI in visual generation, open-source models, and ethical usage, Advanced Professional Projection Design (graduate), Yale University, February 14, 2025." }
   - { date: 2024-12-12, text: "Host: \"Beyond the Screen: Exploring AI Personhood and Their Representation in Media.\" The Creative School Catalyst, Toronto, December 12, 2024." }
-  # TODO: mentorship: true? This reports on a student project rather than being a
-  # mentorship activity itself. Michael's call.
+  # Not mentorship: this is a talk. Michael did mentor students at Oulu, but that
+  # was a separate project (the AVARA 2024 entry under creative), which the talk
+  # discussed. Settled August 2026.
   - { date: 2024-11-22, text: "Closing keynote: \"Wellness for who? An examination of wellness through a research-creation student project.\" AVARA 2024, OAMK, Oulu, Finland, November 22, 2024." }
   - { date: 2024-11-02, mentorship: true, text: "Workshop on projection design, Peterborough Theatre Guild, Peterborough, ON, November 2–3, 2024." }
   - { date: 2024-10-23, text: "Provocation: \"Personhood // AI.\" UKAI Carnival of Shipwreck, Toronto, October 23, 2024." }

@@ -12,6 +12,9 @@
 # the citations, so repeating them beside every line is noise.
 dates: year
 
+# Juries and funders write back to the personal address, not the university one.
+contact_email: email_personal
+
 title: "Artist CV"
 subtitle: "Performance, projection, and machine collaboration"
 

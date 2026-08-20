@@ -39,6 +39,7 @@ export BERGMANN_CV_REPO=~/Documents/Bergmann-CV   # or set it once
 | `title` | `Curriculum Vitae` | Rendered as `# <title> — Michael F Bergmann`. |
 | `subtitle` | none | Italic line under the title. Good place to name the application and date. |
 | `contact` | `true` | The title/ORCID/email/website block from `personal`. Set `false` when the application form already collects it. |
+| `contact_email` | `email` | Which key of cv.yaml's `personal` block supplies the address. `email_personal` puts `michael@bergmann.ai` on the document, which is what the artist CVs use. |
 | `dates` | `month` | Precision of the left column: `month` or `year`. Year is right for arts CVs — the specific run of dates already sits in the citation, and repeating it beside every line is noise. A section can override it. |
 | `hqp` | `false` | Mark supervised HQP with an asterisk in every citation, per tri-agency convention. A section can override it. |
 | `font` | `default` | Which font set `--pdf` uses: `default` is Atkinson Hyperlegible, `sshrc` is Times New Roman. Set it to `sshrc` only when a funder demands that face. |
@@ -81,9 +82,11 @@ about it.
 
 ### Artist CV for a residency or exhibition
 
-Two are committed and ready to copy: `custom/artist-cv.yaml` for residencies and
-galleries, `custom/artist-cv-canada-council.yaml` for funders. Copy rather than
-edit in place — the copy records how that application was framed.
+Two specs are committed. `custom/artist-cv-canada-council.yaml` is the published
+one, built by CI as `Bergmann-CV-Artist` and linked from the README;
+`custom/artist-cv.yaml` is a three-page cut kept for page-limited applications
+and not published. Copy either rather than editing in place — the copy records
+how that application was framed.
 
 Practice first, academic apparatus trimmed to what an arts jury reads. The
 archive matters here: pre-2019 design credits are often the strongest evidence
@@ -228,10 +231,10 @@ Default output is `custom/<spec-name>.md` in the repo root. Keep it out of
 `output/`: CI runs `git add output/`, so a stray file there gets committed as
 though it were one of the canonical documents.
 
-The two artist CVs are the deliberate exception. CI runs `custom_cv.py` on their
-committed specs and writes them into `output/` under fixed names —
-`Bergmann-CV-Artist` and `Bergmann-CV-Artist-Short` — because the README links
-to them and those links have to serve a current build. That is a workflow step,
+`Bergmann-CV-Artist` is the deliberate exception. CI runs `custom_cv.py` on
+`custom/artist-cv-canada-council.yaml` and writes it into `output/` under that
+fixed name, because the README links to it and the link has to serve a current
+build. `custom/artist-cv.yaml` — the three-page cut — is not published. That is a workflow step,
 not something to reproduce by hand: a one-off written into `output/` locally
 would be committed as canonical and then silently overwritten on the next push.
 

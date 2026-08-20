@@ -30,13 +30,12 @@ jobs:
       - name: Generate markdown
         run: python3 build.py
 
-      # The artist CVs come from committed specs rather than build.py, so the
-      # four canonical documents stay untouched while these still publish.
-      - name: Generate artist CVs
+      # The artist CV comes from a committed spec rather than build.py, so the
+      # four canonical documents stay untouched while it still publishes.
+      - name: Generate artist CV
         run: |
           S=.claude/skills/bergmann-cv/scripts/custom_cv.py
           python3 $S custom/artist-cv-canada-council.yaml --out output/Bergmann-CV-Artist.md
-          python3 $S custom/artist-cv.yaml --out output/Bergmann-CV-Artist-Short.md
 
       # Fonts and pandoc flags live in convert.sh so CI and local builds agree.
       - name: Convert to docx and pdf

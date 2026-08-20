@@ -1,8 +1,7 @@
-# Artist CV — the general-purpose one, for residencies, exhibitions, and
-# galleries. Practice first; the academic apparatus is cut to what an arts jury
-# actually reads. Copy this file and adjust rather than editing it in place when
-# an application wants something different; the copy records how that
-# application was framed.
+# Artist CV, cut short — a starting point for applications with a page limit.
+# Not published: the README serves the full artist CV, and anything size-specific
+# gets built on request. Copy this file and adjust rather than editing it in
+# place; the copy records how that application was framed.
 #
 # Build:  python3 .claude/skills/bergmann-cv/scripts/custom_cv.py \
 #           custom/artist-cv.yaml --docx --pdf
@@ -10,6 +9,8 @@
 # Year-only dates in the left column. Specific runs of dates already live in
 # the citations, so repeating them beside every line is noise.
 dates: year
+
+contact_email: email_personal
 
 title: "Artist CV"
 # Name the application and its date here before sending.

@@ -39,6 +39,7 @@ export BERGMANN_CV_REPO=~/Documents/Bergmann-CV   # or set it once
 | `title` | `Curriculum Vitae` | Rendered as `# <title> — Michael F Bergmann`. |
 | `subtitle` | none | Italic line under the title. Good place to name the application and date. |
 | `contact` | `true` | The title/ORCID/email/website block from `personal`. Set `false` when the application form already collects it. |
+| `dates` | `month` | Precision of the left column: `month` or `year`. Year is right for arts CVs — the specific run of dates already sits in the citation, and repeating it beside every line is noise. A section can override it. |
 | `hqp` | `false` | Mark supervised HQP with an asterisk in every citation, per tri-agency convention. A section can override it. |
 | `font` | `default` | Which font set `--pdf` uses: `default` is Atkinson Hyperlegible, `sshrc` is Times New Roman. Set it to `sshrc` only when a funder demands that face. |
 | `sections` | — | Ordered list; the order here is the order the reader sees. |
@@ -58,6 +59,7 @@ holds a block of `text`.
 | `exclude` | Case-insensitive regex over `text`. Drops matches. |
 | `limit` | Keep the first N after filtering and sorting. |
 | `hqp` | Override the document-level HQP marking for this section only. |
+| `dates` | Override the document-level date precision for this section only. |
 | `sort` | `date-desc`, `date-asc`, or `file`. Defaults to `file` for a single source (preserving the hand-maintained order) and `date-desc` for merged sources. |
 | `dated` | `false` suppresses the date column — useful for a bare list of titles. |
 | `bullets` | `true` renders a bullet list instead of a table. Required for `teaching`, which has no dates. |
@@ -79,29 +81,45 @@ about it.
 
 ### Artist CV for a residency or exhibition
 
+Two are committed and ready to copy: `custom/artist-cv.yaml` for residencies and
+galleries, `custom/artist-cv-canada-council.yaml` for funders. Copy rather than
+edit in place — the copy records how that application was framed.
+
 Practice first, academic apparatus trimmed to what an arts jury reads. The
 archive matters here: pre-2019 design credits are often the strongest evidence
 of practice, and they appear in no document but FullRecord.
 
 ```yaml
+dates: year               # arts CVs want the year, not the month
 title: "Artist CV"
 subtitle: "Banff Centre digital arts residency, October 2026"
 sections:
-  - heading: "Selected Creative Work"
-    from: [creative, archive_installation, archive_projection_design]
-    limit: 12
+  - heading: "Selected Works"
+    from: all
+    flags: [selected]     # curated by strength; see below
   - heading: "Residencies"
     from: [invited_positions, archive_residencies]
-  - heading: "Exhibitions and Awards"
+  - heading: "Awards"
     from: awards
-  - heading: "Selected Talks"
-    from: invited_talks
-    since: 2021
+  - heading: "Selected Press"
+    from: interviews
     limit: 6
   - heading: "Education"
     from: education
-    until: 2014          # drop the in-progress PhD if the jury reads it as unfinished
 ```
+
+**Curate by `selected:`, not by `limit:`.** Every other filter in this file sorts
+by date, and an arts jury does not want the twelve newest things — it wants the
+work that defines the practice. On this record a date sort with `limit: 12` drops
+*He Left Quietly* (Best Production, SummerWorks) and *Accidental Death of an
+Anarchist* (Yale Rep / Berkeley Rep), which is close to the opposite of the
+intended effect.
+
+The funder version adds three things a residency jury does not read: grant
+history, the full pre-2019 design record broken out by kind, and a deeper recent
+practice list beneath the highlights. It excludes conference-travel grants —
+they funded attendance, not practice, and read as academic noise next to a
+production budget.
 
 ### Two-page academic CV for a job or fellowship
 

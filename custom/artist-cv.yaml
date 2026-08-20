@@ -1,0 +1,42 @@
+# Artist CV — the general-purpose one, for residencies, exhibitions, and
+# galleries. Practice first; the academic apparatus is cut to what an arts jury
+# actually reads. Copy this file and adjust rather than editing it in place when
+# an application wants something different; the copy records how that
+# application was framed.
+#
+# Build:  python3 .claude/skills/bergmann-cv/scripts/custom_cv.py \
+#           custom/artist-cv.yaml --docx --pdf
+
+# Year-only dates in the left column. Specific runs of dates already live in
+# the citations, so repeating them beside every line is noise.
+dates: year
+
+title: "Artist CV"
+# Name the application and its date here before sending.
+subtitle: "Performance, projection, and machine collaboration"
+
+sections:
+  # Curation is by `selected:`, not recency: an arts jury wants the
+  # career-defining work, and the strongest credits are not the newest.
+  - heading: "Selected Works"
+    from: all
+    flags: [selected]
+
+  - heading: "Residencies"
+    from: [invited_positions, archive_residencies]
+
+  - heading: "Awards"
+    from: awards
+
+  - heading: "Collectives and Affiliations"
+    from: memberships
+    # Excluding rather than matching, so a membership added later is included by
+    # default instead of silently dropping out of this CV.
+    exclude: 'Artificial Intelligence Association|Diagonal'
+
+  - heading: "Selected Press"
+    from: interviews
+    limit: 6
+
+  - heading: "Education"
+    from: education

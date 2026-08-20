@@ -133,15 +133,21 @@ def year(e):
     return str(e.get("date", ""))[:4]
 
 
-def fmt(d):
+def fmt(d, precision="month"):
     d = str(d)
-    return d[:7] if DATE_RE.match(d) else d  # month precision; leave placeholders intact
+    if not DATE_RE.match(d):
+        return d                                   # leave placeholders intact
+    return d[:4] if precision == "year" else d[:7]
 
 
-def dstr(e):
-    d, end = fmt(e.get("date", "")), e.get("end")
+def dstr(e, precision="month"):
+    """The date cell. At year precision an entry inside one year collapses to
+    that year, which is what an arts CV wants: the specific run of dates already
+    lives in the citation, and repeating it in the left column is noise."""
+    d = fmt(e.get("date", ""), precision)
+    end = e.get("end")
     if end:
-        end = "present" if str(end) == "present" else fmt(end)
+        end = "present" if str(end) == "present" else fmt(end, precision)
         return d if end == d else f"{d} – {end}"
     return d
 
@@ -159,11 +165,11 @@ def hqp_text(e):
     return text
 
 
-def rows(entries, dated=True, hqp=False):
+def rows(entries, dated=True, hqp=False, precision="month"):
     """Two-column pipe table: date | item. Dash ratio sets column widths (~24/76)."""
     lines = ["|  |  |", "|:" + "-" * 24 + "|:" + "-" * 76 + "|"]
     for e in entries:
-        d = f"**{dstr(e)}**" if dated and e.get("date") else ""
+        d = f"**{dstr(e, precision)}**" if dated and e.get("date") else ""
         lines.append(f"| {d} | {hqp_text(e) if hqp else e['text']} |")
     return "\n".join(lines)
 
@@ -264,7 +270,8 @@ def render(spec):
             doc.append("\n" + "\n".join(f"- {e['text']}" for e in entries) + "\n")
         else:
             doc.append("\n" + rows(entries, dated=sec.get("dated", True),
-                                    hqp=sec.get("hqp", spec.get("hqp", False))) + "\n")
+                                    hqp=sec.get("hqp", spec.get("hqp", False)),
+                                    precision=sec.get("dates", spec.get("dates", "month"))) + "\n")
 
     return "\n".join(doc)
 

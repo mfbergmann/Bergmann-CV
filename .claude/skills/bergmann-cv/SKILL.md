@@ -65,6 +65,7 @@ editor" belongs in a comment.
 | `status:` | Public-facing state of a forthcoming work | Rendered in brackets |
 | `ocgs_category:` | `chapter`, `journal`, `refereed_proceedings`, or `other` | Bins the entry in the OCGS publication tables |
 | `mentorship: true` | The entry is mentorship or training evidence | Renders nothing; selectable with `flags: [mentorship]` |
+| `selected: true` | A career-highlight work | Renders nothing; drives the artist CV's "Selected Works" |
 | `hqp: [names]` | Supervised people named in the citation | Renders nothing; asterisked on demand for the tri-agency CV |
 
 Two things about flags are easy to get wrong. `refereed` and `other_refereed`
@@ -234,6 +235,35 @@ Three habits keep this clean:
 - **Curate down, not up.** Start from what the record holds (the FullRecord
   document exists for exactly this) and cut. Never write a line into a tailored
   CV that isn't supported by `cv.yaml`.
+
+## Artist CVs
+
+Residencies, galleries, and arts funders want a different document from any of
+the four: practice first, academic apparatus cut to what a jury reads, and the
+pre-2019 design record promoted rather than archived — those credits are the
+bulk of the professional practice and appear in no canonical document but
+FullRecord.
+
+Two specs are committed, and both are starting points to copy rather than edit:
+
+| Spec | For |
+| --- | --- |
+| `custom/artist-cv.yaml` | Residencies, exhibitions, galleries. Three pages. |
+| `custom/artist-cv-canada-council.yaml` | Canada Council and other funders. Adds grant history, the full design record, and a deeper practice list. Seven pages. |
+
+The curation runs on `selected: true` rather than `limit:`, because an arts jury
+wants the career-defining work and the strongest credits are not the newest.
+Sorting by date and taking the top twelve drops the award winners.
+
+Both set `dates: year`. The left column carries the year alone; the specific run
+of dates stays in the citation where it belongs, rather than being repeated
+beside every line.
+
+Two judgement calls are already encoded in the funder spec and worth knowing
+about before copying it: conference-travel grants are excluded, because they
+funded attendance rather than practice; and the residency CV filters memberships
+down to the artist collectives and the ADC/IATSE credential, while the funder
+version lists them all.
 
 ## SSHRC submissions
 

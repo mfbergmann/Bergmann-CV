@@ -28,6 +28,7 @@ Almost every section is a list of one-line flow mappings:
 | `ocgs_category` | publications, forthcoming | `chapter`, `journal`, `refereed_proceedings`, `other`. |
 | `formats` | no | Restricts the entry to the listed documents (`complete`, `ocgs`, `sshrc`, `fullrecord`). Omit for all. FullRecord ignores it. |
 | `mentorship` | no | Marks the entry as mentorship or training evidence. Renders nothing; it exists to be selected on. |
+| `selected` | no | Marks a career-highlight work. Renders nothing; drives the artist CV's "Selected Works". |
 | `hqp` | no | List of supervised highly qualified personnel named in `text`. Renders nothing by default. |
 | funding fields | funding only | `source`, `program`, `ftype`, `amount`, `pi`, `purpose`. |
 
@@ -146,6 +147,25 @@ with `hqp: true`.
 `build.py` warns at build time when an `hqp` name does not appear in the `text`
 it annotates — the failure mode is a name spelled differently on the two sides,
 which is invisible until a reviewer sees an unmarked student.
+
+## Selected works
+
+`selected: true` marks a career highlight. It exists because an artist CV
+curates by strength and every other tool in the file curates by date: `limit`
+after a date sort returns the most recent N, which on this record drops *He Left
+Quietly* and the Yale Rep credit — the two an arts jury is most likely to know.
+There is no way to derive that judgement from the data, so it is recorded.
+
+Sixteen entries carry it, across `creative`, `archive_projection_design`, and
+`archive_installation`. The set is meant to be revised: it is the one flag in
+the file that encodes taste rather than fact, and it should change as the
+practice does.
+
+```yaml
+  - heading: "Selected Works"
+    from: all
+    flags: [selected]
+```
 
 ## Rendering mechanics
 

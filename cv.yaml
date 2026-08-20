@@ -197,19 +197,19 @@ invited_talks:
   - { date: 2019-11, text: "\"Research Creation with Michael Bergmann: The Uncanny Robots Project\" and \"Connecting through live performance\" (with Eugènie Pastor, LSBU). The Catalyst @ FCAD, TMU, November 2019." }
 
 creative:
-  - { date: 2026-04-22, end: 2026-05-09, text: "\"Before I Was This.\" Generative text work. flashDRIVE: Digital Arts Fundraiser Exhibition, InterAccess, Toronto, April 22 – May 9, 2026. Curated by Miriam Arbus." }
-  - { date: 2026-02-13, text: "Nuptials (feature film). Producer, projection design, and live in-camera VFX. Directed by Sean Braune, Para-sight Productions. Official release February 13, 2026 (Freestyle Digital Media). Best World Feature Film, Austin Revolution Film Festival, 2022." }
-  - { date: 2025-11-18, end: 2025-11-22, text: "The Frankenstein Project. Producer, with Debashis Sinha. Performance Studio Theatre, TMU, November 18–22, 2025." }
+  - { selected: true, date: 2026-04-22, end: 2026-05-09, text: "\"Before I Was This.\" Generative text work. flashDRIVE: Digital Arts Fundraiser Exhibition, InterAccess, Toronto, April 22 – May 9, 2026. Curated by Miriam Arbus." }
+  - { selected: true, date: 2026-02-13, text: "Nuptials (feature film). Producer, projection design, and live in-camera VFX. Directed by Sean Braune, Para-sight Productions. Official release February 13, 2026 (Freestyle Digital Media). Best World Feature Film, Austin Revolution Film Festival, 2022." }
+  - { selected: true, date: 2025-11-18, end: 2025-11-22, text: "The Frankenstein Project. Producer, with Debashis Sinha. Performance Studio Theatre, TMU, November 18–22, 2025." }
   - { date: 2025-11-01, end: 2025-11-15, text: "291 by Jade O'Keeffe. Projection co-design with Kristen Ferguson; directed by Lisa Dixon. Peterborough Theatre Guild, November 1–15, 2025." }
-  - { date: 2025-04-02, text: "\"To my creators...\" Solo work exhibited at the Creative AI Symposium, TMU, April 2, 2025; created during the SÍM residency, Reykjavík." }
+  - { selected: true, date: 2025-04-02, text: "\"To my creators...\" Solo work exhibited at the Creative AI Symposium, TMU, April 2, 2025; created during the SÍM residency, Reykjavík." }
   - { date: 2024-11-17, end: 2024-11-23, mentorship: true, text: "AVARA 2024 installation. Led eight students in a semester-long research-creation installation presented at AVARA 2024, OAMK, Oulu, Finland." }
-  - { date: 2024-06-16, end: 2024-06-25, text: "Shipwreck. Group exhibition with UKAI Projects and five Canadian artists, SÍM Gallery, Reykjavík, Iceland, following a month-long residency; includes solo work \"To my creators...\"" }
-  - { date: 2024-04-19, text: "Labour and Us. Workshop series (March 14 – April 17, 2024) and performance, co-created and performed with Lucas Carravetta, Matt Endahl, and Aimée Dawn Robinson; roundtable with Alan Filewod, Tom Scholte, Cynthia Ashperger, and Judith Thompson. ImprovLab, University of Guelph, April 19, 2024." }
-  - { date: 2024-01-25, text: "Almost Alchemy. Two 360° video experiences of improvised research-creation performance. RUBIX, TMU, January 25, 2024." }
+  - { selected: true, date: 2024-06-16, end: 2024-06-25, text: "Shipwreck. Group exhibition with UKAI Projects and five Canadian artists, SÍM Gallery, Reykjavík, Iceland, following a month-long residency; includes solo work \"To my creators...\"" }
+  - { selected: true, date: 2024-04-19, text: "Labour and Us. Workshop series (March 14 – April 17, 2024) and performance, co-created and performed with Lucas Carravetta, Matt Endahl, and Aimée Dawn Robinson; roundtable with Alan Filewod, Tom Scholte, Cynthia Ashperger, and Judith Thompson. ImprovLab, University of Guelph, April 19, 2024." }
+  - { selected: true, date: 2024-01-25, text: "Almost Alchemy. Two 360° video experiences of improvised research-creation performance. RUBIX, TMU, January 25, 2024." }
   - { date: 2023-10-01, text: "\"rocketmanperson.\" Improvised performance with Lucas Carravetta, Matt Endahl, and Aimée Dawn Robinson. Silence, Guelph, October 1, 2023." }
   - { date: 2023-04-01, text: "\"Who's There?\" Improvised performance with Lucas Carravetta, Matt Endahl, and Aimée Dawn Robinson. Silence, Guelph, April 1, 2023." }
   - { date: 2023, text: "Living Newspaper 2.0. Projection design; directed by Julie Labagnara. George Luscombe Theatre, Toronto." }
-  - { date: 2019-10, text: "\"The Uncanny Robots Project: Phase 1.\" Research-creation premiere examining human-robot interaction through dance, commissioned for the opening of the Creative Technology Lab @ FCAD, TMU, October 2019." }
+  - { selected: true, date: 2019-10, text: "\"The Uncanny Robots Project: Phase 1.\" Research-creation premiere examining human-robot interaction through dance, commissioned for the opening of the Creative Technology Lab @ FCAD, TMU, October 2019." }
   # TODO: add pre-2019 design credits (theatre, dance, opera) from the archival CV if wanted in the complete CV
 
 # ============================================================
@@ -232,12 +232,12 @@ archive_projection_design:
   - { date: 2018, text: "Nuptials (feature film). Projection design and live in-camera VFX; directed by Sean Braune. Para-sight Productions. (Released 2026; see Creative Research Output.)" }
   - { date: 2018, text: "Crossing Borders. Projection co-design with Kristen Ferguson; directed by Peggy Shannon and Gill Foster. Parodos Festival, Toronto." }
   - { date: 2018, text: "291. Projection co-design with Kristen Ferguson; directed by Rebecca Ballarin. Parodos Festival, Toronto." }
-  - { date: 2017, text: "Slaughterhouse/Requiem. Projection design; choreography by Belinda McGuire. Harbourfront NextSteps, Fleck Dance Theatre, Toronto." }
-  - { date: 2016, text: "YET. Projection design; choreography by Heidi Strauss. Ryerson Dances, Ryerson Theatre, Toronto." }
+  - { selected: true, date: 2017, text: "Slaughterhouse/Requiem. Projection design; choreography by Belinda McGuire. Harbourfront NextSteps, Fleck Dance Theatre, Toronto." }
+  - { selected: true, date: 2016, text: "YET. Projection design; choreography by Heidi Strauss. Ryerson Dances, Ryerson Theatre, Toronto." }
   - { date: 2016, text: "Slaughterhouse/Requiem. Projection design; choreography by Belinda McGuire. Belinda McGuire Dance Projects." }
   - { date: 2014, text: "Incorporeus. Projection design; choreography by Belinda McGuire. Belinda McGuire Dance Projects." }
-  - { date: 2014, text: "He Left Quietly. Projection design; directed by Leora Morris. SummerWorks Performance Festival, Toronto. Best Production, 2014." }
-  - { date: 2013, end: 2014, text: "Accidental Death of an Anarchist. Projection design; directed by Christopher Bayes. Yale Repertory Theatre / Berkeley Repertory Theatre." }
+  - { selected: true, date: 2014, text: "He Left Quietly. Projection design; directed by Leora Morris. SummerWorks Performance Festival, Toronto. Best Production, 2014." }
+  - { selected: true, date: 2013, end: 2014, text: "Accidental Death of an Anarchist. Projection design; directed by Christopher Bayes. Yale Repertory Theatre / Berkeley Repertory Theatre." }
   - { date: 2012, text: "Iphigenia Among the Stars. Projection design; directed by Jack Tamburri. Yale School of Drama." }
   - { date: 2012, text: "Fox Play. Projection design; directed by Lileana Blain-Cruz. Yale School of Drama." }
   - { date: 2012, text: "Dracula. Projection design; directed by Jack Tamburri. Yale Cabaret." }
@@ -272,11 +272,11 @@ archive_lighting:
   - { date: 2008, text: "Romeo & Juliet. Lighting design; directed by Ian Watson. Ryerson Theatre (Abrams), Toronto." }
 
 archive_installation:
-  - { date: 2014, text: "echo::system Action Station #2: The Desert. Video design and system design team; choreography by Grisha Coleman. ACCAD, The Ohio State University." }
-  - { date: 2014, text: "TECHknowSELF. Wrote, directed, and designed this multimedia performance (MFA thesis). Becton Engineering Center, Yale University." }
-  - { date: 2013, text: "Water Closeted (projection installation). Gallery + Drama, Yale University Art Gallery." }
+  - { selected: true, date: 2014, text: "echo::system Action Station #2: The Desert. Video design and system design team; choreography by Grisha Coleman. ACCAD, The Ohio State University." }
+  - { selected: true, date: 2014, text: "TECHknowSELF. Wrote, directed, and designed this multimedia performance (MFA thesis). Becton Engineering Center, Yale University." }
+  - { selected: true, date: 2013, text: "Water Closeted (projection installation). Gallery + Drama, Yale University Art Gallery." }
   - { date: 2013, text: "AlgoRhythym. Visual component for Matt Otto's sound performance thesis. Yale School of Drama." }
-  - { date: 2012, text: "On Guard (projection installation). Group showing, Gallery + Drama, Yale University Art Gallery." }
+  - { selected: true, date: 2012, text: "On Guard (projection installation). Group showing, Gallery + Drama, Yale University Art Gallery." }
 
 archive_film:
   # year conflict in sources: older CVs say 2006, CV 2025 and the Portfolio folder say 2009

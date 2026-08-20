@@ -1,0 +1,55 @@
+# Artist CV — Canada Council and other funder versions.
+#
+# Differs from custom/artist-cv.yaml in three ways, all of them things a funder
+# reads and a residency jury does not: the practice record runs deeper than the
+# selected highlights, grant history is listed, and presentation history is
+# broken out by kind so the range of the practice is legible.
+#
+# Build:  python3 .claude/skills/bergmann-cv/scripts/custom_cv.py \
+#           custom/artist-cv-canada-council.yaml --docx --pdf
+
+# Year-only dates in the left column. Specific runs of dates already live in
+# the citations, so repeating them beside every line is noise.
+dates: year
+
+title: "Artist CV"
+subtitle: "Performance, projection, and machine collaboration"
+
+sections:
+  - heading: "Selected Works"
+    from: all
+    flags: [selected]
+
+  - heading: "Recent Creative Work"
+    from: creative
+    since: 2019
+
+  - heading: "Residencies"
+    from: [invited_positions, archive_residencies]
+
+  - heading: "Awards"
+    from: awards
+
+  - heading: "Grants and Fellowships"
+    from: [funding_external, funding_internal]
+    # Conference-travel grants funded attendance rather than practice, and read
+    # as academic noise to an arts jury. The Shipwreck travel grant survives
+    # this filter because it funded the work itself.
+    exclude: 'conference presentation'
+
+  # The pre-2019 design record: the bulk of the professional practice, and it
+  # appears in no canonical document but FullRecord.
+  - heading: "Projection and Installation Design"
+    from: [archive_projection_design, archive_installation]
+
+  - heading: "Direction, Lighting, and Film"
+    from: [archive_direction, archive_lighting, archive_film]
+
+  - heading: "Collectives and Affiliations"
+    from: memberships
+
+  - heading: "Selected Press"
+    from: interviews
+
+  - heading: "Education"
+    from: education

@@ -3,7 +3,7 @@
 Associate Professor, Performance, The Creative School, Toronto Metropolitan University  
 ORCID: 0000-0002-5698-8121 · mfb@torontomu.ca · https://bergmann.ai
 
-<!-- Generated 2026-08-19 from cv.yaml — do not edit outputs directly. -->
+<!-- Generated 2026-08-20 from cv.yaml — do not edit outputs directly. -->
 
 
 *The complete record. Archive sections at the end hold historical credits excluded from the rendered CVs; filter from here when building any application-specific version.*

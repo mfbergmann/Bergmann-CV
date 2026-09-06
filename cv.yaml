@@ -79,6 +79,7 @@ memberships:
   - { date: 2018, end: present, text: "Canadian Institute for Theatre Technology (CITT)" }
 
 service:
+  - { date: 2026, text: "Reviewer, NeurIPS Creative AI Track 2026: Agency, Thirty-Ninth Conference on Neural Information Processing Systems" }
   - { date: 2026-06, end: present, text: "Judge, Music, Film & Theatre panel, The Global Undergraduate Awards, Dublin" }
   - { date: 2026-04-02, text: "Co-chair (with Dr. Afsoon Soudi), 3rd Annual Creative AI Symposium, Creative AI Hub, TMU" }
   - { date: 2025-07, end: present, text: "Member, Creative AI Hub Steering Committee, The Creative School, TMU" }

@@ -3,7 +3,7 @@
 Associate Professor, Performance, The Creative School, Toronto Metropolitan University  
 ORCID: 0000-0002-5698-8121 · mfb@torontomu.ca · https://bergmann.ai
 
-<!-- Generated 2026-08-20 from cv.yaml — do not edit outputs directly. -->
+<!-- Generated 2026-09-06 from cv.yaml — do not edit outputs directly. -->
 
 
 ## a) Name
@@ -48,6 +48,7 @@ Bergmann, Michael F. — Associate Professor, Performance, The Creative School, 
 
 |  |  |
 |:------------------------|:----------------------------------------------------------------------------|
+| **2026** | Reviewer, NeurIPS Creative AI Track 2026: Agency, Thirty-Ninth Conference on Neural Information Processing Systems |
 | **2026-06 – present** | Judge, Music, Film & Theatre panel, The Global Undergraduate Awards, Dublin |
 | **2026-04** | Co-chair (with Dr. Afsoon Soudi), 3rd Annual Creative AI Symposium, Creative AI Hub, TMU |
 | **2025-07 – present** | Member, Creative AI Hub Steering Committee, The Creative School, TMU |

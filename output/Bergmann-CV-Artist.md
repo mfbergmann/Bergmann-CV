@@ -5,7 +5,7 @@
 Associate Professor, Performance, The Creative School, Toronto Metropolitan University  
 ORCID: 0000-0002-5698-8121 · michael@bergmann.ai · https://bergmann.ai
 
-<!-- Generated 2026-08-20 from cv.yaml by custom_cv.py — edit cv.yaml or the spec, never this file. -->
+<!-- Generated 2026-09-06 from cv.yaml by custom_cv.py — edit cv.yaml or the spec, never this file. -->
 
 
 ## Selected Works

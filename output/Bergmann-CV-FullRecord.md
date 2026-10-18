@@ -3,7 +3,7 @@
 Associate Professor, Performance, The Creative School, Toronto Metropolitan University  
 ORCID: 0000-0002-5698-8121 · mfb@torontomu.ca · https://bergmann.ai
 
-<!-- Generated 2026-10-14 from cv.yaml — do not edit outputs directly. -->
+<!-- Generated 2026-10-17 from cv.yaml — do not edit outputs directly. -->
 
 
 *The complete record. Archive sections at the end hold historical credits excluded from the rendered CVs; filter from here when building any application-specific version.*
@@ -28,7 +28,7 @@ ORCID: 0000-0002-5698-8121 · mfb@torontomu.ca · https://bergmann.ai
 
 |  |  |
 |:------------------------|:----------------------------------------------------------------------------|
-| **2022-09 – present** | PhD (in progress), Critical Studies in Improvisation, University of Guelph. Expected 2027. |
+| **2022-09 – present** | PhD Candidate, Critical Studies in Improvisation, University of Guelph. Expected 2027. |
 | **2011 – 2014** | MFA, Design (Projection Design Specialization), Yale School of Drama, Yale University |
 | **2006 – 2011** | BFA, Theatre Performance Production, Ryerson Theatre School, Toronto Metropolitan University (coursework completed December 2010; graduated May 2011) |
 

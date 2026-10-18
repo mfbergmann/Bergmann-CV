@@ -42,7 +42,7 @@ Canadian English (colour, centre); Oxford comma; semicolons over em-dashes. Cita
 - Faculty Tenure Committee: joined December 2024
 - BFA: coursework December 2010, graduated May 2011 — degree year is 2011
 - *Nuptials*: official release date is 2026-02-13 (Freestyle Digital Media); design work 2018; award 2022
-- Michael is a PhD student (not yet ABD) — not "candidate"
+- Michael is a PhD Candidate (passed his qualifying exam in October 2026); the CV records the status, not the QE date
 - Co-UPD role ended July 2023
 - LTEF "Creative Laboratory Project" grant: 2018 (funding period 2017/1–2018/1 per CCV); the old "2016" note was unfounded — no source says 2016
 - Eldon Elder Fellowship amount: $40,000 USD; the CCV's "50,000" is the CAD equivalent, not a conflict

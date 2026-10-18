@@ -1,6 +1,6 @@
 # Michael F Bergmann — Curriculum Vitae
 
-Performance designer, researcher, and Associate Professor in Performance at The Creative School, Toronto Metropolitan University. PhD student in Critical Studies in Improvisation, University of Guelph.
+Performance designer, researcher, and Associate Professor in Performance at The Creative School, Toronto Metropolitan University. PhD Candidate in Critical Studies in Improvisation, University of Guelph.
 
 [bergmann.ai](https://bergmann.ai) · [ORCID 0000-0002-5698-8121](https://orcid.org/0000-0002-5698-8121)
 

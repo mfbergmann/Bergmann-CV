@@ -108,11 +108,12 @@ def view(doc):
 V_COMPLETE, V_OCGS, V_SSHRC = view("complete"), view("ocgs"), view("sshrc")
 
 P = CV["personal"]
+# Every document opens with the name alone; which document it is lives in the filename.
 head = (f"# {P['name']}\n\n{P['title']}  \nORCID: {P['orcid']} · {P['email']} · {P['website']}\n\n"
         f"<!-- Generated {TODAY.isoformat()} from cv.yaml — do not edit outputs directly. -->\n")
 
 # ---------- 1. Complete CV ----------
-doc = [head.replace("# ", "# Curriculum Vitae — ")]
+doc = [head]
 doc.append(sec("Employment", V_COMPLETE["employment"]))
 doc.append(sec("Education", V_COMPLETE["education"]))
 doc.append(sec("Teaching, Training, and Certifications", V_COMPLETE["qualifications"]))
@@ -151,7 +152,7 @@ PUB_CATS = [("Books authored", None), ("Books edited", None), ("Chapters in book
 pubs_by_cat = lambda cat: [e for e in V_OCGS["publications"] if e.get("ocgs_category") == cat]
 papers_read = sorted(V_OCGS["presentations"] + V_OCGS["posters"], key=lambda e: str(e.get("date", "")), reverse=True)
 
-doc = [head.replace("# ", "# OCGS Curriculum Vitae — ")]
+doc = [head]
 doc.append(f"\n## a) Name\n\nBergmann, Michael F. — {P['title']}\n")
 doc.append(sec("b) Degrees", V_OCGS["education"]))
 doc.append(sec("c) Employment History", V_OCGS["employment"]))
@@ -176,7 +177,7 @@ doc.append(sec("Creative and Professional Work", V_OCGS["creative"]))
 
 # ---------- 3. SSHRC Research Contributions (six-year window) ----------
 w = lambda key: [e for e in V_SSHRC[key] if in_window(e)]
-doc = [f"# Research Contributions and Relevant Experience — {P['name']}\n\n*Six-year window: contributions since {SIX_YEARS_AGO.isoformat()}. \\* = resulted from previous SSHRC support.*\n\n<!-- Generated {TODAY.isoformat()}; prose sections (significance, training narrative, relevant experience) live in prose/sshrc-prose.md and are appended below. -->\n"]
+doc = [f"# {P['name']}\n\n*Six-year window: contributions since {SIX_YEARS_AGO.isoformat()}. \\* = resulted from previous SSHRC support.*\n\n<!-- Generated {TODAY.isoformat()}; prose sections (significance, training narrative, relevant experience) live in prose/sshrc-prose.md and are appended below. -->\n"]
 doc.append("\n# 1. Research Contributions Over the Last Six Years\n")
 doc.append(sec("Refereed contributions", [e for e in w("publications") if e.get("refereed")], star=True))
 doc.append(sec("Other refereed contributions", [e for e in w("presentations") + w("posters") if e.get("other_refereed")], star=True))
@@ -191,7 +192,7 @@ if prose.exists():
 (OUT / "Bergmann-SSHRC-Contributions.md").write_text("\n".join(doc))
 
 # ---------- 4. Full Record ("full life file": everything, including the archive) ----------
-doc = [head.replace("# ", "# Full Record — ")]
+doc = [head]
 doc.append("\n*The complete record. Archive sections at the end hold historical credits excluded from the rendered CVs; filter from here when building any application-specific version.*\n")
 merged = lambda *ls: sorted(sum(ls, []), key=year, reverse=True)
 doc.append(sec("Employment", merged(CV["employment"], CV["archive_employment"])))

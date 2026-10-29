@@ -194,7 +194,6 @@ None — the School of Performance offers no graduate program; graduate work is 
 |  |  |
 |:------------------------|:----------------------------------------------------------------------------|
 | **2026** | Bergmann, M. "Cultivating Empathy through Robotic Performance." Chapter in Robots and Other Artificial Agents on Stage: Theoretical Concepts and Artistic Practices, edited by Erica Magris and Izabella Pluta, transcript Verlag (Theatre Studies series). [in press] |
-| **2026** | Bergmann, M., and McLeod, K. "Improvising with Commercial AI: Questions of Care and Ethics." [in draft] |
 
 
 ## Creative and Professional Work

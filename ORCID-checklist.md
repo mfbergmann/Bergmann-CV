@@ -20,7 +20,6 @@ Compared against cv.yaml, 2026-10-29, from the public ORCID record. ORCID now ho
 ## Waiting
 
 - [ ] "Cultivating Empathy through Robotic Performance," chapter in *Robots and Other Artificial Agents on Stage*, transcript Verlag: add when confirmed in press.
-- [ ] McLeod and Bergmann, "Improvising with Commercial AI: Questions of Care and Ethics": add when published.
 
 ## Done (confirmed 2026-10-29)
 

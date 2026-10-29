@@ -158,8 +158,9 @@ publications:
 forthcoming:
   # TODO: confirm in-press status with editors; add page count when known
   - { date: 2026, status: "in press", ocgs_category: chapter, text: "Bergmann, M. \"Cultivating Empathy through Robotic Performance.\" Chapter in Robots and Other Artificial Agents on Stage: Theoretical Concepts and Artistic Practices, edited by Erica Magris and Izabella Pluta, transcript Verlag (Theatre Studies series)." }
-  # sshrc_exclude: do not list on SSHRC docs until submitted
-  - { date: 2026, status: "in draft", sshrc_exclude: true, ocgs_category: journal, text: "Bergmann, M., and McLeod, K. \"Improvising with Commercial AI: Questions of Care and Ethics.\"" }
+  # Grant-stage only (Oct 2026): no paper started yet, so kept on file but off every CV handed out.
+  # Drop formats: once a draft exists; sshrc_exclude: keep off SSHRC docs until submitted.
+  - { date: 2026, status: "in draft", formats: [fullrecord], sshrc_exclude: true, ocgs_category: journal, text: "Bergmann, M., and McLeod, K. \"Improvising with Commercial AI: Questions of Care and Ethics.\"" }
 
 presentations:
   - { date: 2025-09-12, other_refereed: true, text: "Bergmann, M. \"Hallucinating Children: Improvisation After the Algorithmic Shipwreck.\" Hugarflug: Unstable Systems, annual conference on artistic research, Iceland University of the Arts, Reykjavík, Iceland, September 12, 2025." }

@@ -36,8 +36,8 @@ export BERGMANN_CV_REPO=~/Documents/Bergmann-CV   # or set it once
 
 | Key | Default | Notes |
 | --- | --- | --- |
-| `title` | `Curriculum Vitae` | Rendered as `# <title> — Michael F Bergmann`. |
-| `subtitle` | none | Italic line under the title. Good place to name the application and date. |
+| `title` | none | Names the document for whoever keeps the spec. Not printed: every CV opens with the name alone. |
+| `subtitle` | none | Italic line under the name. Good place to name the application and date. |
 | `contact` | `true` | The title/ORCID/email/website block from `personal`. Set `false` when the application form already collects it. |
 | `contact_email` | `email` | Which key of cv.yaml's `personal` block supplies the address. `email_personal` puts `michael@bergmann.ai` on the document, which is what the artist CVs use. |
 | `dates` | `month` | Precision of the left column: `month` or `year`. Year is right for arts CVs — the specific run of dates already sits in the citation, and repeating it beside every line is noise. A section can override it. |

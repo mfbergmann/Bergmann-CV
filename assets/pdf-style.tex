@@ -8,3 +8,9 @@
 \setlength\LTpost{0.6em}
 \usepackage{etoolbox}
 \AtBeginEnvironment{longtable}{\renewcommand{\arraystretch}{1.15}}
+% Keep each heading with the start of its section: if fewer than about eight
+% lines remain on the page, break before the heading instead of after it.
+\usepackage{needspace}
+\pretocmd{\section}{\Needspace{8\baselineskip}}{}{}
+\pretocmd{\subsection}{\Needspace{8\baselineskip}}{}{}
+\pretocmd{\subsubsection}{\Needspace{7\baselineskip}}{}{}

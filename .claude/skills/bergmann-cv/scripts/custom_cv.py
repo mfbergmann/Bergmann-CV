@@ -244,7 +244,9 @@ def select(spec):
 
 def render(spec):
     P = CV["personal"]
-    doc = [f"# {spec.get('title', 'Curriculum Vitae')} — {P['name']}\n"]
+    # The heading is the name alone, as in build.py's documents. A spec's `title`
+    # names the document for whoever keeps the spec; it is not printed.
+    doc = [f"# {P['name']}\n"]
     if spec.get("subtitle"):
         doc.append(f"*{spec['subtitle']}*\n")
     if spec.get("contact", True):

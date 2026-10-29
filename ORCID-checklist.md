@@ -1,38 +1,36 @@
 # ORCID Update Checklist — 0000-0002-5698-8121
 
-Compared against cv.yaml, 2026-07-22. ORCID currently holds 6 works.
+Compared against cv.yaml, 2026-10-29, from the public ORCID record. ORCID now holds 49 works, plus employment, education, qualifications, invited positions, distinctions, memberships, service, and funding. The July 2026 list of missing presentations, posters, and creative works is done.
 
-## Fix on ORCID
+## Still to fix on ORCID
 
-- [ ] **Orchestra Remote Delivery during COVID-19 Database** — ORCID says year **2021**; the data set was published **May 5, 2022** (DOI 10.17605/OSF.IO/WCDU2). Change year to 2022.
-- [ ] **Uncanny Text** — typed as "book chapter" with venue "New TransAtlantic Dialogues"; better: journal/magazine item in *Belfield Literary Review: New TransAtlantic Dialogues*, Spring 2021, pp. 96–99.
+- [ ] **Orchestra Remote Delivery during COVID-19 Database**: ORCID still says **2021**; the data set was published **May 5, 2022** (DOI 10.17605/OSF.IO/WCDU2). Change the year to 2022.
+- [ ] **Uncanny Text**: the type is now journal article (done), but the journal title reads only "New TransAtlantic Dialogues". Use *Belfield Literary Review: New TransAtlantic Dialogues*, Spring 2021, pp. 96–99.
+- [ ] **Academic Integrity Committee**: ORCID starts it in **2012**; cv.yaml has **2019–2022**.
+- [ ] **TFA Representative's Council**: ORCID has only the 2018–2022 term. Add the current term, 2026-09 to present.
+- [ ] **CITT membership**: ORCID has no start date and an end date of 2018; cv.yaml has 2018 to present. The start year looks like it went into the end-date field.
+- [ ] **Arts & Letters Club Stage Committee**: "Member, Stage Committee" sits in the department field and the role is blank. Move it to the role field.
 
-## Already correct on ORCID
+## Check which side is right
 
-Hugarflug 2025; USITT 2024; CATR Paramanifesto 2023; Augmented Symphony (EVA 2022, DOI matches); Uncanny Text (year).
+- [ ] **SSHRC Partnership Engage Grant (Visual Music)**: ORCID has 2020-04-01 to 2021-03-31; cv.yaml has 2021. If ORCID is right, correct cv.yaml.
+- [ ] **PhD entry**: ORCID reads "PhD, Critical Studies in Improvisation (in progress)", ending 2027-06. Optionally reword to match the CV's "PhD Candidate".
+- [ ] **MFA wording**: ORCID has "Theatre Design, Projection Concentration", Yale University School of Drama; cv.yaml has "Design (Projection Design Specialization)", Yale School of Drama.
 
-## Add to ORCID — publications
+## Waiting
 
-- [ ] "Performance Art: New Magic." *Rough Draft*, Vol. 2, No. 1, ed. Laurence Butet-Roch, November 7, 2017.
-- [ ] (when confirmed in press) "Cultivating Empathy through Robotic Performance," chapter in *Robots and Other Artificial Agents on Stage*, transcript Verlag.
+- [ ] "Cultivating Empathy through Robotic Performance," chapter in *Robots and Other Artificial Agents on Stage*, transcript Verlag: add when confirmed in press.
+- [ ] McLeod and Bergmann, "Improvising with Commercial AI: Questions of Care and Ethics": add when published.
 
-## Add to ORCID — conference presentations (currently only 3 of 14 are there)
+## Done (confirmed 2026-10-29)
 
-- [ ] "Beyond Tools: Reimaging Technology as Co-Participants in Performance Design." PQ Symposium, Prague, October 2024.
-- [ ] "AI Sentience." CATR Conference (online), June 2023.
-- [ ] "Augmented Symphony" (paper read). EVA London, July 2022.
-- [ ] "Stepping Back In" (with B. Thomson). L&T Conference, TMU, May 2022.
-- [ ] "Student-driven curriculum development for creative practice." L&T Conference, TMU, May 2022.
-- [ ] "Cultivating Empathy through Robotic Performance." University of Lausanne, October 2021.
-- [ ] "Unapologetically learning together" (with O'Brien, Thomson). UAL, June 2021.
-- [ ] "Pandemic Performance" (with O'Brien, Thomson). L&T Conference, Ryerson, May 2021.
-- [ ] "Putting Up the Show" (with B. Thomson). Ryerson L&T Conference, May 2019.
-- [ ] "Theatre in TheatAR." University College Dublin, April 2019.
-- [ ] "Technology as a tool." UAL, March 2018.
+- Rough Draft, "Performance Art: New Magic" (2017).
+- All 11 missing conference presentations: PQ Symposium 2024, AI Sentience (CATR 2023), Augmented Symphony paper (EVA 2022), Stepping Back In and Student-driven curriculum (L&T 2022), Lausanne 2021, UAL 2021, Pandemic Performance (L&T 2021), Putting Up the Show (L&T 2019), Theatre in TheatAR (UCD 2019), Technology as a tool (UAL 2018).
+- All 7 posters (RUBIX 2017–2024, L&T 2018).
+- Creative works, including *Nuptials*, *Shipwreck*, and *Almost Alchemy*.
+- Employment, education, qualifications, invited positions, distinctions, memberships, service, and funding sections.
 
-## Optional additions
+## Optional
 
-- Posters (RUBIX 2017–2024, L&T 2018) — ORCID type "other"
-- SSHRC Partnership Engage Grant (2021) under Funding
-- Creative works (Nuptials, Shipwreck, Almost Alchemy) — ORCID type "artistic performance"
-- Employment/education entries if the record lacks them
+- Peer reviews (ORCID's peer review section is empty): IJPADM, EVA London, NeurIPS 2026, and CFI are currently listed as service instead.
+- Start dates on the internal grants, which show only an end year.
